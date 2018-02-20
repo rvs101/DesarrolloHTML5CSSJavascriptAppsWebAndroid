@@ -1,0 +1,25 @@
+﻿table {
+    padding: 0px;
+    margin: 0px;
+    border-spacing: 0px;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #333;
+}
+
+th, td {
+    padding: 0.5em;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #333;
+}
+
+th {
+    background-color: #E2E2E2;
+}
+
+td {
+    background-color: #F0F0F0;
+}

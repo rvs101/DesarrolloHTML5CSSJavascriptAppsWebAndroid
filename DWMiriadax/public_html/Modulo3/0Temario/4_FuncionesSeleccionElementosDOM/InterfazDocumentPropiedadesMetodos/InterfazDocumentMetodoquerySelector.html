@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> querySelector </title>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+
+    <h2 class="example">A heading with class='example'.</h2>
+    <p class="example">A paragraph with class='example'.</p>
+    <p id="example">A paragraph with id="example".</p>
+
+    <button onclick="myFunction1()">Try it</button>
+    <button onclick="myFunction2()">Try it</button>
+    <button onclick="myFunction3()">Try it</button>
+
+    <script type="text/javascript">
+
+        function myFunction1() {
+            document.querySelector(".example").style.backgroundColor = "red";
+        }
+
+        function myFunction2() {
+            document.querySelector("#example").style.backgroundColor = "blue";
+        }
+
+        function myFunction3() {
+            document.querySelector("#example , .example").style.backgroundColor = "orange";
+        }
+
+
+
+    </script>
+</body>
+</html>

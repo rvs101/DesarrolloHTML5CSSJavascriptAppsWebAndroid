@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+
+    <p id="demo"><span>Resultado : </span> </p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <script type="text/javascript">
+
+        document.writeln();
+        document.write("Codifica la cadena -> my test.aps?name=ståle&car=saab");
+        document.writeln("resultado :");
+
+        function myFunction() {
+            var uri = "my test.aps?name=ståle&car=saab";
+            var res = encodeURI(uri);
+            document.getElementById("demo").innerHTML = res;
+        }
+
+
+    </script>
+</body>
+</html>

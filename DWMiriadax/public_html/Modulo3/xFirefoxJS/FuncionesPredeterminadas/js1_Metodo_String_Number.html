@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <script type="text/javascript">
+
+        function valueforDefault() {
+            var objRef;
+            alert(objRef); // devuelve undefined
+            alert(Number(objRef)); // devuelve NaN
+            alert(String(objRef)); // devuelve undefined
+        }
+
+        function conversionDateToString() {
+            var D = new Date(430054663215), x; // Thu Aug 18 1983 13:37:43 GMT+0200 (Hora de verano romance)
+            x = String(D);
+            alert(x);
+        }
+
+        conversionDateToString();
+
+
+    </script>
+</body>
+</html>

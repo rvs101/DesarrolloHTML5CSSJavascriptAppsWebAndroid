@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title></title>
+
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="HTML5 , CSS3 , JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Viualizar : Windows Phone -->
+    <!--<meta name="msapplication-TileColor" content="#9f00a7">-->
+    <!-- Viualizar : Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#121010">
+
+    <!-- Renderizado de todos los navegadores -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge , chrome=1">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <!-- Archivo configuración de los recursos del HTML -->
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Iconografia general del website -->
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../img/source/icon192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../img/source/icon192x192.png">
+    <link rel="mask-icon" href="../../../img/source/icon192x192.png" color="#5bbad5">
+    <link rel="shortcut icon" href="../../../img/source/icon192x192.png" />
+    <link rel="shortcut icon" href="../../../img/source/icon192x192.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="../../../img/source/icon192x192.png">
+
+    <!-- Quitar por defecto los elementos de los navegadores -->
+    <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+
+    <style type="text/css">
+
+        section#s1, section#s2, section#s3 {
+            text-align: center;
+            width: auto;
+            border: 1px solid red;
+            margin: 10px;
+            background-color: antiquewhite;
+        }
+
+        footer > section {
+            display: inline-block;
+            position: fixed;
+            bottom: 30px;
+            width: auto;
+            margin: 100px 0 0 0;
+        }
+
+        section > a {
+            display: inline-block;
+            position: fixed;
+        }
+
+        img {
+            display: inline-block;
+            border-width: 0;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <section id="s1">texto</section>
+
+    <button>Change color</button>
+
+    <footer>
+
+        <section id="copyright">
+            <img alt="Licencia de Creative Commons" style="" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+            </a>&nbsp;Este obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">licencia de Creative Commons Reconocimiento 4.0 Internacional</a>.
+            <br />
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#The_evolution_of_events">Fuente</a>
+        </section>
+
+    </footer>
+
+    <script>
+
+        var btn = document.querySelector('button');
+
+        function random(number) {
+            return Math.floor(Math.random() * (number + 1));
+        }
+
+        // funcion que invoca el otro metodo y selecciona:
+        function bgChange() {
+            // del documento 'document' el 'body' , el 'style' y del objeto 'style' invoca la propiedad 'tb objeto' backgroundColor.
+            var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+            // le añade el objeto 'rndCol' para almacenar el color generado mediante el valor del atributo css 'rgb'
+            document.body.style.backgroundColor = rndCol;
+            btn.textContent = rndCol;
+
+        }
+        // invocamos el objeto 'btn' y le añadimos el evento para que lance la función 'bgChange'
+        btn.onclick = bgChange;
+
+    </script>
+
+</body>
+</html>

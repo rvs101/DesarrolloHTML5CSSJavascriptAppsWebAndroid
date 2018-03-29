@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+
+
+    <section>
+        <p>Salida del elemento : </p>
+        <header>
+            <h2 id="demo"></h2>
+        </header>
+        <form name="up"><input type="text"></form>
+    </section>
+    <div name="down"><input type="text"></div>
+
+    <button onclick="lanzaBoton()">Pulsar</button>
+
+    <script type="text/javascript">
+
+        function lanzaBoton() {
+            var up_forms = document.getElementsByName("up");
+            document.getElementById("demo").innerHTML = up_forms[0].tagName;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: #F00;
+}
+
+h1, h2, h3 {
+    color: #F00;
+}
+
+.caja nav ul {
+    color: red;
+}
+
+/*selectores class */
+.marron {
+    color: brown;
+}
+
+/*selectores id*/
+#texto {
+    color: blue;
+}
+
+/*seleccion de hijos directos*/
+li > a {
+    color: red;
+}

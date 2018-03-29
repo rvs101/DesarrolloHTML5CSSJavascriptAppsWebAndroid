@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+        div {
+            border: 3px solid blue;
+        }
+
+        @media screen and (min-width: 600px) {
+            nav {
+                border: 1px solid green;
+                float: left;
+                width: 25%;
+            }
+
+            section {
+                border: 1px solid red;
+                margin-left: 25%;
+            }
+        }
+
+        @media screen and (max-width: 599px) {
+            nav li {
+                border: 5px solid blue;
+                display: inline;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        contenedor
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Taco Menu</li>
+                <li>Draft List</li>
+                <li>Hours</li>
+                <li>Directions</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+
+        <section>
+            ¡Ahora, cuando modificas el tamaño de tu navegador tu estructura se ve mejor que nunca!
+        </section>
+        <section>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio.
+        </section>
+    </div>
+</body>
+</html>

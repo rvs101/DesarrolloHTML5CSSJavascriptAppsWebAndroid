@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Pag11prompt.html</title>
+    <link rel="shortcut icon" href="../../img/source/icon192x192.png" />
+    <style type="text/css">
+
+        section#s1 {
+            width: 300px;
+            border: 1px solid red;
+        }
+
+        button#s2 {
+            margin: 10px 20px 0 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Sentencia if/else</h3>
+
+    <section id="s1"></section>
+
+    <button id="s2" onclick="lanzar()">Boton</button>
+
+    <script type="text/javascript">
+
+        function lanzar() {
+
+            var x = confirm("Elige una opcion : ");
+            var y = document.getElementById("s1");
+
+            if (x) {
+                y.innerHTML = "Has pulsado si : " + x.toString();
+            } else {
+                y.innerHTML = "Has pulsado no : " + x.toString();
+            }
+        }
+
+    </script>
+
+</body>
+</html>

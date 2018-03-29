@@ -1,0 +1,240 @@
+﻿
+* {
+    padding: 0px;
+    margin: 0px;
+    background-color: #4e4e4e;
+    color: white;
+}
+
+p#mensaje {
+    border: 1px solid red;
+    text-align: center;
+    max-width: 100px;
+    border-radius: 200px;
+    overflow: hidden;
+}
+
+button#boton1 {
+    position: relative;
+    left: 12px;
+    top: 5px;
+}
+
+#forma4 {
+    position: relative;
+    top: 20px;
+    width: 600px;
+    height: 380px;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: #cfc;
+    webkit-shape-outside: rectangle(0,0,100%,100%,50px,50px);
+    font-size: 0.8em;
+    text-align: center;
+    /*text-align: justify;*/
+    color: darkred;
+}
+
+.float-left {
+    position: relative;
+    top: 20px;
+    width: 100px;
+    height: 100px;
+    float: left;
+    -webkit-shape-inside: circle(50%, 50%, 50%);
+    -webkit-shape-outside: circle(50%, 50%, 50%);
+    -webkit-shape-margin: 50px;
+    -webkit-shape-padding: 50px;
+    background: #ccc;
+    border: 1px solid red;
+    padding: 0 10px 0 10px;
+    margin: 0 0 0 15px;
+}
+
+.container {
+    position: relative;
+    top: 10px;
+    padding: 0 10px 0 0;
+}
+
+    .container .float-left p.caja2 {
+        position: relative;
+        top: 10px;
+        padding: 0 10px 0 10px;
+        border: 1px solid blue;
+    }
+
+     
+
+.caja2 {
+    margin: 0 0 100px 0;
+    border: 1px solid red;
+    padding: 0 10px 0 10px;
+}
+
+table.tutorial-table {
+    border: 3px solid red;
+}
+
+@media screen and ( max-width: 1400px) and (min-width: 1100px) {
+    #forma4 {
+        width: auto;
+        text-align: center;
+        font-size: small;
+        margin: 0px 10px auto 0px;
+        padding: 16px 9px 5px 9px;
+    }
+
+    .priority-5 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 900px) {
+    #forma4 {
+        width: auto;
+        text-align: center;
+        font-size: small;
+        margin: 0px 10px auto 0px;
+        padding: 16px 9px 5px 9px;
+    }
+
+    .priority-5 {
+        display: none;
+    }
+
+    .priority-4 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 400px) {
+    #forma4 {
+        width: auto;
+        text-align: center;
+        font-size: small;
+        margin: 0px 10px auto 0px;
+        padding: 16px 9px 5px 9px;
+    }
+
+    .priority-5 {
+        display: none;
+    }
+
+    .priority-4 {
+        display: none;
+    }
+
+    .priority-3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    #forma4 {
+        width: auto;
+        text-align: center;
+        font-size: small;
+        margin: 0px 10px auto 0px;
+        padding: 16px 9px 5px 9px;
+    }
+
+    .priority-5 {
+        display: none;
+    }
+
+    .priority-4 {
+        display: none;
+    }
+
+    .priority-3 {
+        display: none;
+    }
+
+    .priority-2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 200px) {
+
+    #forma4 {
+        width: auto;
+        height: inherit;
+        text-align: center;
+        font-size: small;
+        margin: 0px 0px 5px 0px;
+        padding: 16px 9px 5px 9px;
+    }
+
+    .priority-5 {
+        display: none;
+    }
+
+    .priority-4 {
+        display: none;
+    }
+
+    .priority-3 {
+        display: none;
+    }
+
+    .priority-2 {
+        display: none;
+    }
+
+    .float-left {
+        position: relative;
+        top: 20px;
+        width: 100px;
+        height: 100px;
+        float: left;
+        -webkit-shape-inside: circle(50%, 50%, 50%);
+        -webkit-shape-outside: circle(50%, 50%, 50%);
+        -webkit-shape-margin: 50px;
+        -webkit-shape-padding: 50px;
+        background: #ccc;
+        border: 1px solid red;
+        padding: 0 10px 0 10px;
+        margin: 0 0 0 0px;
+    }
+}
+
+
+@media screen and (max-width: 100px) {
+
+    #forma4 {
+        width: auto;
+        height: inherit;
+        text-align: center;
+        font-size: small;
+        margin: 0px 10px 5px 0px;
+        padding: 16px 9px 5px 9px;
+    }
+
+    .caja2 {
+        padding: 0 0 0 0;
+        margin: 0 0 88px 0;
+        padding-left: 0px;
+        padding-right: 30px;
+        margin-left: -9px;
+        margin-right: 45px;
+    }
+
+    .priority-5 {
+        display: none;
+    }
+
+    .priority-4 {
+        display: none;
+    }
+
+    .priority-3 {
+        display: none;
+    }
+
+    .priority-2 {
+        display: none;
+    }
+}

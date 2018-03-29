@@ -1,0 +1,47 @@
+﻿
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Date</title>
+    <style type="text/css">
+
+        div#mensajes2 {
+            color: blue;
+        }
+    </style>
+
+    <script>
+
+        function validate(obj, lowval, hival) {
+            if ((obj.value < lowval) || (obj.value > hival) {
+                alert('Invalid Value!');
+            }
+        }
+
+
+
+
+    </script>
+
+</head>
+<body>
+
+    <input type="text" name="age" size="3"
+           onchange="validate(this,18,99)" />
+
+    <form name="myForm">
+        <p>
+            <label>
+                Form name:
+                <input type="text" name="text1" value="Beluga" />
+            </label>
+        <p>
+            <input name="button1" type="button" value="Show Form Name"
+                   onclick="this.form.text1.value = this.form.name" />
+        </p>
+    </form>
+
+
+</body>
+</html>

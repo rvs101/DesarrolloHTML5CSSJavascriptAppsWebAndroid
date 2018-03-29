@@ -1,0 +1,102 @@
+﻿<!--Incluyendo los siguientes elementos:
+
+1) El nombre de la persona que hace la entrega debajo del titulo <h1>
+2) Un bloque <div> debajo de la fecha y la hora y
+    las instrucciones JavaScript necesarias para
+    que muestre en dicho bloque el contenido de
+    las siguientes propiedades DOM en líneas separadas,
+    que comiencen por el nombre de la propiedad(es) mostrada(s):
+
+        a) Contenido de innerHTML de elemento identificado por id="h2"
+        b) Contenido de outerHTML de elemento identificado por id="h1"
+        c) Contenido de de la propiedad global: location.href
+        d) Contenido de de la propiedad global: location
+        e) Contenido de de las propiedades globales: screen.width y screen.heigth
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Date</title>
+    <style type="text/css">
+
+        div {
+            width: auto;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid red;
+            margin: 0 210px 0 210px;
+            
+        }
+
+            div#mensajes2 {
+                color: blue;
+            }
+
+            div#mensajes3 {
+                color: orange;
+            }
+
+            div#mensajes4 {
+                color: cornflowerblue;
+            }
+
+            div#mensajes5 {
+                color: brown;
+            }
+    </style>
+</head>
+<body>
+
+    <h1 id="h1"></h1>
+    <h2 id="h2">La fecha y la hora son: </h2>
+    <div id="fecha"></div>
+    <div id="mensajes0"></div>
+    <div id="mensajes1"></div>
+    <div id="mensajes2"></div>
+    <div id="mensajes3"></div>
+    <div id="mensajes4"></div>
+    <div id="mensajes5"></div>
+
+    <script type="text/javascript">
+        var fecha = new Date();
+        var msj;
+
+        if (fecha.getHours() < 7) {
+            msj = "Buenas Noches";
+        } else if (fecha.getHours() < 12) {
+            msj = "Buenos días";
+        } else if (fecha.getHours() < 21) {
+            msj = "Buenas tardes";
+        } else {
+            msj = "Buenas noches";
+        }
+
+        var x = "<span style='color: red';> Raúl Vela Salas</span>"
+
+        var x2 = document.getElementById("h1");
+        document.getElementById("mensajes0").innerText = x2.outerHTML;
+
+        document.getElementById("h1").innerHTML = msj + " " + x;
+        document.getElementById("fecha").innerHTML = fecha;
+
+        var x1 = document.getElementById("h2").innerHTML;
+        document.getElementById("mensajes1").innerHTML = x1;
+
+        var men = location.href;
+        document.getElementById("mensajes2").innerHTML = men;
+
+        var mensaje3 = location;
+        document.getElementById("mensajes3").innerHTML = mensaje3;
+
+        var mensaje4 = screen.width;
+        document.getElementById("mensajes4").innerHTML = "width: " + mensaje4;
+
+        var mensaje5 = screen.height;
+        document.getElementById("mensajes5").innerHTML = "height: " + mensaje5;
+
+    </script>
+
+</body>
+</html>

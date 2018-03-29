@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Pag11prompt.html</title>
+    <link rel="shortcut icon" href="../../img/source/icon192x192.png" />
+    <style type="text/css">
+
+        section#s1 {
+            width: 300px;
+            border: 1px solid red;
+        }
+
+        button#s2 {
+            margin: 10px 20px 0 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Sentencia if/else</h3>
+
+    <section id="s1"></section>
+
+    <button id="s2" onclick="lanzar()">Boton</button>
+
+    <script type="text/javascript">
+
+        function lanzar() {
+            var numero = prompt("Introduce un numero");
+            alert(numero);
+
+            var num = 0.5;
+
+            if (numero <= num && numero !== null) {
+                document.getElementById("s1").innerHTML = numero.toString() + " menor a " + num;
+            }
+
+            if (numero >= num && numero !== null) {
+                document.getElementById("s1").innerHTML = numero.toString() + " mayor a " + num;
+
+            } else if (numero == null) {
+                document.getElementById("s1").innerHTML = "Valor : " + numero;
+            }
+        }
+
+    </script>
+
+</body>
+</html>

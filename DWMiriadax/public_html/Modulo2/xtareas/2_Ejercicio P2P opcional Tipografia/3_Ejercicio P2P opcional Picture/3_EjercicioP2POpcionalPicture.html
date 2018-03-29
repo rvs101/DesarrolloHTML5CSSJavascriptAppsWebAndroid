@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>3_Ejercicio P2P opcional Picture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        .horizontal {
+            max-width: 300px;
+            height: auto;
+        }
+
+
+        .main {
+            border: 1px solid #6AC5AC;
+            width: 600px;
+            margin: 10px auto;
+            padding: 10px;
+        }
+
+        .main2 {
+            border: 1px solid #6AC5AC;
+            max-width: 300px;
+            margin: 10px auto;
+            padding: 10px;
+        }
+
+
+        @media screen and (min-width:600px) {
+            .main {
+                margin-left: 25%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <picture>
+        <source media="(min-width: 1366px)" srcset="img1280×720servidor.jpg">
+        <source media="(min-width: 1280px)" srcset="img1056x1053chip.png">
+        <source media="(min-width: 854px)" srcset="img800×480torre.jpg">
+        <source media="(min-width: 650px)" srcset="img460x345placa.jpg">
+        <source media="(min-width: 465px)" srcset="img214x204monitor.jpg">
+        <img src="img100x135mouse.png" alt="hardware" style="width:auto;">
+    </picture>
+
+    <p class="main">
+        Cambia el tamaño del navegador para ver diferentes versiones de la carga de la imagen en diferentes tamaños de ventanas. El navegador busca el primer elemento de origen donde la consulta de medios coincide con el ancho de la ventana gráfica actual del usuario y recupera la imagen especificada en el atributo srcset.
+    </p>
+
+
+    <iframe class="main" width="300" height="400" src="https://www.youtube.com/embed/tgbNymZ7vqY"
+            allowtransparency="true" frameborder="0"></iframe>
+
+    <iframe class="main" width="300" height="400"
+            src="https://www.youtube.com/embed/CFp_8Sah6YU"
+            frameborder="0" allowfullscreen></iframe>
+
+    <div class="main2">
+        <object class="horizontal" type="image/svg+xml"
+                data="img/Moire_Circles.svg"></object>
+        <img class="horizontal" src="Moire_Circles.svg" alt="imagen1">
+    </div>
+
+
+
+</body>
+</html>

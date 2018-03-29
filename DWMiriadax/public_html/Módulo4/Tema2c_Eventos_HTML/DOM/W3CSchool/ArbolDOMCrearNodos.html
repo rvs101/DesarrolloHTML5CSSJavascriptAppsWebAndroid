@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <div id="div1">
+        <p id="p1">This is a paragraph</p>
+        <p id="p2">This is another paragraph.</p>
+    </div>
+
+    <hr />
+
+    <span id="s1">Soy Span</span>
+
+    <p id="parrafo" class="normal">...</p>
+
+
+
+    <script>
+        // - Crea el elemento
+        var para = document.createElement("p");
+        // - Crea un nodo texto
+        var node = document.createTextNode("This is new Text Node");
+        // - Añade el nuevo 'nodo' al nodo parrafo
+        para.appendChild(node);
+        // - Selecciona el elemento div 'NODO padre' mediante su id
+        var element = document.getElementById("div1");
+        // - Añadimos un nodo hijo al div porque es quien encierra los nodos 'p'
+        element.appendChild(para);
+        //-----------------------------------
+        // - Creamos el nodo "elemento" de tipo 'div'
+        var para1 = document.createElement("div");
+        // - Creamos el nodo "elemento" de tipo texto
+        var node1 = document.createTextNode(" Crear un nodo de Texto");
+        // - Añade al nodo hijo su nodo texto "paquete completo del nodo"
+        para1.appendChild(node1);
+        // - Seleccionamos el nodo padre al que queremos
+        // añadir el nuevo nodo tipo < div > y su nodo < text >
+        var element1 = document.getElementById("s1");
+        // - Añadimos al nodo padre un nuevo nodo hijo
+        element1.appendChild(para1);
+        /////////////////////////////////////////////////
+
+    </script>
+
+</body>
+</html>

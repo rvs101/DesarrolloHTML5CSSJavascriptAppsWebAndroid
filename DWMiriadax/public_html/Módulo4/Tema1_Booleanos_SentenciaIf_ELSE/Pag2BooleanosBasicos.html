@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Tema1_Booleanos_y_sentencia If_ELSE</title>
+    <style type="text/css">
+
+        #men1 , #men2 {
+            width: 50px;
+            padding: 10px;
+            border: 1px solid red;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3> Booleanos </h3>
+        <h4>(3 <= x) && (x <= 8)</h4>
+    </header>
+
+    <section id="men1">
+        (3 <= x) && (x <= 8)
+    </section>
+
+    <section id="men2">
+        (3 <= x) && (x <= 8)
+    </section>
+
+
+    <script type="text/javascript">
+
+        function entre_3_y_8(x) {
+            return (3 <= x) && (x <= 8);
+        };
+
+        document.getElementById("men1").innerHTML = entre_3_y_8(4);
+        document.getElementById("men2").innerHTML = entre_3_y_8(2);
+
+    </script>
+
+</body>
+</html>

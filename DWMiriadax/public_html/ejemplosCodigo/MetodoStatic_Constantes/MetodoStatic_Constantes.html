@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Object.defineProperty</title>
+    <style type="text/css">
+
+        #s1 {
+            border: 1px solid red;
+            width: 40px;
+            text-align: center;
+            margin: 10px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="s1"></section>
+
+    <pre>
+        //Constante
+        const object1 = {};
+
+        //Metodo 'static' tipo Object para 'objeto' y crear una Propiedad
+        Object.defineProperty(object1, 'property1', {
+            value: 42, writable: false
+        });
+
+        //Crea objeto de tipo Object : le asignamos un valor
+        object1.property = 77;
+
+        //Mostramos por pantalla el valor de la Propiedad
+        document.getElementById("s1").innerHTML = object1.property1;
+</pre>
+
+    <script type="text/javascript">
+
+
+        //Constante
+        const object1 = {};
+
+        //Metodo 'static' tipo Object para 'objeto' y crear una Propiedad
+        Object.defineProperty(object1, 'property1', {
+            value: 42, writable: false
+        });
+
+        //Crea objeto de tipo Object : le asignamos un valor
+        object1.property = 77;
+
+        //Mostramos por pantalla el valor de la Propiedad
+        document.getElementById("s1").innerHTML = object1.property1;
+
+    </script>
+
+</body>
+</html>

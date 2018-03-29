@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Tema_2_HTMLCSS_Estructura_CSS</title>
+    <style type="text/css">
+
+        div {
+            background-color: bisque;
+            border: 1px solid blue;
+        }
+
+        p {
+            background-color: aquamarine;
+            border: 1px solid red;
+            font-size: 26px;
+        }
+
+        .marca {
+            font-weight: 900;
+        }
+
+        .caja0 {
+            background-color: #f01313;
+            position: absolute; /*Liberta de movimiento en la pagina y se pone encima*/
+            top: 100px; /*Selecciono la direccion de la caja*/
+            left: 100px; /*Selecciono la direccion de la caja*/
+        }
+
+        .caja1 {
+            height: 100px;
+            width: 150px;
+            background-color: #FF9;
+            float: left; /*Direccion de la caja pegada a la siguiente siguiendo el flujo natural del posicionamiento*/
+        }
+
+        .caja2 {
+            background-color: #CCF;
+            height: 100px;
+            width: 150px;
+            position: absolute; /*Liberta de movimiento en la pagina y se pone encima*/
+            top: 40px; /*Selecciono la direccion de la caja*/
+            left: 250px; /*Selecciono la direccion de la caja*/
+        }
+
+        .caja3 {
+            background-color: #CFC;
+            height: 100px;
+            width: 150px;
+            float: left; /*Direccion de la caja pegada a la siguiente siguiendo el flujo natural del posicionamiento*/
+        }
+
+        .caja4 {
+            background-color: #FC6;
+            height: 50px;
+            width: 450px;
+            /*padding: 5px;*/
+            clear: both; /*Liberta de movimiento en la pagina y se pone encima*/
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            Parrafo :<br />
+            Uso de <b>float</b> y un div <b>clear</b> que rompe el esquema del <em>float</em>
+        </p>
+
+        <p>
+            Parrafo :<br />
+            CSS3 permite posicionar 'div' en la pagina
+            mediante position : absolute , relative , fixed
+        </p>
+
+        <p>
+            Parrafo :<br />
+            Con posicion <b class="marca">absolute</b> el div <b class="marca">sale</b> del flujo del contenido
+        </p>
+    </div>
+
+    <div class="caja0">
+        caja 0 con position: absolute - Liberta de movimiento en la pagina y se pone encima
+        puede quedarse fuera
+    </div>
+    <div class="caja1">caja 1 con float : left </div>
+    <div class="caja2">
+        caja 2 con position: absolute - Liberta de movimiento en la pagina y se pone encima
+        puede quedarse fuera
+    </div> 
+    <div class="caja3">caja 3 con float: left; </div>
+    <div class="caja4">caja 4 con clear : both; </div>
+
+</body>
+</html>  

@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Modulo 2: Estructura HTML5/CSS3 Para Multipantalla Y Objetos Multimedia</title>
+    <style>
+
+        #caja header h1 {
+            color: blue; /*0,1,0,2 */
+        }
+
+        #caja .cabecera h1 { /*0,1,1,1 - Elemento GANADOR */
+            color: gold;
+        }
+
+        header h1 { /*0,0,0,2 */
+            color: blueviolet;
+        }
+
+        h1 { /*0,0,0,1 */
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+
+    <p>
+        Ejercicio P2P opcional
+    </p>
+
+    <p>
+        Realizar en el siguiente HTML 5 declaraciones de estilo CSS que afecten <br />
+        al mismo elemento, el titilar h1, con diferentes puntuaciones de prioridad,<br />
+        e indicar su puntuación como un comentario en el propio HTML:<br />
+    </p>
+
+<pre>
+
+        #caja header h1 {
+        color: blue; /* 0,1,0,2 */
+        }
+
+        #caja .cabecera h1 { /* 0,1,1,1 - Elemento GANADOR */
+        color: gold;
+        }
+
+        header h1 { /* 0,0,0,2 */
+        color: blueviolet;
+        }
+
+        h1 { /* 0,0,0,1 */
+        color: purple;
+        }
+</pre>
+
+    <div id="caja">
+        <header class="cabecera">
+            <h1>Cabecera: header</h1>
+        </header>
+    </div>
+
+
+
+
+
+</body>
+</html>

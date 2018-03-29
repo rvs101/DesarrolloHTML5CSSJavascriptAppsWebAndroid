@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi documento</title>
+</head>
+<body>
+    <h1>Cabecera</h1>
+    <p>Parrafo</p>
+
+    <script>
+        // document.getElementsByTagName("H1") devuelve un NodeList de los
+        // elementos H1 del documento; el primer elemento tiene índice 0:
+
+        var header = document.getElementsByTagName("h1").item(0);
+
+        //Propiedad firstChild de la cabecera contiene un nodo de texto y su propiedad
+        //"data" contiene el texto del nodo
+        header.firstChild.data = "un documento dinamico";
+
+        var para = document.getElementsByTagName('p').item(0);
+
+        para.firstChild.data = 'Este es el primer parrafo';
+
+    </script>
+
+</body>
+</html>

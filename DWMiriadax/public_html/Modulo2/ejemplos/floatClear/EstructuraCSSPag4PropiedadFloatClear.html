@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Estructura CSS Pag 4 Propiedad Float Clear</title>
+    <style type="text/css">
+        .muestra {
+            height: 300px;
+            width: 60%;
+            background-color: #FF9;
+            float: left;
+        }
+
+        .anterior {
+            height: 100px;
+            width: 20%;
+            background-color: #CFC;
+            float: left;
+        }
+
+        .posterior {
+            height: 50px;
+            width: 80%;
+            background-color: #CCF;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="anterior">
+        1º DIV con float : 20%
+    </div>
+
+    <div class="muestra">
+        2º DIV con float : 60%
+    </div>
+
+    <div class="posterior">
+        3º DIV con clear : both - 80%
+    </div>
+
+</body>
+</html>

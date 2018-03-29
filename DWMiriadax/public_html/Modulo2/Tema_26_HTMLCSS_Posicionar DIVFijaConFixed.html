@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Tema_2_HTMLCSS_Estructura_CSS</title>
+    <style type="text/css">
+
+        * {
+            border: 1px solid blue;
+        }
+
+        p {
+            border: 1px solid red;
+        }
+
+        div {
+            border: 1px solid red;
+        }
+
+        .caja1 {
+            height: 100px;
+            width: 150px;
+            background-color: #FF9;
+            float: left; /*Direccion de la caja pegada a la siguiente siguiendo el flujo natural del posicionamiento*/
+        }
+
+        .caja2 {
+            height: 100px;
+            width: 150px;
+            background-color: #CCF;
+            position: absolute; /*Liberta de movimiento en la pagina y se pone encima*/
+            left: 250px; /*Selecciono la direccion de la caja*/
+            top: 40px; /*Selecciono la direccion de la caja*/
+        }
+
+        .caja3 {
+            height: 100px;
+            width: 150px;
+            float: left; /*Direccion de la caja pegada a la siguiente siguiendo el flujo natural del posicionamiento*/
+            background-color: #CFC;
+        }
+
+        .caja4 {
+            height: 50px;
+            background-color: #FC6;
+            clear: both; /*Liberta de movimiento en la pagina y se pone encima*/
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <p>
+        Con posicion fija 'fixed'
+        el <b>div</b> no cambia
+        de posicion en el escalado del navegador
+        o el scroll en la pagina
+    </p>
+
+
+
+    <div class="caja1">
+        Caja 1 con float : left
+    </div>
+    <div class="caja2">
+        Caja 2 con position: absolute - Liberta de movimiento en la pagina y se pone encima
+        puede quedarse fuera
+    </div>
+    <div class="caja3">
+        Caja 3 con float: left;
+    </div>
+    <div class="caja4">
+        Caja 4 Posicion fija abajo - para crear 'footer' o 'Logótipos empresa'
+    </div>
+
+</body>
+</html>  

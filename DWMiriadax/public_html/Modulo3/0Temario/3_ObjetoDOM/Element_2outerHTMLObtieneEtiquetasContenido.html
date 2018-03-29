@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body class="body">
+
+    <div id="div_1">
+    </div>
+    <form id="form1" action="" osubmit="">
+        <input type="text" name="t1" />
+        <input type="button" value="innerText" onclick="Process(1)" />
+        <input type="button" value="innerHTML" onclick="Process(2)" />
+    </form>
+
+    <div id="container">
+        <div id="d"><p>Content</p><p>Further Elaborted</p></div>
+    </div>
+
+    <script>
+
+        function Process(val) {
+            var obj = document.getElementById("div_1");
+            if (val == 1) {
+                obj.innerText = "<h4 style='color:red;'>Algun texto</h4> - Almacena el texto" + "<br>";
+            } else {
+                obj.innerHTML = "<h4 style='color:blue;'>Algún texto</h4> - Almacena el elementos y texto";
+            }
+        }
+    </script>
+</body>
+</html>

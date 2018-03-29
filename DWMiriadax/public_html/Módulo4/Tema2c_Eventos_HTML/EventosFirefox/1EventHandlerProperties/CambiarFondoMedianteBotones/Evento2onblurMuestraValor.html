@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Random color example — event handler property</title>
+    <style>
+        button {
+            margin: 10px;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <button id='b1'>Change color 1</button>
+ 
+
+    <script type="text/javascript">
+
+        var btn = document.querySelector('button');
+   
+
+        function random(number) {
+            return Math.floor(Math.random() * number);
+        }
+
+        function bgChange() {
+            var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+            document.body.style.backgroundColor = rndCol;
+            // dentro del objeto boton se introduce el valor elegido para el color
+            btn.textContent = rndCol;
+        }
+
+        function lanzar() {
+            document.getElementById('b1').onblur = bgChange;
+        }
+
+    </script>
+
+    <script type="text/javascript">
+        var x = document.getElementById('b1');
+        x.onblur = bgChange;
+    </script>
+
+</body>
+</html>

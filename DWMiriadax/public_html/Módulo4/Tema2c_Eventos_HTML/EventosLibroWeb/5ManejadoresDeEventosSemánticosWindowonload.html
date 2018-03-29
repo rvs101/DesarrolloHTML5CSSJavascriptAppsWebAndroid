@@ -1,0 +1,134 @@
+﻿e<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title></title>
+
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="HTML5 , CSS3 , JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Viualizar : Windows Phone -->
+    <!--<meta name="msapplication-TileColor" content="#9f00a7">-->
+    <!-- Viualizar : Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#121010">
+
+    <!-- Renderizado de todos los navegadores -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge , chrome=1">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <!-- Archivo configuración de los recursos del HTML -->
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Iconografia general del website -->
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../img/source/icon192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../img/source/icon192x192.png">
+    <link rel="mask-icon" href="../../../img/source/icon192x192.png" color="#5bbad5">
+    <link rel="shortcut icon" href="../../../img/source/icon192x192.png" />
+    <link rel="shortcut icon" href="../../../img/source/icon192x192.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="../../../img/source/icon192x192.png">
+
+    <!-- Quitar por defecto los elementos de los navegadores -->
+    <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+
+    <style type="text/css">
+
+        section#s1, section#s2, section#s3 {
+            text-align: center;
+            width: 500px;
+            border: 1px solid red;
+            margin: 10px 0 0 5px;
+            background-color: antiquewhite;
+        }
+
+        form#formulario {
+            text-align: right;
+            width: 370px;
+            border: 1px solid red;
+            margin: 10px 200px 0px 10px;
+            padding: 10px 20px 0px 0px;
+            background-color: antiquewhite;
+            border-radius: 20px;
+        }
+
+
+        #i1, #i2, #i3 {
+            clear: left;
+            display: block;
+            margin: 15px 0px 10px 5px;
+        }
+
+        #l1, #l2, #l3 {
+            float: left;
+            display: inline;
+            margin: 15px 0px 0px 10px;
+        }
+
+        #i4, #i5 {
+            margin: 10px 17px 20px 0px;
+        }
+
+        footer > section {
+            position: fixed;
+            bottom: 10px;
+            width: auto;
+            margin: 100px 0 0 0;
+        }
+
+        .backGroundColor {
+            background-color: green;
+        }
+    </style>
+
+    <script>
+
+        function resalta() {
+
+            var camposInput = formulario.getElementsByTagName('input');
+
+            for (var i = 0; i < camposInput.length; i++) {
+                if (camposInput[i].type == "text") {
+                    var x = document.getElementsByTagName('input')[i];
+                    x.style.backgroundColor = "#ffcccc";
+                }  
+            }
+        }
+
+        window.onload = function () {
+            var formulario = document.getElementById('formulario');
+            var camposInput = formulario.getElementsByTagName('input');
+
+            for (var i = 0; i < camposInput.length; i++) {
+                if (camposInput[i].type == "text") {
+                    camposInput[i].onclick = resalta();
+                }
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <form id="formulario" action="#" method="get" autocomplete="on">
+        <label id="l1">Nombre: </label>
+        <input id="i1" type="text" name="n1" value="" size="40" placeholder="Nombre" autofocus />
+
+        <label id="l2">Apellidos: </label>
+        <input id="i2" type="text" name="n2" value="" size="40" placeholder="Apellidos" />
+
+        <label id="l3">Telefono: </label>
+        <input id="i3" type="text" name="n3" value="" size="40" placeholder="Tlf" />
+
+        <input id="i4" type="submit" value="enviar" />
+        <input id="i5" type="reset" value="borrar" />
+    </form>
+
+    <section id="s1">texto</section>
+
+
+    <footer>
+        <section id="copyright"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>&nbsp;Este obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">licencia de Creative Commons Reconocimiento 4.0 Internacional</a>.</section>
+    </footer>
+
+</body>
+</html>

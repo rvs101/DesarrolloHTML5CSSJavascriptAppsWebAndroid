@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Example</title>
+
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="HTML5 , CSS3 , JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Viualizar : Windows Phone -->
+    <!--<meta name="msapplication-TileColor" content="#9f00a7">-->
+    <!-- Viualizar : Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#121010">
+
+    <!-- Renderizado de todos los navegadores -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge , chrome=1">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <!-- Archivo configuración de los recursos del HTML -->
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Iconografia general del website -->
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../img/source/icon192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../img/source/icon192x192.png">
+    <link rel="mask-icon" href="../../../img/source/icon192x192.png" color="#5bbad5">
+    <link rel="shortcut icon" href="../../../img/source/icon192x192.png" />
+    <link rel="shortcut icon" href="../../../img/source/icon192x192.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="../../../img/source/icon192x192.png">
+
+    <!-- Quitar por defecto los elementos de los navegadores -->
+    <link type="text/css" rel="stylesheet" href="../../../../css/normalize.css" />
+
+    <style>
+
+        form.myForm {
+            text-align: center;
+            width: auto;
+            border: 1px solid red;
+            margin: 10px;
+            background-color: antiquewhite;
+        }
+
+        footer > section {
+            position: fixed;
+            bottom: 10px;
+            width: auto;
+            margin: 100px 0 0 0;
+        }
+    </style>
+
+</head>
+<body>
+
+    <script>
+
+        function numbersOnly(oToCheckField, oKeyEvent) {
+            return oKeyEvent.charCode === 0 || /\d/.test(String.fromCharCode(oKeyEvent.charCode));
+        }
+
+    </script>
+
+    <form name="myForm">
+        <p>
+            Enter numbers only:
+            <input type="text" name="myInput" onkeypress="return numbersOnly(this, event);"
+                   onpaste="return false;" />
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+        .container {
+            border: 3px solid blue;
+            position: relative;
+        }
+
+        nav {
+            border: 2px solid green;
+            position: absolute;
+            left: 0px;
+            width: 200px;
+        }
+
+        section {
+            border: 5px solid brown;
+            margin-left: 200px;
+        }
+
+        footer {
+            border: 3px solid orange;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            height: 7px;
+            background-color: navajowhite;
+            width: 100%;
+        }
+
+        body {
+            margin-bottom: 120px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        container
+        <nav>
+            nav
+            <ul>
+                <li>Inicio</li>
+                <li>Taco Menu</li>
+                <li>Lista de Pendientes</li>
+                <li>Horas</li>
+                <li>Direcciones</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+
+        <section>
+            section<br />
+            El estilo margin-left para section, es para que haya espacio para nav.
+        </section>
+        <section>
+            section <br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet,
+        </section>
+        <section>
+            section<br />
+            Mira lo que pasa si haces la ventana de tu navegador mas pequeña. ¡Funciona!
+        </section>
+    </div>
+    <footer>Si usas un header o footer con valor fixed, asegurate de que haya espacio para él. Yo puse un margin-bottom en el body.</footer>
+
+</body>
+</html>

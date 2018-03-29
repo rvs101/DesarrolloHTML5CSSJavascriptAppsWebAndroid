@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <header>
+        <h2 id="demo"></h2>
+    </header>
+
+    <section>
+        <ul>
+            <li>lista 1</li>
+            <li>lista 2</li>
+            <li>lista 3</li>
+        </ul>
+    </section>
+
+    <button onclick="lanzaBoton()">Pulsar</button>
+
+
+    <script type="text/javascript">
+
+        function lanzaBoton() {
+            var x = document.getElementsByTagName("li");
+            document.getElementById("demo").innerHTML = x[1].innerHTML;
+        }
+
+    </script>
+</body>
+</html>

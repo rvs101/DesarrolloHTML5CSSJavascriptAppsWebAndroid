@@ -1,0 +1,41 @@
+header {
+    display: inline;
+}
+
+section {
+    border: 1px solid green;
+    display: block;
+    height: 500px;
+}
+
+div {
+    border: 2px solid #ff0000;
+}
+
+    div#articulo {
+        margin: 10px 0px 5px 20px;
+        width: 350px;
+        height: 480px;
+    }
+
+    div#lateral {
+        margin: 10px 15px 10px 5px;
+        width: 100px;
+        height: 480px;
+    }
+
+article {
+    display: inline-block;
+    /*float: left;*/
+}
+
+aside {
+    display: inline-block;
+    /*float: right;*/
+}
+
+footer {
+    display: inline;
+    /*height: 200px;*/
+    /*width: 500px;*/
+}

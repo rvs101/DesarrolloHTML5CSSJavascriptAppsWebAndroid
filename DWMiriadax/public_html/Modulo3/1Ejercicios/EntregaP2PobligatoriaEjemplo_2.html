@@ -1,0 +1,68 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        body {
+            background-color: #F0F0F0;
+        }
+
+        ul {
+            list-style-type: upper-alpha;
+            font-weight: bold;
+        }
+
+        li {
+            margin: 5px;
+        }
+
+        .contenedor {
+            margin-left: 10%;
+            margin-right: 15%;
+            background-color: #E0E0E0;
+            border: 1px solid;
+            border-radius: 25px 25px 25px 25px;
+            border-color: #D0D0D0;
+            width: 70%;
+            padding: 5%
+        }
+    </style>
+
+</head>
+<body>
+    <div class="contenedor">
+        <h1 id="h1"></h1>
+        <h3 id="nombre"></h3>
+        <h2 id="h2">La fecha y la hora son:</h2>
+        <div id="fecha"></div>
+        <ul>
+            <li id="a"><strong></strong></li>
+            <li id="b"></li>
+            <li id="c"></li>
+            <li id="d"></li>
+            <li id="e"></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        var fecha = new Date();
+        var msj;
+
+        if (fecha.getHours() < 7) { msj = "Buenas noches"; }
+        else if (fecha.getHours() < 12) { msj = "Buenos días"; }
+        else if (fecha.getHours() < 21) { msj = "Buenas tardes"; }
+        else { msj = "Buenas noches"; }
+
+        document.getElementById("h1").innerHTML = msj;
+        document.getElementById("fecha").innerHTML = fecha;
+        document.getElementById("nombre").innerText = "Mirla Mieses Guzman";
+        document.getElementById("a").innerText = "innerHTML: " + document.getElementById("h2").innerHTML;
+        document.getElementById("b").innerText = "outerHTML: " + document.getElementById("h1").outerHTML;
+        document.getElementById("c").innerText = "location.href: " + location.href;
+        document.getElementById("d").innerText = "location: " + location;
+        document.getElementById("e").innerText = "screen.width x screen.heigth: " + screen.width + " x " + screen.height;
+    </script>
+
+</body>
+</html>

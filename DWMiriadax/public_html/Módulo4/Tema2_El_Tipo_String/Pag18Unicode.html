@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Pag11prompt.html</title>
+    <link rel="shortcut icon" href="../../img/source/icon192x192.png" />
+    <style type="text/css">
+
+        section {
+            width: auto;
+            border: 1px solid red;
+            margin: 10px 20px 0 0;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Sentencia if/else</h3>
+
+    <p>Null</p>
+    <section id="s1"></section>
+
+    <p>Backspace</p>
+    <section id="s2"></section>
+
+    <p>Horizontal tab</p>
+    <section id="s3"></section>
+
+    <p>Newline</p>
+    <section id="s4"></section>
+
+    <p>Vertical tab</p>
+    <section id="s5"></section>
+
+    <p>Form feed</p>
+    <section id="s6"></section>
+
+    <p>Carriage return</p>
+    <section id="s7"></section>
+
+    <p>Comillas (dobles)</p>
+    <section id="s8"></section>
+
+    <p>Ap&oacute;strofe</p>
+    <section id="s9"></section>
+
+    <p>BackSlash</p>
+    <section id="s10"></section>
+
+    <p>Decimal 10 a Hexadecimal</p>
+    <section id="s11"></section>
+
+    <p>Hexadecimal 'a' -> Decimal </p>
+    <section id="s12"></section>
+
+
+    <script type="text/javascript">
+
+        document.getElementById("s1").innerHTML =
+            "\0 mensaje \x00 mensaje \u0000";
+
+        document.getElementById("s2").innerHTML =
+            "\b mensaje \x08 mensaje \u0008";
+
+        document.getElementById("s3").innerHTML =
+            "\t mensaje \x09 mensaje \u0009";
+
+        document.getElementById("s4").innerHTML =
+            "\n mensaje \x0A mensaje \u000A";
+
+        document.getElementById("s5").innerHTML =
+            "\t mensaje \x0B mensaje \u000B";
+
+        document.getElementById("s6").innerHTML =
+            "\f mensaje \x0C mensaje \u000C";
+
+        document.getElementById("s7").innerHTML =
+            "\r mensaje \x0D mensaje \u000D";
+
+        document.getElementById("s8").innerHTML =
+            " \" mensaje \x22 mensaje \u0022";
+
+        document.getElementById("s9").innerHTML =
+            " \' mensaje \x27 mensaje \u0027";
+
+        document.getElementById("s10").innerHTML =
+            " \\ mensaje \x5C mensaje \u005C";
+
+        var num = 10;
+        var hexString = num.toString(16);
+
+        document.getElementById("s11").innerHTML = hexString;
+
+        hexString = parseInt(hexString, 16);
+
+        document.getElementById("s12").innerHTML = hexString;
+
+
+
+    </script>
+
+</body>
+</html>

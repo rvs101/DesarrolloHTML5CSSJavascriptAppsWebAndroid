@@ -1,0 +1,227 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>fecha y hora</title>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            padding: 10px;
+            background-color: #FF9680;
+            color: #283747;
+            font-size: 14px;
+            line-height: 1.4;
+            font-family: 'PT Sans', Georgia, serif;
+        }
+
+        ul {
+            list-style-position: inside;
+            padding-left: 0px;
+        }
+
+            ul ul {
+                list-style-position: inside;
+                padding-left: 10px;
+            }
+
+        li {
+            line-height: 1.5;
+            width: 100%;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Merriweather', Georgia, serif;
+        }
+
+        h1 {
+            font-size: 24px;
+            line-height: 30px;
+        }
+
+        h2 {
+            font-size: 21px;
+            line-height: 27px;
+            margin-bottom: 25px;
+        }
+
+        #cabecera {
+            width: 100%;
+            border: 2px solid gray;
+            text-align: center;
+            border-radius: 15px;
+            background-color: darkslategray;
+            color: whitesmoke;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 20px;
+            line-height: 26px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        footer {
+            margin-top: 15px;
+            clear: both;
+            text-align: center;
+        }
+
+
+        #tarea {
+            border: 1px solid grey;
+            margin-bottom: 25px;
+            padding: 0px 10px;
+        }
+
+        .codigo {
+            font-family: Consolas, "courier new";
+            line-height: 1.4;
+            width: auto;
+            font-size: 14px;
+            background-color: #fff;
+            padding: 5px 5px;
+            margin: 0 0 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header id="cabecera">
+        <h1 id="h1"></h1>
+    </header>
+    <h2 id="h2">La fecha y la hora son:</h2>
+    <div id="fecha"></div>
+
+
+
+    <div>
+        <h3>Incluye los siguientes elementos:</h3>
+        <ul>
+            <li>
+                El nombre de la persona que hace la entrega debajo del titulo &lt;h1&gt;.
+            </li>
+
+            <li>
+                Un bloque &lt;div&gt; debajo de la fecha y la hora y <b>las instrucciones JavaScript necesarias</b>
+                para que muestre en dicho bloque el contenido de las siguientes propiedades DOM  en líneas separadas,
+                que comiencen por el nombre de la propiedad(es) mostrada(s):
+            </li>
+            <ul>
+                <li id="p1"> Contenido de innerHTML de elemento identificado por id="h2"</li>
+                <li id="p2"> Contenido de outerHTML de elemento identificado por id="h1"</li>
+                <li id="p3"> Contenido de de la propiedad global: location.href</li>
+                <li id="p4"> Contenido de de la propiedad global: location.</li>
+                <li id="p5"> Contenido de de las propiedades globales: screen.width y screen.heigth</li>
+            </ul>
+        </ul>
+    </div>
+    <div id="tarea">
+        <header>
+            <h3>Descripción de la Tarea</h3>
+        </header>
+        <p>Ampliar&nbsp;la siguiente&nbsp;aplicación Web (muestra la fecha y la hora):</p>
+
+        <p>
+            &nbsp;&lt;!DOCTYPE html&gt;&lt;html&gt;<br />
+            &lt;head&gt;<br />
+            &nbsp; &lt;title&gt;Date&lt;/title&gt;<br />
+            &nbsp; &lt;meta charset="UTF-8"&gt;<br />
+            &lt;/head&gt;<br />
+            &lt;body&gt;<br />
+            &nbsp; &lt;h1 id="h1"&gt;&lt;/h1&gt;<br />
+            &nbsp; &lt;h2 id="h2"&gt;La fecha y la hora son:&lt;/h2&gt;<br />
+            &nbsp; &lt;div id="fecha"&gt;&lt;/div&gt;<br />
+            <br />
+            &nbsp;&lt;script type="text/javascript"&gt;<br />
+            &nbsp; var fecha = new Date();<br />
+            &nbsp; var msj;<br />
+            <br />
+            &nbsp; if &nbsp; &nbsp; &nbsp;(fecha.getHours() &lt; 7) &nbsp;{ msj = "Buenas noches";}<br />
+            &nbsp; else if (fecha.getHours() &lt; 12) { msj = "Buenos días";}<br />
+            &nbsp; else if (fecha.getHours() &lt; 21) { msj = "Buenas tardes";}<br />
+            &nbsp; else &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{ msj = "Buenas noches";}<br />
+            <br />
+            &nbsp; document.getElementById("h1").innerHTML &nbsp; &nbsp;= msj;<br />
+            &nbsp; document.getElementById("fecha").innerHTML = fecha;<br />
+            &lt;/script&gt;<br />
+            &lt;/body&gt;<br />
+            &lt;/html&gt;
+        </p>
+
+        <div>
+            Incluyendo los siguientes elementos:&nbsp;<br />
+            &nbsp;
+        </div>
+
+        <div>1) El nombre de la persona que hace la entrega debajo del titulo &lt;h1&gt;</div>
+
+        <div>2) Un bloque &lt;div&gt; debajo de la fecha y la hora&nbsp;y las instrucciones JavaScript necesarias para que muestre en dicho bloque el contenido de las&nbsp;siguientes propiedades DOM&nbsp;&nbsp;en líneas separadas, que comiencen por el nombre de la propiedad(es) mostrada(s):</div>
+
+        <div>
+            <br />
+            a) Contenido de innerHTML de elemento identificado por id="h2"
+        </div>
+
+        <div>b) Contenido de outerHTML&nbsp;de elemento identificado por id="h1"</div>
+
+        <p>
+            c) Contenido de de la propiedad global: location.href<br />
+            d) Contenido de de la propiedad global: location<br />
+            e) Contenido de de las propiedades globales: screen.width y screen.heigth<br />
+            <br />
+            Subir dicha aplicación a la cuenta de neocities.org
+        </p>
+    </div>
+
+    <div>
+        <footer>
+            <section id="copyright"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>&nbsp;Este obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">licencia de Creative Commons Reconocimiento 4.0 Internacional</a>.</section>
+
+        </footer>
+    </div>
+    <script type="text/javascript">
+
+        function escapeHtml(text) {
+            'use strict';
+            return text.replace(/[\"&<>]/g, function (a) {
+                return { '"': '&quot;', '&': '&amp;', '<': '&lt;', '>': '&gt;' }[a];
+            });
+        }
+
+        var fecha = new Date();
+        var msj;
+        var h1 = document.getElementById("h1");
+        var h2 = document.getElementById("h2");
+
+        if (fecha.getHours() < 7) {
+            msj = "Buenas noches";
+        }
+        else if (fecha.getHours() < 12) {
+            msj = "Buenos días";
+        }
+        else if (fecha.getHours() < 21) {
+            msj = "Buenas tardes";
+        }
+        else {
+            msj = "Buenas noches";
+        }
+
+        msj += "<br> OSCAR FIGUEROA ";
+
+        document.getElementById("h1").innerHTML = msj;
+        document.getElementById("fecha").innerHTML = fecha;
+
+        document.getElementById("p1").innerHTML = document.getElementById("p1").innerHTML + "<br><div class=\"codigo\">document.getElementById(\"h2\").innerHTML = <b>[" + document.getElementById("h2").innerHTML + "] </b></div>";
+        document.getElementById("p2").innerHTML = document.getElementById("p2").innerHTML + "<br><div class=\"codigo\">escapeHtml(document.getElementById(\"h1\").outerHTML) = <b>[" + escapeHtml(document.getElementById("h1").outerHTML) + "] </b></div>";
+        document.getElementById("p3").innerHTML = document.getElementById("p3").innerHTML + "<br><div class=\"codigo\">location.href = <b>[" + location.href + "] </b></div>";
+        document.getElementById("p4").innerHTML = document.getElementById("p4").innerHTML + "<br><div class=\"codigo\">Object.getOwnPropertyNames(location) = <b>[" + Object.getOwnPropertyNames(location) + "]</b></div>";
+        document.getElementById("p5").innerHTML = document.getElementById("p5").innerHTML + "<br><div class=\"codigo\">screen.width = <b> [" + screen.width + "] </b>" + "screen.height=<b> [" + screen.height + "] </b></div>";
+
+    </script>
+</body>
+</html>

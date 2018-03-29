@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <script type="text/javascript">
+
+        var miAuto = new Object();
+        miAuto.marca = "Ford";
+        miAuto.modelo = "Mustang";
+        miAuto.año = 1969;
+
+        function mostrarPropiedades(objeto, nombreObjeto) {
+            var resultado = "";
+            for (var i in objeto) {
+                if (objeto.hasOwnProperty(i)) {
+                    resultado += nombreObjeto + "." + i + " = " + objeto[i] + "\n";
+                }
+            }
+            return resultado;
+        }
+
+        function listaTodasLasPropiedades(o) {
+            var objetoAInspeccionar;
+            var resultado = [];
+
+            for (objetoAInspeccionar = o; objetoAInspeccionar !== null; objetoAInspeccionar = Object.getPrototypeOf(objetoAInspeccionar))
+            {
+                resultado = resultado.concat(Object.getOwnPropertyNames(objetoAInspeccionar)) + "\n";
+            }
+            return resultado;
+        }
+
+        var x = mostrarPropiedades(miAuto, "miAuto");
+        alert(x);
+        var y = listaTodasLasPropiedades(miAuto);
+        alert(y);
+        document.writeln(y);
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+﻿<!--Incluyendo los siguientes elementos:
+
+1) El nombre de la persona que hace la entrega debajo del titulo <h1>
+2) Un bloque <div> debajo de la fecha y la hora y
+    las instrucciones JavaScript necesarias para
+    que muestre en dicho bloque el contenido de
+    las siguientes propiedades DOM en líneas separadas,
+    que comiencen por el nombre de la propiedad(es) mostrada(s):
+
+        a) Contenido de innerHTML de elemento identificado por id="h2"
+        b) Contenido de outerHTML de elemento identificado por id="h1"
+        c) Contenido de de la propiedad global: location.href
+        d) Contenido de de la propiedad global: location
+        e) Contenido de de las propiedades globales: screen.width y screen.heigth
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Date</title>
+    <style type="text/css">
+
+        div#mensajes2 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="entrada"></h1>
+    <h1 id="salida"></h1>
+
+
+
+    <script type="text/javascript">
+
+        var d = document.getElementById("entrada");
+        //dump(d.outerHTML);
+        document.write(d.outerHTML);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+﻿
+section {
+    /*float: left;*/
+    /*width: 200px;*/
+    /*height: 100px;*/
+    /*margin: 2em 0 0 5em;*/
+    background: linear-gradient(to top, rgba(50,116,45,1)) 0%;
+    font-family: abril-fatface, serif;
+    /*border: 1px solid red;*/
+}
+
+.seccion1 {
+    width: auto;
+    margin: 0 auto 1em 0;
+}
+
+.seccion2 {
+    width: auto;
+    text-align: center;
+    margin: 0 auto 1em 0;
+}
+
+.seccion3 {
+    display: inline-table;
+    width: 200px;
+    height: 100px;
+    margin: 1em 0 1em 0;
+    text-align: center;
+}
+
+
+code {
+    position: relative;
+    transform: translate(-50%,-50%);
+    line-height: 20px;
+    text-align: center;
+}
+
+/*Degradado General*/
+.degradado {
+    background: linear-gradient(to top, rgba(174, 172, 118, 0.8) 0%, #566647 100%);
+    border-radius: 25px;
+    line-height: 20px;
+    text-align: center;
+}
+
+    /*Degradado superior izquierda*/
+    .degradado.sombra {
+        background: linear-gradient(to right, rgba(174, 172, 118, 0.8) 0%, #566647 100%);
+        box-shadow: -5px -5px #888;
+    }
+
+/*Degradado inferior derecha*/
+.degradado1 {
+    background: linear-gradient(to bottom, rgba(174, 172, 118, 0.8) 0%, #566647 100%);
+    box-shadow: 5px 5px #888;
+    border-radius: 25px;
+    line-height: 20px;
+    text-align: center;
+}
+
+    .degradado1.sombra {
+        background: linear-gradient(to left, rgba(174, 172, 118, 0.8) 0%, #566647 100%);
+        box-shadow: 5px 5px 5px 5px #888;
+    }
+
+    .degradado1.sombraGeneral {
+        background: linear-gradient(to left, #cab98a 0%, #566647 100%);
+        box-shadow: 0 0 5px 5px #888;
+        border-radius: 25px;
+    }
+
+
+.seccion4 {
+    text-align: center;
+    width: auto;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    height: 3em;
+    font-size: 2em;
+}
+
+p {
+    padding: 0 1em 0 1em;
+    /*border: 2px solid red;*/
+    font-family: 'Abril Fatface', cursive;
+}
+
+    p .mensaje1 {
+        text-align: center;
+        margin: 200px 50px 95px 90px;
+        font-size: 2em;
+    }
+
+    p .mensaje2 {
+        text-align: center;
+        margin: 200px 90px 100px 80px;
+        font-size: 2em;
+    }
+
+    p .parrafo1 {
+        width: 200px;
+        border: 5px solid #e1d9c1;
+    }
+
+    p .objeto2 {
+        width: 158px;
+        border: 5px solid #707856;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    p .horizontal3 {
+        width: 150px;
+        border: 5px solid #707856;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+
+img {
+    border-radius: 20px;
+}
+
+section .ordenador {
+    border: 5px solid #707856;
+}

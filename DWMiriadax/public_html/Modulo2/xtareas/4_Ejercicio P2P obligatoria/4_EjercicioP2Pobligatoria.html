@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="es-es">
+<!-- Fuentes online -->
+<!--x2 Inclusión de tipografías externas de Google Fonts, Adobe Edge Web Fonts o un servicio similar on line.-->
+<head>
+    <meta charset="utf-8" />
+    <title>4 Ejercicio P2P Obligatoria</title>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/xbarraNavegacion.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/cajasBasicas.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/fondo.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/estructuras.css" media="screen" />
+    <script src="http://use.edgefonts.net/abril-fatface.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Quien soy</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </header>
+
+    <header class="titulo1">
+        <!-- x3 Distintos encabezados.-->
+        <h1>
+            <!-- x8 La página debe comenzar con el siguiente encabezamiento:  “Página personal de <nombre y apellido del alumno>” -->
+            Ra&uacute;l Vela Salas
+        </h1>
+        <h2>
+            Ejercicio P2P obligatoria
+        </h2>
+        <h3>
+            <!-- x3 Uso de caracteres especiales-->
+            P&aacute;gina web personal simulada
+        </h3>
+    </header>
+
+    <section class="seccion1">
+        <article class="titulo2">
+            <h4>
+                <!--x6 Incluir algún vídeo.-->
+                Video Embedido con IFrame
+            </h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6_P8RUqGQbM?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </article>
+    </section>
+
+    <section class="seccion2">
+        <article class="titulo2">
+            <h6>Imagenes Responsivas</h6>
+        </article>
+        <picture>
+            <source media="(min-width: 850px)" srcset="img/800×480torre.jpg">
+            <source media="(min-width: 460px)" srcset="img/460x345placabase.jpg">
+            <source media="(min-width: 250px)" srcset="img/214x204monitor.jpg">
+            <img class="ordenador" src="img/100x135mouse.png" alt="hardware" style="width:auto;">
+        </picture>
+    </section>
+
+
+
+    <main class="estiloMain">
+
+        <section class="degradado sombra seccion3">
+            Imagen degradada
+        </section>
+
+        <section class="degradado sombra seccion3">
+            Imagen degradada sombra lateral superior izquierda
+            <code>
+                <br />
+                box-shadow: -5px -5px #888;
+                <br />
+            </code>
+        </section>
+
+        <!--x7 Incluir bordes redondeados en alguna de sus cajas.-->
+        <section class="degradado1 seccion3">
+            Imagen degradada sombra lateral inferior derecha
+            <code>
+                <br />
+                box-shadow: 0px 0px 5px 5px #888;
+            </code>
+        </section>
+
+        <!--x7 Incluir bordes redondeados en alguna de sus cajas.-->
+        <section class="degradado1 sombraGeneral seccion3">
+            Imagen degradada sombra General
+            <code>
+                <br />
+                box-shadow: 0 0 5px 5px #888;
+            </code>
+        </section>
+
+        <!--x7 Incluir bordes redondeados en alguna de sus cajas.-->
+        <section class="seccion4">
+            <span>
+                <!--x5 Incluir, imágenes de tipo bitmap y vectorial.-->
+                Imagenes Vectoriales y PNG
+                <br />
+            </span>
+            <span>SVG</span>
+            <span>
+                <object type="image/svg+xml"
+                        data="img/svg/Computer.svg"></object>
+                <span>PNG</span>
+                <img class="horizontal" src="img/png/Computer.png" alt="computer">
+            </span>
+        </section>
+        <!--x7 Incluir bordes redondeados en alguna de sus cajas.-->
+        <p>
+            <span class="mensaje1">
+                SVG
+            </span>
+            <span class="mensaje2">
+                PNG
+            </span>
+            <br />
+            <object class="objeto2" type="image/svg+xml"
+                    data="img/svg/Moire_Circles.svg"></object>
+
+            <img class="horizontal3" src="img/png/Moire_Circles_100px.png" alt="circles">
+        </p>
+    </main>
+
+    <!--x7 Incluir bordes redondeados en alguna de sus cajas.-->
+    <footer class="pie">
+        <address>
+            Autor: Raul Vela Salas<br />
+            <a href="mailto:raulvelasalas@gmail.com">
+                correo: raulvelasalas@gmail.com<br />
+            </a>
+        </address>
+    </footer>
+</body>
+
+</html>

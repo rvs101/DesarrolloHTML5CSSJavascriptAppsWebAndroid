@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CSS Demo: background-image</title>
+    <style type="text/css">
+        p {
+            font-size: 1.5em;
+            color: #FE7F88;
+            background-image: none;
+            background-color: transparent;
+        }
+
+        div {
+            background-image: url("https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png");
+        }
+
+        .catsandstars {
+            background-image: url("https://mdn.mozillademos.org/files/11991/startransparent.gif"), url("https://mdn.mozillademos.org/files/7693/catfront.png");
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <p class="catsandstars">
+            This paragraph is full of cats<br />and stars.
+        </p>
+        <p>This paragraph is not.</p>
+        <p class="catsandstars">
+            Here are more cats for you.<br />Look at them!
+        </p>
+        <p>And no more.</p>
+    </div>
+
+</body>
+</html>

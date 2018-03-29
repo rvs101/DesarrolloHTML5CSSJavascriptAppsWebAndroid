@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <p>Funcion isNaN()</p>
+
+    <script type="text/javascript">
+
+        var x = isNaN(1);
+        var cadena = '1';
+        var y = isNaN(cadena);
+
+        alert("1 - Es un numero : " + x);
+        alert("2 - Es un numero : " + y);
+        alert(0 / 0);
+
+        isNaN(123) //false
+        isNaN(-1.23) //false
+        isNaN(5 - 2) //false
+        isNaN(0) //false
+        isNaN('123') //false
+        isNaN('Hello') //true
+        isNaN('2005/12/12') //true
+        isNaN('') //false
+        isNaN(true) //false
+        isNaN(undefined) //true
+        isNaN('NaN') //true
+        isNaN(NaN) //true
+        isNaN(0 / 0) //true
+
+
+
+    </script>
+</body>
+</html>

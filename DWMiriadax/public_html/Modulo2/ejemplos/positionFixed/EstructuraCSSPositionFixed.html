@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="es-es">
+<head>
+    <meta charset="utf-8" />
+    <title>Estructura CSS Position Fixed</title>
+    <style>
+
+        div {
+            width: 150px;
+            height: 150px;
+            border: 1px solid red;
+        }
+
+        .caja0 {
+            float: left;
+            background-color: #FF9;
+        }
+
+        .caja1 {
+            float: left;
+            background-color: aqua;
+        }
+
+        .caja2 {
+            float: left;
+            background-color: thistle;
+        }
+
+        .caja3 {
+            position: absolute;
+            top: 100px;
+            left: 250px;
+            background-color: #CFC;
+        }
+
+        .caja4 {
+            position: fixed; /*Fijado */
+            bottom: 0;
+            left: 0;
+            clear: both; 
+            width: 100%;
+            height: 12%;
+            border: 0 solid goldenrod !important;
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="caja0">Caja 0 con float : left</div>
+    <div class="caja1">Caja 1 con float : left</div>
+    <div class="caja2">Caja 2 con float : left</div>
+    <div class="caja3">Caja 3 con position: absolute</div>
+    <div class="caja4">Caja 4 con position: fixed</div>
+
+
+</body>
+</html>

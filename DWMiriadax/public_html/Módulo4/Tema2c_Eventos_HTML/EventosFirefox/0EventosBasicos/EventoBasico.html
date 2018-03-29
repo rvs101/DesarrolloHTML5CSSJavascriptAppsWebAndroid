@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title></title>
+
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="HTML5 , CSS3 , JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Viualizar : Windows Phone -->
+    <!--<meta name="msapplication-TileColor" content="#9f00a7">-->
+    <!-- Viualizar : Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#121010">
+
+    <!-- Renderizado de todos los navegadores -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge , chrome=1">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <!-- Archivo configuración de los recursos del HTML -->
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Iconografia general del website -->
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../img/source/icon192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../img/source/icon192x192.png">
+    <link rel="mask-icon" href="../../../img/source/icon192x192.png" color="#5bbad5">
+    <link rel="shortcut icon" href="../../../img/source/icon192x192.png" />
+    <link rel="shortcut icon" href="../../../img/source/icon192x192.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="../../../img/source/icon192x192.png">
+
+    <!-- Quitar por defecto los elementos de los navegadores -->
+    <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+
+    <style type="text/css">
+
+        section#s1, section#s2, section#s3 {
+            text-align: center;
+            width: auto;
+            border: 1px solid red;
+            margin: 10px;
+            background-color: antiquewhite;
+        }
+
+        footer > section {
+            position: fixed;
+            bottom: 10px;
+            width: auto;
+            margin: 100px 0 0 0;
+        }
+    </style>
+
+</head>
+<body>
+
+    <button id='button'>Change color</button>
+
+    <script type="text/javascript">
+
+        // almacenamos una referencia al boton
+        var btn = document.querySelector('button');
+        // almacenamos una referencia al boton
+        var btnId = document.getElementById('button');
+
+        // definimos la funcion que regresa un numero aleatorio
+        function random(number) {
+            return Math.floor(Math.random() * (number + 1));
+        }
+
+        // esto es la parte del Handler Event
+        // variable btn apunta a un ELEMENTO 'button' que tiene 
+        //una lista de 'EVENTOS' que puede disparar por lo tanto
+        //es un 'Handler Event - Manejador de eventos'
+        btn.onclick = function () {
+            var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+            document.body.style.backgroundColor = rndCol;
+            btnId.textContent = rndCol;
+        }
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Random color example — event handler property</title>
+    <style>
+        button, input {
+            float: none;
+            display: block;
+            margin: 10px;
+        }
+
+        a {
+            position: fixed;
+            bottom : 10px;
+        }
+    </style>
+
+
+
+</head>
+<body>
+
+    <p>Escribe 'exit' para que aparezca un mensaje y redirigirte a una pagina</p>
+
+    <script type="text/javascript">
+
+        (function () {
+
+            var sSecret = /* chose your hidden word...: */ "exit", nOffset = 0;
+
+            document.onkeypress = function (oPEvt) {
+                var oEvent = oPEvt || window.event;
+                var nChr = oEvent.charCode;
+                var sNodeType = oEvent.target.nodeName.toUpperCase();
+
+                if (nChr === 0
+                    || oEvent.target.contentEditable.toUpperCase() === "TRUE"
+                    || sNodeType === "TEXTAREA"
+                    || sNodeType === "INPUT"
+                    && oEvent.target.type.toUpperCase() === "TEXT") {
+                    return true;
+                }
+                if (nChr !== sSecret.charCodeAt(nOffset)) {
+                    nOffset = nChr === sSecret.charCodeAt(0) ? 1 : 0;
+                } else if (nOffset < sSecret.length - 1) {
+                    nOffset++;
+                } else {
+                    nOffset = 0;
+                    alert("Yesss!!! " + nOffset);
+                    //location.assign("http://developer.mozilla.org/");
+                }
+                return true;
+            };
+        })();
+
+    </script>
+
+    <a href="https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onkeypress">Fuente</a>
+
+</body>
+</html>

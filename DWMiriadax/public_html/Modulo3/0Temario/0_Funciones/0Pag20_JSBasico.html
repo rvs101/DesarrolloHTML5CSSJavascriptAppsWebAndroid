@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>0 JS Basico</title>
+    <style type="text/css">
+
+        p {
+            width: 90px;
+            text-align: center;
+            height: auto;
+            border: 1px solid red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <button type="button" onclick="mifuncion()" id="demo">boton</button>
+
+    <script type="text/javascript">
+
+        function mifuncion() {
+
+            var x = 2;
+            ++x;
+            document.getElementById("demo1").innerHTML = x;
+            var y = ++x + 2;
+            document.getElementById("demo2").innerHTML = y;
+            var z = y-- + 2;
+            document.getElementById("demo3").innerHTML = z;
+        }
+
+    </script>
+</body>
+</html>

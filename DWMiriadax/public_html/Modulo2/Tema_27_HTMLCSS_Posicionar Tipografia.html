@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Tema_2_HTMLCSS_Estructura_CSS</title>
+    <style type="text/css">
+
+        p {
+            font-family: 'Times New Roman', Georgia, serif;
+        }
+
+        div {
+            border: 1px solid red;
+        }
+
+        .caja0 {
+            height: auto;
+            width: auto;
+            float: left; /*Direccion de la caja pegada a la siguiente siguiendo el flujo natural del posicionamiento*/
+            background-color: #CFC;
+        }
+
+        .caja1 {
+            height: 50px;
+            background-color: #FC6;
+            clear: both; /*Liberta de movimiento en la pagina y se pone encima*/
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="caja0">
+        Caja 3 con float: left;
+        <p>
+            Las hojas de estilo asocian características de estilo a los elementos basándose en las etiquetas de los elementos y en su posición relativa (en el árbol del documento). Las pseudo-clases y los pseudo-elementos permiten hacer referencia a determinados elementos sin basarse en la información contenida en el árbol del documento.
+        </p>
+
+        <p>
+            La diferencia entre pseudo-clases y pseudo-elementos es sutil. En general, los pseudo-elementos suelen hacer referencia a determinadas partes de un elemento, mientras que las pseudo-clases suelen hacer referencia al estado del elemento.
+        </p>
+
+        <p>
+            Otra diferencia importante es que un pseudo-elemento sólo puede aparecer al final de un selector, mientras que una pseudo-clase puede aparecer en cualquier elemento del selector.
+        </p>
+
+        <p>
+            En CSS 2, la sintaxis de las pseudo-clases y los pseudo-elementos era la misma, etiqueta:pseudo-elemento-o-pseudo-clase (es decir, el nombre de la etiqueta seguido de dos puntos y del nombre del pseudo-elemento o de la pseudo-clase). En 2011, en la recomendación CSS 3: Selectores, se modificó la notación de los pseudo-elementos a etiqueta::pseudo-elemento (es decir, el nombre de la etiqueta seguido dos veces de dos puntos y del nombre del pseudo-elemento) para distinguir unos de otros, pero permitiendo utilizar también la antigua notación.
+        </p>
+    </div>
+
+    <div class="caja1">
+        Caja 4 Posicion fija abajo - para crear 'footer' o 'Logótipos empresa'
+    </div>
+
+</body>
+</html>  

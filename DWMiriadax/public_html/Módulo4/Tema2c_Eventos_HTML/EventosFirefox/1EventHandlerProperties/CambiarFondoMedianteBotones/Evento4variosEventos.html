@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Random color example — event handler property</title>
+    <style>
+        button, input {
+            float: none;
+            display: block;
+            margin: 10px;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <button id='b1'>Evento onblur</button>
+    <input type="text" id="i1" value="" />
+
+
+    <button id='b2'>Evento doble click</button>
+    <input type="text" id="i2" value="" />
+
+    <script type="text/javascript">
+
+        var btn = document.querySelector('button');
+        var input1 = document.getElementById('i1');
+
+        var btn2 = document.getElementById('b2');
+        var input2 = document.getElementById('i2');
+
+
+        function random(number) {
+            return Math.floor(Math.random() * number);
+        }
+
+        function bgChange() {
+            var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+            // dentro del objeto boton se introduce el valor elegido para el color
+            document.body.style.backgroundColor = rndCol;
+            // dentro de hueco de 'value' también se introduce el valor RGB
+            input1.value = rndCol;
+        }
+
+        function bgChange2() {
+            var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+            // dentro del objeto boton se introduce el valor elegido para el color
+            document.body.style.backgroundColor = rndCol;
+            // dentro de hueco de 'value' también se introduce el valor RGB
+            input2.value = rndCol;
+        }
+
+        function lanzar() {
+            document.getElementById('b1').onblur = bgChange;
+            document.getElementById('b2').ondblclick = bgChange2;
+
+        }
+
+    </script>
+
+    <script type="text/javascript">
+
+        lanzar();
+
+    </script>
+
+</body>
+</html>

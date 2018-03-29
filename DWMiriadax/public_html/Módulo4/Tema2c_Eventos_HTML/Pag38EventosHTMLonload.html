@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title></title>
+
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="HTML5 , CSS3 , JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Viualizar : Windows Phone -->
+    <!--<meta name="msapplication-TileColor" content="#9f00a7">-->
+    <!-- Viualizar : Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#121010">
+
+    <!-- Renderizado de todos los navegadores -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge , chrome=1">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <!-- Archivo configuración de los recursos del HTML -->
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Iconografia general del website -->
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../img/source/icon192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../img/source/icon192x192.png">
+    <link rel="mask-icon" href="../../../img/source/icon192x192.png" color="#5bbad5">
+    <link rel="shortcut icon" href="../../../img/source/icon192x192.png" />
+    <link rel="shortcut icon" href="../../../img/source/icon192x192.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="../../../img/source/icon192x192.png">
+
+    <!-- Quitar por defecto los elementos de los navegadores -->
+    <link type="text/css" rel="stylesheet" href="../../css/normalize.css" />
+
+    <script type="text/javascript">
+
+        function init() {
+            var x = document.getElementById('s1');
+            if (screen.width > 1800 && screen.height > 1000) {
+                x.innerHTML = " width : " + screen.width + " height : " + screen.height;
+            } else {
+                x.innerHTML = " width 1 : " + screen.width + " height 1 : " + screen.height;
+            }
+        }
+
+    </script>
+
+    <style type="text/css">
+
+
+        header, img {
+            text-align: center;
+            width: 100px;
+            margin: 5px 100px 1px 15px;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body onload="init()">
+    <header>
+        <h4>Eventos HMTL onload</h4>
+    </header>
+
+    <section id="s1"></section>
+
+
+</body>
+</html>

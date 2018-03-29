@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+
+        // Shape - superclase
+        function Shape() {
+            this.x = 0;
+            this.y = 0;
+        }
+
+
+        // Metodo de la superClase
+        Shape.prototype.move = function (x, y) {
+            this.x += x;
+            this.y += y;
+            Console.info("Shape moved");
+        };
+
+        // subclase
+        function Rectangule() {
+            Shape.call(this);
+        }
+
+        // subclase extiende superClase
+        Rectangule.prototype = Object.create(Shape.prototype);
+        Rectangule.prototype.constructor = Rectangule;
+
+        var rect = new Rectangule();
+
+        rect instanceof Rectangule; //true
+        rect instanceof Shape; //true
+
+        rect.move(1, 1);
+
+    </script>
+</body>
+</html>

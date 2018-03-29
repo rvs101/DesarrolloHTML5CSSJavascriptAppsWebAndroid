@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>
+        Manejadores de eventos y variable this
+    </title>
+
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="HTML5 , CSS3 , JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Viualizar : Windows Phone -->
+    <!--<meta name="msapplication-TileColor" content="#9f00a7">-->
+    <!-- Viualizar : Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#121010">
+
+    <!-- Renderizado de todos los navegadores -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge , chrome=1">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <!-- Archivo configuración de los recursos del HTML -->
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Iconografia general del website -->
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../img/source/icon192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../img/source/icon192x192.png">
+    <link rel="mask-icon" href="../../../img/source/icon192x192.png" color="#5bbad5">
+    <link rel="shortcut icon" href="../../../img/source/icon192x192.png" />
+    <link rel="shortcut icon" href="../../../img/source/icon192x192.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="../../../img/source/icon192x192.png">
+
+    <!-- Quitar por defecto los elementos de los navegadores -->
+    <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+
+    <style type="text/css">
+
+        h1#section, section#s1, section#s2, section#s3 {
+            text-align: center;
+            width: auto;
+            border: 1px solid red;
+            margin: 20px;
+            background-color: antiquewhite;
+        }
+
+        div {
+            display: inline-block;
+            margin: 20px;
+        }
+
+            div#contenidos1 {
+                width: 150px;
+                height: 60px;
+                border: thin solid silver;
+            }
+
+            div#contenidos2 {
+                width: 150px;
+                height: 60px;
+                border: thin solid silver;
+            }
+
+            div#contenidos3 {
+                width: 150px;
+                height: 60px;
+                border: thin solid silver;
+            }
+        footer > section {
+            position: fixed;
+            bottom: 10px;
+            width: auto;
+            margin: 100px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="section">Manejadores De Eventos con Variable this</h1>
+
+    <div id="contenidos1"
+         onmouseover="document.getElementById('contenidos1').style.borderColor = 'black';"
+         onmouseout="document.getElementById('contenidos1').style.borderColor = 'silver';">
+        Versi&oacute;n antigua 'sin this'
+    </div>
+
+    <div id="contenidos2"
+         onmouseover="
+         document.getElementById('contenidos2').style.border = '5px solid',
+         document.getElementById('contenidos2').style.borderColor='red' ;"
+         onmouseout="
+         document.getElementById('contenidos2').style.border = '1px solid',
+         document.getElementById('contenidos2').style.borderColor='green';">
+        Versi&oacute;n antigua 'sin this' varios atributos
+    </div>
+
+
+    <div id="contenidos2"
+         onmouseover="this.style.borderColor = 'red';"
+         onmouseout="this.style.borderColor = 'silver';">
+        Versi&oacute;n actual 'con this'
+    </div>
+
+    <div id="contenidos3"
+         onmouseover="this.style.borderColor = 'black'; this.style.border = '5px solid';"
+         onmouseout="this.style.borderColor = 'silver'; this.style.border = '1px solid silver';">
+        Versi&oacute;n actual 'con this' varios atributos
+    </div>
+
+    <footer>
+        <section id="copyright"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>&nbsp;Este obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">licencia de Creative Commons Reconocimiento 4.0 Internacional</a>.</section>
+    </footer>
+</body>
+</html>

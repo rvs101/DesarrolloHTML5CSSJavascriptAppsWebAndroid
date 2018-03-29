@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 CSS JS</title>
+    <meta charset="utf-8" />
+    <title>Pag11prompt.html</title>
+    <link rel="shortcut icon" href="../../img/source/icon192x192.png" />
+    <style type="text/css">
+
+        section#s1, section#s2, section#s3 {
+            text-align: center;
+            width: auto;
+            border: 1px solid red;
+            margin: 10px 20px 0 0;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h3>Literales</h3>
+        <section id="s1"></section>
+        <section id="s2"></section>
+        <section id="s3"></section>
+    </header>
+
+
+    <script type="text/javascript">
+
+        var a = 'b';
+        var b = 'a';
+
+        if (a < b) {
+            var x = document.getElementById("s1");
+            x.innerHTML = (a + ' is less than ' + b);
+        } else if (a > b) {
+            var x = document.getElementById("s2");
+            x.innerHTML = (a + ' is greater than ' + b);
+        } else {
+            var x = document.getElementById("s3");
+            x.innerHTML = (a + ' and ' + b + ' are equal');
+        }
+
+
+    </script>
+
+</body>
+</html>

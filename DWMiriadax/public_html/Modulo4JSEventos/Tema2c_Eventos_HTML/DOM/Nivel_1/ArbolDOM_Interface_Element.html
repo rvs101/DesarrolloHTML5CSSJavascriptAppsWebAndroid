@@ -1,0 +1,44 @@
+<!--https://developer.mozilla.org/es/docs/Web/API/Document_object_model/Using_the_W3C_DOM_Level_1_Core/Example-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mi documento</title>
+    <script>
+      function cambio() {
+        // - Devuelve un NodeList 'texto' de :
+        // - Elementos H1 del documento; el primer elemento tiene índice 0:
+        // document.getElementsByTagName("H1") 
+        var header = document.getElementsByTagName("H1").item(0);
+
+        // - Propiedad firstChild 
+        // - De la cabecera contiene un nodo de texto y su Propiedad
+        //   "data" contiene el texto del nodo
+        header.firstChild.data = "Un documento dinamico";
+
+        //Ahora el encabezado es un documento dinamico
+        var para = document.getElementsByTagName('p').item(0);
+
+        // y cambiamos su texto:
+        para.firstChild.data = 'Este es el primer parrafo';
+
+        // creamos un nodo texto 'TEXT' para el segundo parrafo
+        var newText = document.createTextNode("Este es el segundo parrafo");
+
+        //Creamos un nuevo 'ELEMENT' para que sea el segundo parrafo
+        var newElement = document.createElement("p");
+
+// Creamos un nuevo Element para que sea el segundo parrafo
+        newElement.appendChild(newText);
+
+// Y agrega un parrafo al final del documento dentro del 'body' 
+// el cual es el padre 'parent'
+        para.parentNode.appendChild(newElement);
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" value="Cambia este documento" onclick="cambio()">
+    <h1>Cabecera</h1>
+    <p>Parrafo</p>
+  </body>
+</html>

@@ -1,5 +1,5 @@
 <!-- Referencia :  -->
-<!--Created on 31-mar-2018, 21:29:51-->
+<!--Created on 01-abr-2018, 12:28:15-->
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -9,6 +9,8 @@
     <meta name="author" content="Raul Vela Salas">
     <meta name="description" content="...">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fondo navegador -->
+    <!--<meta name="Theme-Color" content="#121010">-->
     <!-- Viualizar : Chrome, Firefox OS and Opera -->
     <!-- Renderizado de todos los navegadores -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,8 +21,7 @@
     <!--<link rel="icon" type="image/png" sizes="192x192" href="">-->
     <!--<link rel="icon" type="image/png" sizes="192x192" href="">-->
     <!--<link rel="mask-icon" href="">-->
-    <!--<link rel="shortcut icon" href="" />-->
-    <!--<link rel="shortcut icon" href="" />-->
+    <link rel="shortcut icon" href="ic_launcher.ico">
     <!--<link rel="apple-touch-icon" sizes="192x192" href="">-->
     <!-- Quitar por defecto los elementos de los navegadores - usar LINK para CSS externos -->
     <!--<link type="text/css" rel="stylesheet" href="css/normalize.css" />-->
@@ -29,31 +30,31 @@
     <!--Usar para invocar librerias/archivos externos--> 
     <!--<script src="link"></script>-->
     <!--Usar para ejecutar codigo--> 
-    <!--<script></script>-->
+
   </head>
   <body>
-    <script>
-      function anadir_parrafo() {
-        var parrafo = document.createElement('p');
-        var texto = document.createTextNode('Parrafo añadido.');
-        parrafo.append(texto);
-        document.getElementById('ej-aCh').appendChild(parrafo);
-      }
-    </script>
 
-    <p id="ej-aCh" onclick="anadir_parrafo()">Parrafo</p>
+    <div id="padre">
+      <p>Un parrafo</p>
+      <p>Otro parrafo</p>
+    </div>
 
     <footer>
       <section id="copyright">
         <h3>&nbsp;</h3>
         <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
           <img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
-        </a>
-        &nbsp;Este obra está bajo una 
-        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-          licencia de Creative Commons Reconocimiento 4.0 Internacional
-        </a>
+        </a>&nbsp;Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">licencia de Creative Commons Reconocimiento 4.0 Internacional</a>
       </section>
     </footer>
+    <script>
+//      Creamos el nuevo parrafo
+      var nuevo_parrafo = document.createElement('p').appendChild(document.createTextNode('Nuevo parrafo.'));
+//      Recojemos en una variable el segundo parrafo
+      var segundo_parrafo = document.getElementById('padre').getElementsByTagName('p')[1];
+//      Ahora lo insertamos en el 
+      document.getElementById('padre').insertBefore(nuevo_parrafo, segundo_parrafo);
+    </script>
   </body>
 </html>

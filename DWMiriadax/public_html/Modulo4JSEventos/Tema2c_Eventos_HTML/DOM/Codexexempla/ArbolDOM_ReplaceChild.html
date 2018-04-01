@@ -1,0 +1,96 @@
+<!-- Referencia :  -->
+<!--Created on 01-abr-2018, 12:28:15-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="ic_launcher.ico">
+    <style>
+      body{
+        color: white;
+        background-color: black;
+      }
+
+      p{
+        width: 200px;
+        border: 1px solid red;
+      }
+
+      div{
+        margin: 10px;
+      }
+
+      div#ej-rCh{
+        width: 200px;
+        border: 5px solid #26d258;
+      }
+
+      div#ej-rCh1{
+        width: 200px;
+        border: 1px solid greenyellow;
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+    <div id="ej-rCh" onclick="reemplazar_parrafo();">
+      <p>Este párrafo será reemplazado cuando haga clic en el botón...</p>
+      <p>Este párrafo será reemplazado cuando haga clic en el botón...</p>
+    </div>
+
+    <div id="ej-rCh1" onclick="reemplazar_span();">
+      <span>Este párrafo será reemplazado cuando haga clic en el botón...</span>
+    </div>
+
+    <footer>
+      <section id="copyright">
+        <h3>&nbsp;</h3>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Licencia de Creative Commons" style="border-width:0" 
+               src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+        </a>&nbsp;Este obra está bajo una 
+        <a rel="license" 
+           href="http://creativecommons.org/licenses/by/4.0/">
+          licencia de Creative Commons Reconocimiento 4.0 Internacional 
+        </a>
+      </section>
+    </footer>
+    <script>
+      /**
+       * 
+       * @returns {undefined}
+       */
+      function reemplazar_parrafo() {
+        // Crea un elemento del mismo tipo al que quiero reemplazar
+        var nuevoParrafo = document.createElement('p');
+        // Añadimos al Elemento Nodo "p" otro nodo de tipo 'Texto' 
+        nuevoParrafo.appendChild(document.createTextNode('Cambia Tipo Nodo Element y Nodo Text '));
+        // Seleccionamos el Elemento que queremos intercambiar    
+        var viejoParrafo = document.getElementById('ej-rCh').getElementsByTagName('p')[0];
+        // 1º Seleccionamos el elemento que queremos intercambiar y luego el elemento a intercambiar
+        document.getElementById('ej-rCh').replaceChild(nuevoParrafo, viejoParrafo);
+      }
+      /**
+       * 
+       * @returns {undefined}
+       */
+      function reemplazar_span() {
+        var nuevoParrafo = document.createElement('span');
+        nuevoParrafo.appendChild(document.createTextNode('Cambia Tipo Nodo Element y Nodo Text '));
+        var viejoParrafo = document.getElementById('ej-rCh1').getElementsByTagName('span')[0];
+        document.getElementById('ej-rCh1').replaceChild(nuevoParrafo, viejoParrafo);
+      }
+
+    </script>
+  </body>
+</html>
+

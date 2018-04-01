@@ -1,0 +1,61 @@
+<!--Created on 02-abr-2018, 0:55:27-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <style>
+      .resultados{
+        align-content: center;
+        padding: 10px;
+        border: 5px solid red;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="ej-cN" class="resultados">
+      <p>Este elemento contiene un párrafo y una lista.</p>
+      <ul>
+        <li>Ítem.</li>
+        <li>Ítem.</li>
+        <li>Ítem.</li>
+      </ul>
+    </div>
+
+    <p id="referente-clon">
+      <button onclick="clonar(false)">Clonar el elemento</button> 
+      <button onclick="clonar(true)">Clonar el elemento y sus descendientes</button></p>
+    <p>El último código:</p>
+
+    <footer>
+      <section id="copyright">
+        <h3>&nbsp;</h3>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+        </a>&nbsp;Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          licencia de Creative Commons Reconocimiento 4.0 Internacional
+        </a>
+      </section>
+    </footer>
+    <script>
+      /**
+       * @param {type} x = true 'todo el contenido y descendiente' - false solo el elemento
+       * @returns {undefined}
+       */
+      function clonar(x) {
+        var clon = document.getElementById('ej-cN').cloneNode(x);
+        document.getElementById('referente-clon').parentNode.insertBefore(clon, document.getElementById('referente-clon'));
+      }
+
+    </script>
+  </body>
+</html>

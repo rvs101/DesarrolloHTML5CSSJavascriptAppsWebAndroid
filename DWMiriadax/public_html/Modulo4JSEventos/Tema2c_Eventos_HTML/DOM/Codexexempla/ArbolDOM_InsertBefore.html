@@ -49,11 +49,11 @@
       </section>
     </footer>
     <script>
-//      Creamos el nuevo parrafo
+//      Creamos el nuevo 'Nodo' parrafo y 'Nodo' texto en una sola linea
       var nuevo_parrafo = document.createElement('p').appendChild(document.createTextNode('Nuevo parrafo.'));
 //      Recojemos en una variable el segundo parrafo
       var segundo_parrafo = document.getElementById('padre').getElementsByTagName('p')[1];
-//      Ahora lo insertamos en el 
+//      Ahora lo insertamos en el padre
       document.getElementById('padre').insertBefore(nuevo_parrafo, segundo_parrafo);
     </script>
   </body>

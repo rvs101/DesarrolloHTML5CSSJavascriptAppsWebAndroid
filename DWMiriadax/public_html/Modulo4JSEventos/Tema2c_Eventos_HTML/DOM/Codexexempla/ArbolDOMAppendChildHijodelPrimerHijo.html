@@ -1,5 +1,5 @@
 <!-- Referencia :  -->
-<!--Created on 01-abr-2018, 1:48:45-->
+<!--Created on 31-mar-2018, 21:29:51-->
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -18,7 +18,7 @@
     <!-- Archivo configuración de los recursos del HTML para el manifiesto -->
     <!--<link rel="manifest" href="/site.webmanifest">-->
     <!-- Iconografia general del website -->
-    <link rel="icon" type="image/png" sizes="192x192" href="../../../../img/source/icon192x192.png">
+    <!--<link rel="icon" type="image/png" sizes="192x192" href="">-->
     <!--<link rel="icon" type="image/png" sizes="192x192" href="">-->
     <!--<link rel="mask-icon" href="">-->
     <!--<link rel="shortcut icon" href="" />-->
@@ -33,50 +33,30 @@
     <!--Usar para ejecutar codigo--> 
     <!--<script></script>-->
   </head>
-  <body>
-    <button type="button" value="Pulsar" onclick="crearNuevoParrafo()">Pulsar</button>
+  <body onclick="anadir_parrafo()">
+    <script>
+      function anadir_parrafo() {
+        var lista = document.createElement('ul');
+        var item = document.createElement('li');
+        lista.appendChild(item);
+
+      }
+    </script>
+    
+    <p onclick="anadir_parrafo()">Pulsar</p>
+ 
 
     <footer>
       <section id="copyright">
         <h3>&nbsp;</h3>
         <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
           <img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
-        </a>&nbsp;Este obra está bajo una
-        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">licencia de Creative Commons Reconocimiento 4.0 Internacional</a>
+        </a>
+        &nbsp;Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          licencia de Creative Commons Reconocimiento 4.0 Internacional
+        </a>
       </section>
     </footer>
-
-    <script>
-      /**
-       *<p>Éste es un párrafo con una palabra <em>enfatizada</em> y otras aún <strong>más enfatizadas</strong>.</p>
-       * @returns {undefined}
-       */
-      function crearNuevoParrafo() {
-
-        var parrafo1 = document.getElementsByTagName('body')[0];
-//        Creamos los nodos tipo 'Element'
-        var elem_p = document.createElement('p');
-        var elem_em = document.createElement('em');
-        var elem_strong = document.createElement('strong');
-//       Se añade a los hijos de tipo 'Text' - luego los Elmentos
-        var txt_01 = document.createTextNode('Éste es un párrafo con una palabra ');
-        var txt_02 = document.createTextNode('enfatizada');
-        var txt_03 = document.createTextNode(' y otras aún ');
-        var txt_04 = document.createTextNode('más enfatizadas');
-        var txt_05 = document.createTextNode('.');
-
-        elem_em.appendChild(txt_02);
-        elem_strong.appendChild(txt_04);
-        elem_p.appendChild(txt_01);
-        elem_p.appendChild(elem_em);
-        elem_p.appendChild(txt_03);
-        elem_p.appendChild(elem_strong);
-        elem_p.appendChild(txt_05);
-// Parrafo padre
-        parrafo1.appendChild(elem_p);
-
-      }
-    </script>
-
   </body>
 </html>

@@ -1,0 +1,79 @@
+<!--Created on 02-abr-2018, 18:35:57-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="short icon" href="../../../img/source/ic_launcher.ico" type="image/x-icon">
+    <!--Usar para CSS internos-->
+    <style>
+      #i1 , #i2 , #i3 , #i4 {
+        display: inline;
+        text-align: center;
+        align-content: center;
+      }
+      div{
+        border: 1px solid red;
+        margin: 10px;
+        width: auto;
+        text-align: center;
+        align-content: center;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div onclick="lanzarDOM_Core()">
+      <img id="i1" src="../../../img/source/android.png" alt="a1">
+      <img id="i2" src="../../../img/source/android.png" alt="a2">
+    </div>
+
+
+    <div onclick="lanzarDOM_HTML()">
+      <img id="i3" src="../../../img/source/icon192x192.png" alt="a3">
+      <img id="i4" src="../../../img/source/icon192x192.png" alt="a4">
+    </div>
+    <script>
+      /**
+       * 
+       * @returns {undefined}
+       */
+      function lanzarDOM_Core() {
+        var imags = document.getElementsByTagName('img');
+        for (var i = 0; i < imags.length; i++) {
+          imags[i].setAttribute('width', imags[i].getAttribute('width') - 10 + 50);
+          imags[i].setAttribute('height', imags[i].getAttribute('height') - 10 + 50);
+        }
+      }
+      /**
+       * 
+       * @returns {undefined}
+       */
+      function lanzarDOM_HTML() {
+        for (var i = 0; i < document.images.length; i++) {
+          document.images[i].width /= 1.1;
+          document.images[i].height /= 1.1;
+        }
+      }
+    </script>
+    <footer>
+      <section id="copyright">
+        <h3>&nbsp;</h3>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Licencia de Creative Commons" style="border-width:0" 
+               src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+        </a>&nbsp;Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          licencia de Creative Commons Reconocimiento 4.0 Internacional
+        </a>
+      </section>
+    </footer>
+  </body>
+</html>

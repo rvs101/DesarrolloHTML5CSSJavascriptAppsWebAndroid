@@ -1,0 +1,54 @@
+<!--Created on 02-abr-2018, 22:54:59-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="short icon" type="image/x-icon" href="../../img/source/ic_launcher.ico">
+    <!--Usar para CSS internos-->
+    <!--<style></style>-->
+    <!--<script src="link"></script>-->
+    <!--Usar para ejecutar codigo--> 
+  </head>
+  <body onload="lanzar()">
+
+    <img src="https://cdn2.graphicleftovers.com/10396/item15627/15627_thumb125.jpg" alt="a1">
+
+
+    <footer>
+      <section id="copyright">
+        <h3>&nbsp;</h3>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Licencia de Creative Commons" style="border-width:0" 
+               src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+        </a>&nbsp;Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          licencia de Creative Commons Reconocimiento 4.0 Internacional
+        </a>
+      </section>
+    </footer>
+
+    <script>
+      function lanzar() {
+        var img = document.getElementsByTagName('img').item(0);
+        var width = img.offsetWidth + 50;
+        var height = img.offsetHeight + 50;
+        // creo un nodo tipo 'Element p'
+        var p = document.createElement('p');
+        // creo un nodo tipo 'Texto'
+        var t = document.createTextNode('Ancho : ' + width.toString() + ' Alto : ' + height.toString());
+        // añado el nodo texto al nodo element
+        p.appendChild(t);
+        // añado el nodo element y text a la referencia del elemento body        
+        document.getElementsByTagName('body')[0].appendChild(p);
+      }
+    </script>
+  </body>
+</html>

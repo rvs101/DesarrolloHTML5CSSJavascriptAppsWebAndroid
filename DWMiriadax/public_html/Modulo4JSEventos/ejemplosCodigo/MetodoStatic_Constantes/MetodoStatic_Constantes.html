@@ -1,19 +1,20 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>Object.defineProperty</title>
+    <link rel="short icon" href="../../../img/source/ic_launcher.ico" type="image/x-icon">
     <style type="text/css">
 
-        #s1 {
-            border: 1px solid red;
-            width: 40px;
-            text-align: center;
-            margin: 10px 0 0 0;
-        }
+      #s1 {
+        border: 1px solid red;
+        width: 40px;
+        text-align: center;
+        margin: 10px 0 0 0;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
 
     <section id="s1"></section>
 
@@ -31,26 +32,26 @@
 
         //Mostramos por pantalla el valor de la Propiedad
         document.getElementById("s1").innerHTML = object1.property1;
-</pre>
+    </pre>
 
     <script type="text/javascript">
 
 
-        //Constante
-        const object1 = {};
+      //Constante
+      const object1 = {};
 
-        //Metodo 'static' tipo Object para 'objeto' y crear una Propiedad
-        Object.defineProperty(object1, 'property1', {
-            value: 42, writable: false
-        });
+      //Metodo 'static' tipo Object para 'objeto' y crear una Propiedad
+      Object.defineProperty(object1, 'property1', {
+        value: 42, writable: false
+      });
 
-        //Crea objeto de tipo Object : le asignamos un valor
-        object1.property = 77;
+      //Crea objeto de tipo Object : le asignamos un valor
+      object1.property = 77;
 
-        //Mostramos por pantalla el valor de la Propiedad
-        document.getElementById("s1").innerHTML = object1.property1;
+      //Mostramos por pantalla el valor de la Propiedad
+      document.getElementById("s1").innerHTML = object1.property1;
 
     </script>
 
-</body>
+  </body>
 </html>

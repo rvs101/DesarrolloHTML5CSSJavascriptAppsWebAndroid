@@ -1,0 +1,90 @@
+<!--Created on 03-abr-2018, 0:38:11-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Useful event target example</title>
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="chrisdavidmills">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="short icon" type="image/x-icon" href="../../../../img/source/ic_launcher.ico">
+    <!--Usar para CSS internos-->
+    <style>
+      div{
+        background-color: #dea9a9;
+        height: 100px;
+        width: 25%;
+        float: left;
+        border: 1px solid red;
+        display: inline-block;
+        border-radius: 7px;
+        text-align: center;
+        align-content: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      for (var i = 1; i <= 16; i++) {
+//      Creo 16 Element tipo 'div' 
+        var myDiv = document.createElement('div');
+        var myDiv2 = document.createTextNode('Soy un nodo : ' + i.toString());
+        myDiv.appendChild(myDiv2);
+//      Añado los elementos de tipo 'div' al body 'objeto' del document 
+        document.body.appendChild(myDiv);
+      }
+
+      /**
+       * 
+       * @param {type} number
+       * @returns {Number}
+       */
+      function random(number) {
+        return Math.floor(Math.random() * number);
+      }
+
+      /**
+       * 
+       * @returns {String}
+       */
+      function bgChange() {
+        var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+        return rndCol;
+      }
+
+//    Selecciono todos los div creados
+      var divs = document.querySelectorAll('div');
+
+//    Recorro los 16 elementos que hacen referencias a los divs creados
+      for (var i = 0; i < divs.length; i++) {
+//    Cada elemento tipo 'div' recorrido le voy añadiendo
+//    un evento onclick 'objeto' que almacena una funcion anonima que tiene por parametro 
+//    el elemento que queremos asociar al evento
+        divs[i].onclick = function (e) {
+//        al elemento div le asociamos al fondo la función creada
+          e.target.style.backgroundColor = bgChange();
+          alert(bgChange());
+        };
+      }
+    </script>
+    <footer>
+      <section id="copyright">
+        <h3>&nbsp;</h3>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Licencia de Creative Commons" style="border-width:0" 
+               src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+        </a>&nbsp;Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          licencia de Creative Commons Reconocimiento 4.0 Internacional
+        </a>
+      </section>
+    </footer>
+    <!--Usar para ejecutar codigo--> 
+
+  </body>
+</html>

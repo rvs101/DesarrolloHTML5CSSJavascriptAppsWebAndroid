@@ -1,0 +1,61 @@
+<!--Created on 03-abr-2018, 0:38:11-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="short icon" type="image/x-icon" href="../../../../img/source/ic_launcher.ico">
+    <!--Usar para CSS internos-->
+    <style>
+      div{
+        height: 500px;
+        width: 500px;
+        border: 1px solid red;
+        border-radius: 20px;
+      }
+    </style>
+    <!--<script src="link"></script>-->
+  </head>
+  <body>
+
+    <button>Pulsar</button>
+
+    <footer>
+      <section id="copyright">
+        <h3>&nbsp;</h3>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Licencia de Creative Commons" style="border-width:0" 
+               src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+        </a>&nbsp;Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          licencia de Creative Commons Reconocimiento 4.0 Internacional
+        </a>
+      </section>
+    </footer>
+    <!--Usar para ejecutar codigo--> 
+    <script>
+
+      var btn = document.querySelector('button');
+      
+      function random(number) {
+        return Math.floor(Math.random() * number);
+      }
+      
+      function bgChange(e) {
+        var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+        e.target.style.backgroundColor = rndCol;
+        console.log(e);
+      }
+      
+      btn.addEventListener('click', bgChange);
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!--Created on 02-abr-2018, 17:53:17-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="../../../img/source/ic_launcher.ico" type="img/x-icon"> 
+    <!--Usar para CSS internos-->
+    <style>
+
+      p {
+        border: 1px solid red;
+        width: auto;
+        text-align: left;
+      }
+
+    </style>
+    <!--<script src="link"></script>-->
+    <!--Usar para ejecutar codigo--> 
+    <script>
+      /**
+       * 
+       * @returns {undefined}
+       */
+      function lanzar() {
+        var p = document.getElementById('p1');
+        p.setAttribute('align', 'right');
+        p.firstChild.nodeValue = 'ahora estoy alineado a la derecha 1';
+      }
+      /**
+       * 
+       * @returns {undefined}
+       */
+      function lanzarPorNombre() {
+        var p = document.getElementsByTagName('p')[2];
+        p.setAttribute('align', 'right');
+        p.firstChild.nodeValue = 'ahora estoy alineado a la derecha 2';
+      }
+    </script>
+  </head>
+  <body>
+    
+    <p id="p1" align="left" onclick="lanzar()">Estoy alineado a la izquierda</p>
+    <p id="p2" align="left" onclick="lanzarPorNombre()">Estoy alineado a la izquierda</p>
+    <p id="p3" align="left">Estoy alineado a la izquierda</p>
+
+    <footer>
+      <section id="copyright">
+        <h3>&nbsp;</h3>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+        </a>&nbsp;Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">licencia de Creative Commons Reconocimiento 4.0 Internacional</a>
+      </section>
+    </footer>
+  </body>
+</html>

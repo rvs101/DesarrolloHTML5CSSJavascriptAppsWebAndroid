@@ -1,88 +1,70 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <title></title>
 
     <!-- Metadatos basicos  -->
     <meta name="author" content="Raul Vela Salas">
     <meta name="description" content="HTML5 , CSS3 , JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Viualizar : Windows Phone -->
-    <!--<meta name="msapplication-TileColor" content="#9f00a7">-->
-    <!-- Viualizar : Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#121010">
-
-    <!-- Renderizado de todos los navegadores -->
-    <meta http-equiv="x-ua-compatible" content="ie=edge , chrome=1">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-
-    <!-- Archivo configuración de los recursos del HTML -->
-    <link rel="manifest" href="/site.webmanifest">
-
-    <!-- Iconografia general del website -->
-    <link rel="icon" type="image/png" sizes="192x192" href="../../../img/source/icon192x192.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="../../../img/source/icon192x192.png">
-    <link rel="mask-icon" href="../../../img/source/icon192x192.png" color="#5bbad5">
-    <link rel="shortcut icon" href="../../../img/source/icon192x192.png" />
-    <link rel="shortcut icon" href="../../../img/source/icon192x192.png" />
-    <link rel="apple-touch-icon" sizes="192x192" href="../../../img/source/icon192x192.png">
+    <link rel="shortcut icon" href="../../../../img/source/ic_launcher.ico" />
 
     <style>
 
-        html {
-            font-size: 16px;
-        }
+      html {
+        font-size: 16px;
+      }
 
-        div {
-            padding: 4rem;
-            font-size: 2rem;
-            text-align: center;
-        }
+      div {
+        padding: 4rem;
+        font-size: 2rem;
+        text-align: center;
+      }
 
-        .uno {
-            background-color: red;
-        }
+      .uno {
+        background-color: red;
+      }
 
-        .dos {
-            background-color: green;
-        }
+      .dos {
+        background-color: green;
+      }
 
-        .tres {
-            background-color: blue;
-        }
+      .tres {
+        background-color: blue;
+      }
     </style>
 
 
 
-</head>
-<body>
+  </head>
+  <body>
     <h1>Flujo de Eventos</h1>
     <div class="uno">
-        1
-        <div class="dos">
-            2
-            <div class="tres">3</div>
-        </div>
+      1
+      <div class="dos">
+        2
+        <div class="tres">3</div>
+      </div>
     </div>
     <script>
 
-        var divs = document.querySelectorAll('div');
+      var divs = document.querySelectorAll('div');
 
-        //Tenemos capturado el evento
-        function hola(evento) {
-            this.style.backgroundColor = 'yellow'
+      //Tenemos capturado el evento
+      function hola(evento) {
+        this.style.backgroundColor = 'yellow'
 
-            alert('Hola te saluda : ' + this.className + ' el click lo origino : ' + evento.target.className)
-            console.log(evento)
-            this.style.backgroundColor = '';
-        }
+        alert('Hola te saluda : ' + this.className + ' el click lo origino : ' + evento.target.className)
+        console.log(evento)
+        this.style.backgroundColor = '';
+      }
 
-        for (var n = 0; n < divs.length; n++) {
-            divs[n].addEventListener('click', hola , true);
-        }
-         
-   
+      for (var n = 0; n < divs.length; n++) {
+        divs[n].addEventListener('click', hola, true);
+      }
+
+
     </script>
 
-</body>
+  </body>
 </html>

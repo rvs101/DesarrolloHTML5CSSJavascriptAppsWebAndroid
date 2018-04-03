@@ -1,0 +1,98 @@
+<!--Created on 03-abr-2018, 10:28:14-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="short icon" type="image/x-icon" href="../../../img/source/ic_launcher.ico">
+    <!--Usar para CSS internos-->
+    <!--<style></style>-->
+    <!--<script src="link"></script>-->
+    <!--Usar para ejecutar codigo--> 
+  </head>
+  <body>
+    <script>
+
+// Declara variable;
+      var Homer;
+// Inicializa variable tipo 'object'   
+      Homer = new Object();
+// Incializa valor de la Propiedad String 'nombre'     
+      Homer.nombre = "Homer Simpson";
+// Incializa valor de la Propiedad Numerica 'edad'     
+      Homer.edad = 34;
+// Incializa valor de la Propiedad Booleana 'casado'     
+      Homer.casado = true;
+//      Borramos Propiedad
+      delete Homer.edad;
+
+// Declara e inicializa un Nodo objeto de tipo "Element"
+      var r1 = document.createElement('section');
+// Declara e inicializa un Nodo objeto de tipo "Text"
+      var h1 = document.createTextNode(Homer.edad);
+// Añadimos Nodo objeto de tipo "Text" hoja-hijo al Nodo tipo 'Element' rama-Padre
+      r1.appendChild(h1);
+// Creamos salto de linea mediante un nuevo 'Nodo' Hijo tipo 'rama' que se inserta antes del nodo 'Text'
+      r1.innerHTML = r1.firstChild.nodeValue;
+      document.getElementsByTagName('body')[0].appendChild(r1);
+// Cambiamos la propiedad del objeto 'Homer'
+      Homer.edad = 40;
+
+// Declara e inicializa un Nodo objeto de tipo "Element"
+      var r2d = document.createElement('div');
+      // creo nodo tipo 'Text' y le pasamos por argumento la PROPIEDAD del objeto 'Homer'
+      var h2d = document.createTextNode(Homer.edad);
+      // añado elemento hijo 'Text' al padre 'Element'      
+      r2d.appendChild(h2d);
+// Creamos salto de linea mediante un nuevo 'Nodo' Hijo tipo 'rama' que se inserta antes del nodo 'Text'
+      r2d.innerHTML = r2d.firstChild.nodeValue;
+      // añado un nuevo elemento 'div' al 'body' del document       
+      document.getElementsByTagName('body')[0].appendChild(r2d);
+      
+// Declara e inicializa un Nodo objeto de tipo "Element"
+      var r2 = document.createElement('p');
+      // creo nodo tipo 'Text' y le pasamos por argumento la PROPIEDAD del objeto 'Homer'
+      var h2 = document.createTextNode(Homer.edad);
+      // añado elemento hijo 'Text' al padre 'Element'      
+      r2.appendChild(h2);
+// Creamos salto de linea mediante un nuevo 'Nodo' Hijo tipo 'rama' que se inserta antes del nodo 'Text'
+      r2.innerHTML = r2.firstChild.nodeValue;
+      // añado un nuevo elemento 'div' al 'body' del document       
+      document.getElementsByTagName('body')[0].appendChild(r2);
+
+      // asigno valor nuevo a la PROPIEDAD "edad" mediante formato Array
+      var comoArray = Homer["edad"] = 40;
+      // Ahora creo un mensaje de entrada de datos
+      var prop = prompt("¿ Que propiedad quieres ?");
+      // Se lo paso al objeto Homer con formato array para que muestre la PROPIEDAD predefinida      
+//      alert(Homer[prop]);
+
+      var r3 = document.createElement('span');
+      var h3 = document.createTextNode(Homer[prop]);
+      r3.appendChild(h3);
+// Creamos salto de linea mediante un nuevo 'Nodo' Hijo tipo 'rama' que se inserta antes del nodo 'Text'
+      r3.innerHTML = r3.firstChild.nodeValue;
+      document.getElementsByTagName('body')[0].appendChild(r3);
+
+    </script>
+    <footer>
+      <section id="copyright">
+        <h3>&nbsp;</h3>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Licencia de Creative Commons" style="border-width:0" 
+               src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+        </a>&nbsp;Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          licencia de Creative Commons Reconocimiento 4.0 Internacional
+        </a>
+      </section>
+    </footer>
+  </body>
+</html>

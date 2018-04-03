@@ -1,0 +1,60 @@
+<!--Created on 03-abr-2018, 16:19:18-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!--<link rel="short icon" type="image/x-icon" href="">-->
+    <!--Usar para CSS internos-->
+    <!--<style></style>-->
+    <!--<script src="link"></script>-->
+    <!--Usar para ejecutar codigo--> 
+  </head>
+  <body>
+
+    <p id="par">Pulsar</p>
+
+    <input id="par2" value="" name="valor" />
+
+    <script>
+      function saludo(e) {
+        if (window.event) {
+          e = window.event;
+        }
+        alert("Se ha pulsado el boton : " + e.button);
+      }
+      document.getElementById('par').onclick = saludo;
+
+      function saludo2(e) {
+        if (window.event) {
+          e = window.event;
+        }
+        alert("Se ha pulsado la tecla : " + e.key);
+      }
+      document.getElementById('par2').onkeypress = saludo2;
+    </script>
+
+
+
+
+    <footer>
+      <section id="copyright">
+        <h3>&nbsp;</h3>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Licencia de Creative Commons" style="border-width:0" 
+               src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+        </a>&nbsp;Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          licencia de Creative Commons Reconocimiento 4.0 Internacional
+        </a>
+      </section>
+    </footer>
+  </body>
+</html>

@@ -1,24 +1,14 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <title></title>
 
     <!-- Metadatos basicos  -->
     <meta name="author" content="Raul Vela Salas">
     <meta name="description" content="HTML5 , CSS3 , JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Viualizar : Windows Phone -->
-    <!--<meta name="msapplication-TileColor" content="#9f00a7">-->
-    <!-- Viualizar : Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#121010">
-
-    <!-- Renderizado de todos los navegadores -->
-    <meta http-equiv="x-ua-compatible" content="ie=edge , chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge , chrome=1">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-
-    <!-- Archivo configuración de los recursos del HTML -->
-    <link rel="manifest" href="/site.webmanifest">
-
     <!-- Iconografia general del website -->
     <link rel="icon" type="image/png" sizes="192x192" href="../../../img/source/icon192x192.png">
     <link rel="icon" type="image/png" sizes="192x192" href="../../../img/source/icon192x192.png">
@@ -30,40 +20,40 @@
     <link type="text/css" rel="stylesheet" href="css/normalize.css" />
 
     <script>
-        function myFunction() {
-            var x = document.getElementById('mySelect').value;
-            document.getElementById("s1").innerHTML = "Has seleccionado : " + x;
-        }
+      function myFunction() {
+        var x = document.getElementById('mySelect').value;
+        document.getElementById("s1").innerHTML = "Has seleccionado : " + x;
+      }
     </script>
 
 
     <style type="text/css">
 
-        section, section#s1, section#s2, section#s3 {
-            text-align: center;
-            width: auto;
-            border: 1px solid red;
-            margin: 10px;
-            background-color: antiquewhite;
-        }
+      section, section#s1, section#s2, section#s3 {
+        text-align: center;
+        width: auto;
+        border: 1px solid red;
+        margin: 10px;
+        background-color: antiquewhite;
+      }
     </style>
 
 
-</head>
-<body>
+  </head>
+  <body>
 
     <section>
-        Cuando selecciona un automóvil nuevo, se activa una función que genera el valor del automóvil seleccionado.
+      Cuando selecciona un automóvil nuevo, se activa una función que genera el valor del automóvil seleccionado.
     </section>
 
     <select id="mySelect" onchange="myFunction()">
-        <option value="Audio">Audi</option>
-        <option value="BMW">BMW</option>
-        <option value="Mercedes">Mercedes</option>
-        <option value="Volvo">Volvo</option>
+      <option value="Audio">Audi</option>
+      <option value="BMW">BMW</option>
+      <option value="Mercedes">Mercedes</option>
+      <option value="Volvo">Volvo</option>
     </select>
 
     <section id="s1"></section>
 
-</body>
+  </body>
 </html>

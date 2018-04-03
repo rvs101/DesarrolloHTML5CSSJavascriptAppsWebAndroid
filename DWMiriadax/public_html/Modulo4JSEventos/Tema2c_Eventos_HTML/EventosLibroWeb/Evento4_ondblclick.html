@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <title></title>
 
     <!-- Metadatos basicos  -->
@@ -16,41 +16,48 @@
 
     <style type="text/css">
 
-        section#s1, section#s2, section#s3 {
-            text-align: center;
-            width: auto;
-            border: 1px solid red;
-            margin: 10px;
-            background-color: antiquewhite;
-        }
+      section#s1, section#s2, section#s3 {
+        text-align: center;
+        width: auto;
+        border: 1px solid red;
+        margin: 10px;
+        background-color: antiquewhite;
+      }
 
-        footer > section {
-            position: fixed;
-            bottom: 10px;
-            width: auto;
-            margin: 100px 0 0 0;
-        }
+      footer > section {
+        position: fixed;
+        bottom: 10px;
+        width: auto;
+        margin: 100px 0 0 0;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
 
     <section id="s1">texto</section>
 
     <script type="text/javascript">
-        function myFunction() {
-            document.getElementById('s1').innerHTML = 'I was double-click';
-        }
+      function myFunction() {
+        document.getElementById('s1').innerHTML = 'I was double-click';
+      }
 
-        document.getElementById('s1').ondblclick = function () {
-            myFunction();
-        };
+      document.getElementById('s1').ondblclick = function () {
+        myFunction();
+      };
     </script>
     <footer>
-        <section id="copyright"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>&nbsp;Este obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">licencia de Creative Commons Reconocimiento 4.0 Internacional</a>.</section>
+      <section id="copyright">
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Licencia de Creative Commons" style="border-width:0" 
+               src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+        </a>&nbsp;Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          licencia de Creative Commons Reconocimiento 4.0 Internacional</a>.
+      </section>
     </footer>
 
 
 
 
-</body>
+  </body>
 </html>

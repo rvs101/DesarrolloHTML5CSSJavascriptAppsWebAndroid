@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>HTML5 CSS JS</title>
+
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="HTML5 , CSS3 , JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <link rel="shortcut icon" href="../../../img/source/icon192x192.png" />
+    <link type="text/css" rel="stylesheet" href="../../css/normalize.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
+
+    <script type="text/javascript">
+
+
+    </script>
+
+    <style type="text/css">
+
+      body {
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 1em;
+      }
+
+      #copyright {
+        margin: 10px 0 0 0;
+      }
+
+      #s1, #s2, #s3, #s4, #s5, #s6, #s7, #s8, #s9, #s10, #s11, #s12 {
+        text-align: center;
+        width: auto;
+        border: 1px solid red;
+        margin: 10px 20px 0 0;
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+
+    <script>
+      var r = document.createElement('p');
+      var h = document.createTextNode(parseInt('1010'));
+      r.appendChild(h);
+      document.getElementsByTagName('body')[0].appendChild(r);
+
+      var r = document.createElement('p');
+      var h = document.createTextNode(parseInt('1010', 2));
+      r.appendChild(h);
+      document.getElementsByTagName('body')[0].appendChild(r);
+
+      var r = document.createElement('p');
+      var h = document.createTextNode(parseInt("12", 8));
+      r.appendChild(h);
+      document.getElementsByTagName('body')[0].appendChild(r);
+
+      var r = document.createElement('p');
+      var h = document.createTextNode(parseInt('a', 16));
+      r.appendChild(h);
+      document.getElementsByTagName('body')[0].appendChild(r);
+
+      var r = document.createElement('p');
+      var h = document.createTextNode(parseInt("01xx"));
+      r.appendChild(h);
+      document.getElementsByTagName('body')[0].appendChild(r);
+
+      var r = document.createElement('p');
+      var h = document.createTextNode(parseInt('01+4'));
+      r.appendChild(h);
+      document.getElementsByTagName('body')[0].appendChild(r);
+
+      var r = document.createElement('p');
+      var h = document.createTextNode(Math.floor(2.7));
+      r.appendChild(h);
+      document.getElementsByTagName('body')[0].appendChild(r);
+
+//      alert((0x4).toString());
+      alert((16).toString(16));
+      alert((2).toString(16));
+
+
+
+
+    </script>
+
+    <footer id="copyright">
+
+      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />Este obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">licencia de Creative Commons Reconocimiento 4.0 Internacional</a>
+
+    </footer>
+
+
+
+
+
+  </body>
+</html>

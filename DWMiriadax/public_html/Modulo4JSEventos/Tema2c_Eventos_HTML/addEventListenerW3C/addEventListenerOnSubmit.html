@@ -1,0 +1,74 @@
+<!--Created on 03-abr-2018, 17:32:29-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="short icon" type="image/x-icon" href="../../../img/source/ic_launcher.ico">
+    <!--Usar para CSS internos-->
+    <style>
+      
+      input{
+        display: block;
+        margin: 10px;
+      }
+      
+    </style>
+    <!--<script src="link"></script>-->
+    <!--Usar para ejecutar codigo--> 
+  </head>
+  <body>
+
+    <form id="myForm" action="#" method="get">
+      <label>Enter name: </label>
+      <input id="texto" type="text" value="">
+      <input type="submit" value="Submit">
+    </form>
+
+    <script>
+
+      document.getElementById('myForm').addEventListener('submit', myFunction);
+
+      /**
+       * 
+       * @returns {undefined}
+       */
+      function myFunction() {
+        var valor = document.getElementsByTagName('input')[0].value;
+        var r = document.createElement('p');
+        r.style.border = "1px solid red";
+        r.style.width = '200px';
+        r.style.padding = '10px';
+        r.style.textAlign = 'center';
+        r.style.alignContent = 'center';
+        r.style.alignItems = 'center';
+        r.style.fontFamily = 'cursive';
+        r.style.borderRadius = '13px'; 
+        var h = document.createTextNode(valor.toString());
+        r.appendChild(h);
+        document.getElementsByTagName('body')[0].appendChild(r);
+      }
+
+    </script>
+
+    <footer>
+      <section id="copyright">
+        <h3>&nbsp;</h3>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Licencia de Creative Commons" style="border-width:0" 
+               src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+        </a>&nbsp;Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          licencia de Creative Commons Reconocimiento 4.0 Internacional
+        </a>
+      </section>
+    </footer>
+  </body>
+</html>

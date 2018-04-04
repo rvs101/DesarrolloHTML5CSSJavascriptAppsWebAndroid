@@ -1,0 +1,71 @@
+<!--Created on 04-abr-2018, 12:20:41-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Ejemplo</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="short icon" type="image/x-icon" href="../../img/source/ic_launcher.ico">
+    <!--Usar para CSS internos-->
+    <!--<style></style>-->
+    <!--<script src="link"></script>-->
+    <!--Usar para ejecutar codigo--> 
+    <script>
+      /**
+       * 
+       * @returns {undefined}
+       */
+      function vaciar() {
+        document.getElementById('n1').value = '';
+      }
+      /**
+       * 
+       * @returns {undefined}
+       */
+      function cuadrado() {
+        var num = document.getElementById('n1');
+        var cuerpo = document.getElementsByTagName('body')[0];
+        var p = document.createElement('p');
+        p.style.border = "1px solid #ffa6a6";
+        p.style.width = "auto";
+        p.style.height = "auto";
+        p.style.alignContent = 'center';
+        p.style.alignItems = 'center';
+        p.style.textAlign = 'center';
+        var t = document.createTextNode(num.value = Math.pow(num.value, 2));
+        p.appendChild(t);
+        cuerpo.appendChild(p);
+      }
+      
+    </script>
+  </head>
+  <body>
+
+    <label>Numero : </label>
+    
+    <input type="text" id="n1" onclick="vaciar()">
+
+    <button onclick="cuadrado()">
+      x<sup>2</sup>
+    </button>
+ 
+    <footer>
+      <section id="copyright">
+        <h3>&nbsp;</h3>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Licencia de Creative Commons" style="border-width:0" 
+               src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+        </a>&nbsp;Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          licencia de Creative Commons Reconocimiento 4.0 Internacional
+        </a>
+      </section>
+    </footer>
+  </body>
+</html>

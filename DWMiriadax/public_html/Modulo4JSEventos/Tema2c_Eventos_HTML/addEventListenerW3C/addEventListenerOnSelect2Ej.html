@@ -1,0 +1,86 @@
+<!--Created on 03-abr-2018, 17:32:29-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="short icon" type="image/x-icon" href="../../../img/source/ic_launcher.ico">
+    <!--Usar para CSS internos-->
+    <!--<style></style>-->
+    <!--<script src="link"></script>-->
+  </head>
+  <body>
+
+    <input type='text' id='TextoASeleccionar' value='Seleccioname' onselect="myAlertFunction()">
+
+    <p>Click the button to select the contents of the text field</p>
+
+    <button type='button' onclick='mySelectFunction()'>Selecciona contenido del Input</button>
+
+    <p>
+      The select() method of the <br>
+      HTML DOM Input Text Object selects the<br>
+      contents of the text field.<br>
+      When this happens ,<br>
+      the onselect event fires , <br>
+      which will trigger<br>
+      the alert function<br>
+    </p>
+
+    <script>
+      /**
+       * 
+       * @returns {undefined}
+       */
+      function mySelectFunction() {
+//        * Hago referencia al elemento 'objeto' seleccionado
+        document.getElementById('TextoASeleccionar').select();
+//       * Creo el elemento 'parrafo'
+        var r = document.createElement('p');
+//       * Selecciono el valor de 'value' del form
+        var selInput = document.getElementsByTagName('input')[0].value;
+//       * Creo el nodo elemento
+        var h = document.createTextNode(selInput);
+//       * Añado el nodo elemento
+        r.appendChild(h);
+//       * Selecciono el nodo del elemento 'body' y le añado la rama padre con el texto
+        document.getElementsByTagName('body')[0].appendChild(r);
+//       * Selecciono el nodo del elemento 'p' y le añado los estilos
+        document.getElementsByTagName('p')[2].style.color = "red";
+        document.getElementsByTagName('p')[2].style.border = "1px solid red";
+        document.getElementsByTagName('p')[2].style.padding = "10px";
+        document.getElementsByTagName('p')[2].style.width = "100px";
+        document.getElementsByTagName('p')[2].style.backgroundColor = "#b7a1b4";
+      }
+
+      /**
+       * alerta para avisar que el texto ha sido seleccionado
+       * 
+       * @returns {undefined}
+       */
+      function myAlertFunction() {
+        alert('You selected some text \n Has seleccionado el texto del input');
+      }
+    </script>
+
+    <footer>
+      <section id="copyright">
+        <h3>&nbsp;</h3>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Licencia de Creative Commons" style="border-width:0" 
+               src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+        </a>&nbsp;Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          licencia de Creative Commons Reconocimiento 4.0 Internacional
+        </a>
+      </section>
+    </footer>
+  </body>
+</html>

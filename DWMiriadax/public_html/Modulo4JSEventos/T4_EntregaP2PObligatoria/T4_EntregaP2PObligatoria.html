@@ -1,0 +1,134 @@
+<!--Created on 04-abr-2018, 20:01:38-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Módulo 4: Booleano, If/Else, String, Número, DOM, Eventos E Interacción</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="short icon" type="image/x-icon" href="https://photos.app.goo.gl/5sRk8vG7mr5fZz0x2">
+    <!--Usar para CSS internos-->
+    <style>
+      body{
+        background-color:rgb(0,0,0);
+        background-image:
+          url(http://www.zingerbugimages.com/backgrounds/white_parchment_paper_wallpaper_texture_seamless.jpg);
+        background-position:top left;
+        background-repeat:repeat;
+        background-attachment:fixed;
+      }
+      label{
+        display: block;
+        margin: 10px 0px 0px 0px;
+      }
+      main{
+        padding: 20px;
+        margin: 10px;
+        border: 2px solid #cccccc;
+        border-radius: 13px;
+      }
+      input{
+        display: block;
+        margin: 5px 0px 0px 0px;
+      }
+      button{
+        margin: 10px;
+        margin: 5px 0px 0px 0px;
+      }
+
+      hr{
+        padding: 2px;
+        margin: 10px;
+        background-color: #cccccc;
+      }
+    </style>
+    <!--Usar para ejecutar codigo-->  
+    <script>
+      function vaciar() {
+        document.getElementById('n1').value = '';
+      }
+
+      function elevado() {
+        var num = document.getElementById('n1');
+        num.value = num.value * num.value;
+      }
+      
+      function cuadrado() {
+        var num = document.getElementById('n1');
+        num.value = num.value * num.value;
+      }
+      
+      
+    </script>
+  </head>
+  <body>
+
+    <main id='centro'>
+      <header>
+        <h2>Módulo 4: Booleano, If/Else, String, Número, DOM, Eventos E Interacción</h2>
+      </header>
+
+      <label>Numero : </label>
+      <input type='text' id='n1' onclick="vaciar()"> 
+      <hr>
+
+      <label>1) Operaciones unitarias (con un solo operando): </label>
+      <input type='text' value='' size="12">
+      <button>Pulsar</button>
+
+      <label>1.1) x^2 (número elevado al cuadrado)</label>
+      <input type='text' value='' size="12">
+      <button onclick="cuadrado()">Pulsar</button>
+
+      <label>1.2) 1/x (inverso del número)</label>
+      <input type='text' value='' size="12">
+      <button>Pulsar</button>
+
+      <label>1.3) sqrt(x) (raiz cuadrada del número)</label>
+      <input type='text' value='' size="12">
+      <button>Pulsar</button>
+
+      <label>
+        1.4) parte_entera(x)<br />
+        (parte entera de x: si x es positivo <br />
+        devuelve Math.floor(x) <br />
+        y si es negativo devuelve -Math.ceil(x))<br />
+      </label>
+      <input type='text' value='' size="12">
+      <button>Pulsar</button>
+
+      <label>2) Operaciones binarias (con dos operandos):</label>
+      <input type='text' value='' size="12">
+      <button>Pulsar</button>
+
+      <label>2.1) +. -. *, / (suma, resta, multiplicación y división)</label>
+      <input type='text' value='' size="12">
+      <button>Pulsar</button>
+
+      <label>2.2) x^y (x elevado a y)</label>
+      <input type='text' value='' size="12">
+      <button onclick="elevado()">Pulsar</button>
+    </main>
+
+
+
+    <footer>
+      <section id="copyright">
+        <h3>&nbsp;</h3>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Licencia de Creative Commons" style="border-width:0" 
+               src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+        </a>&nbsp;Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          licencia de Creative Commons Reconocimiento 4.0 Internacional
+        </a>
+      </section>
+    </footer>
+
+  </body>
+</html>

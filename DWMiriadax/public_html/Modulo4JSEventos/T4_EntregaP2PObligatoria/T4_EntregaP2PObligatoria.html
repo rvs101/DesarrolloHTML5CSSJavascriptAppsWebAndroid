@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <!-- Metadatos basicos  -->
     <meta name="author" content="Raul Vela Salas">
-    <meta name="description" content="...">
+    <meta name="description" content="Ejercicio 4 PSP Calculadora">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -21,11 +21,19 @@
         background-position:top left;
         background-repeat:repeat;
         background-attachment:fixed;
+        font-size: small;
       }
       label{
+        font-weight: bold;
         display: block;
-        margin: 10px 0px 0px 0px;
+        margin: 30px 0px 0px 0px;
       }
+
+      header > h3{
+        font-style: oblique;
+        font-size: large;
+      }
+
       main{
         padding: 20px;
         margin: 10px;
@@ -36,87 +44,261 @@
         display: block;
         margin: 5px 0px 0px 0px;
       }
+      input#n1{
+        display: block;
+        align-content: center;
+        text-align: center;
+      }
       button{
         margin: 10px;
         margin: 5px 0px 0px 0px;
       }
-
       hr{
         padding: 2px;
-        margin: 10px;
+        margin: 30px;
         background-color: #cccccc;
+      }
+      .li{
+        color: #009688;
       }
     </style>
     <!--Usar para ejecutar codigo-->  
     <script>
-      function vaciar() {
-        document.getElementById('n1').value = '';
+// VARIABLE GLOBALES
+      /**
+       * Utilizan en la funcion 'inic' para almacenar la referencia al objeto <input>
+       * del elemento <input> de HTML del ARBOL DOM
+       * Acumula el 1º valor
+       * @type Element <input>
+       */
+      var numOperaciones = 0;
+      var numPotencia = 0;
+      /**
+       * Acumulador : Almacena una referencia al objeto <input> con la PROPIEDAD 'value'
+       * @type Number|Node.value|document@call;getElementById.value|Object|numOperaciones.value|String|Element.value
+       */
+      var acc = 0;
+      var accPot = 0;
+      /**
+       * Almacena un 'string' con el tipo de simbolo seleccionado 
+       * @type String
+       */
+      var op = "";
+      /**
+       * Almacena un 'objeto' de tipo '<input>' para invocar sus PROPIEDADES y METODOS
+       * @returns {undefined}
+       */
+      var num_entero;
+
+// FUNCIONES
+      /**
+       * Al cargar la pagina 'YA ESTA HACIENDO REFERENCIA a los <b>id</b>
+       * Se lanza el evento <onload> con el metodo inic()
+       * Se almacena dentro del 'objeto num' una variable global 
+       * que tiene una referencia al Elemento <input> del arbol DOM 
+       * 'ahora tengo una referencia directa a ese Elemento para agregarle
+       * 'PROPIEDADES Y METODOS'
+       * 
+       * @returns {undefined}
+       */
+      function inic() {
+        // variable global 'objeto' que almacena una referencia al Elemento <input> del ARBOL DOM
+        numOperaciones = document.getElementById('optotal');
+        // ESTOY CARGANDO UNA REFERENCIA AL OBJETO <input> del ARBOL DOM para invocar sus PROPIEDADES Y METODOS
+        numPotencia = document.getElementById('oppotencia');
+        // ESTOY CARGANDO AL INICIAR LA PAGINMA UNA REFERENCIA AL OBJETO <input> del ARBOL DOM para invocar sus PROPIEDADES Y METODOS
+        num_entero = document.getElementById('opentera');
+      }
+      /**
+       * 
+       * @returns {undefined}
+       */
+      function cuadrado() {
+        var num = document.getElementById('opcuadrado');
+        document.getElementById('n1').value = (num.value * num.value);
+      }
+      /**
+       * 
+       * @returns {undefined}
+       */
+      function inverso() {
+        var num = document.getElementById('opinverso');
+        document.getElementById('n1').value = (1 / num.value);
+      }
+      /**
+       * 
+       * @returns {undefined}
+       */
+      function raizCuadrada() {
+        var num = document.getElementById('opsqrt');
+        document.getElementById('n1').value = (Math.sqrt(num.value));
+      }
+      /**
+       * 
+       * @returns {undefined}
+       */
+      function elevado() {
+        var num = document.getElementById('opinverso');
+        document.getElementById('n1').value = (1 / num.value);
+      }
+      function mas() {
+        // variable acumula 1º valor
+        acc = numOperaciones.value;
+        op = '+';
+      }
+      function menos() {
+        acc = numOperaciones.value;
+        op = '-';
+      }
+      function multiplicar() {
+        acc = numOperaciones.value;
+        op = '*';
+      }
+      function dividir() {
+        acc = numOperaciones.value;
+        op = '/';
+      }
+      /**
+       * Coger el 1º numero y lo almacena variable global
+       * @returns {undefined}
+       */
+      function potencia() {
+        accPot = numPotencia.value; //  coge el 1º numero
+      }
+      /**
+       * Coger el 2º numero
+       * Realizar operacion
+       * Mostrar resultado
+       * @returns {undefined}
+       */
+      function calcularPotencia() {
+        var res = Math.pow((+accPot), (+numPotencia.value));
+        document.getElementById('n1').value = res;
       }
 
-      function elevado() {
-        var num = document.getElementById('n1');
-        num.value = num.value * num.value;
+      /**
+       * 
+       * @returns {undefined}
+       */
+      function numEntero() {
+        var num = Number.parseFloat(num_entero.value);
+        if (isNaN(num)) {
+          alert('Introduce un numero - por favor ');
+        } else {
+          var valor = (num).toPrecision(2);
+          if (valor >= 0.0) {
+            alert('Positivo: ' + valor);
+            valor = Math.floor(valor);
+            document.getElementById('n1').value = (valor).toPrecision(2);
+          } else {
+            alert('Negativo: ' + valor);
+            var nuevoValor = Math.abs(valor);
+            valor = (Math.ceil(nuevoValor));
+            document.getElementById('n1').value = -(valor);
+          }
+        }
       }
-      
-      function cuadrado() {
-        var num = document.getElementById('n1');
-        num.value = num.value * num.value;
+      /**
+       * Al pulsar el boton '=' se lanza el evento <onclick> con el metodo calcular()
+       * 1º Obtiene el valor de la 1º referencia a 'num' almacenada en 'acc'
+       * 2º Otiene el valor de la 2º referencia a 'num' almacenada en 'num.value'
+       * Obtiene de las variables globales el simbolo , el valor y el acumulado 
+       * @returns {undefined}
+       */
+      function calcular() {
+        if (op === '+') {
+          numOperaciones.value = (+acc + (+numOperaciones.value));
+        }
+        if (op === '-') {
+          numOperaciones.value = (+acc - (+numOperaciones.value));
+        }
+        if (op === '*') {
+          numOperaciones.value = (+acc * (+numOperaciones.value));
+        }
+        if (op === '/') {
+          numOperaciones.value = (+acc / (+numOperaciones.value));
+        }
+        document.getElementById('n1').value = numOperaciones.value;
       }
-      
-      
+      /**
+       * Vacia todos los input del HTML
+       * @returns {undefined}
+       */
+      function vaciar() {
+        var elementosInput = document.getElementsByTagName('input').length;
+        for (var i = 0; i < elementosInput; i++) {
+          document.getElementsByTagName('input')[i].value = '';
+        }
+      }
     </script>
   </head>
-  <body>
-
+  <!--
+  Evento onLoad : Indica que se ha construido el Arbol DOM 
+  funcion inic(): Carga en la variable 'num' el objeto DOM de acceso al cajetin que utiliza el resto de funciones
+  -->
+  <body onload="inic()">
     <main id='centro'>
       <header>
-        <h2>Módulo 4: Booleano, If/Else, String, Número, DOM, Eventos E Interacción</h2>
+        <h1>Buenos días<br>Bienvenido a la calculadora de Ra&uacute;l Vela Salas</h1>
       </header>
 
-      <label>Numero : </label>
-      <input type='text' id='n1' onclick="vaciar()"> 
+      <label id="n2">Resultado : </label>
+      <input type='text' id='n1' class="li" size="15" onclick="vaciar()"> 
       <hr>
 
-      <label>1) Operaciones unitarias (con un solo operando): </label>
-      <input type='text' value='' size="12">
-      <button>Pulsar</button>
+      <header>
+        <h3>1) Operaciones unitarias (con un solo operando): </h3>
+      </header>
 
       <label>1.1) x^2 (número elevado al cuadrado)</label>
-      <input type='text' value='' size="12">
+      <input id='opcuadrado' type='text' value='' size="12" class="li" ondblclick="vaciar()">
       <button onclick="cuadrado()">Pulsar</button>
 
       <label>1.2) 1/x (inverso del número)</label>
-      <input type='text' value='' size="12">
-      <button>Pulsar</button>
+      <input id='opinverso' type='text' value='' size="12" class="li" ondblclick="vaciar()">
+      <button onclick="inverso()">Pulsar</button>
 
       <label>1.3) sqrt(x) (raiz cuadrada del número)</label>
-      <input type='text' value='' size="12">
-      <button>Pulsar</button>
-
+      <input id='opsqrt' type='text' value='' size="12" class="li" ondblclick="vaciar()">
+      <button onclick="raizCuadrada()">Pulsar</button>
       <label>
-        1.4) parte_entera(x)<br />
-        (parte entera de x: si x es positivo <br />
-        devuelve Math.floor(x) <br />
-        y si es negativo devuelve -Math.ceil(x))<br />
+        1.4) 
+        Parte_entera(x)(parte entera de x: si x es positivo devuelve Math.floor(x)<br /> 
+        Si es negativo devuelve Math.ceil(x)<br />
       </label>
-      <input type='text' value='' size="12">
-      <button>Pulsar</button>
+      <ol>
+        <li>Introduce un n&uacute;mero en el recuadro con decimales positivo o negativo</li>
+      </ol>
+      <input id="opentera" type='text' value='' size="12" class="li" onblur="numEntero()" ondblclick="vaciar()">
 
-      <label>2) Operaciones binarias (con dos operandos):</label>
-      <input type='text' value='' size="12">
-      <button>Pulsar</button>
+      <header>
+        <h3>2) Operaciones binarias (con dos operandos):</h3>
+      </header>
 
       <label>2.1) +. -. *, / (suma, resta, multiplicación y división)</label>
-      <input type='text' value='' size="12">
-      <button>Pulsar</button>
+      <ol>
+        <li>Introduce el n&uacute;mero en el recuadro </li>
+        <li>A continuación pulsa el boton de la operacion '+,-,*,/' a ejecutar</li>
+        <li>Introduce otro numero para la operacion</li>
+        <li>Y finalmente pulsa boton '=' para ejecutar operacion final</li>
+      </ol>
+      <input id="optotal" type='text' value='' size="12" class="li" ondblclick="vaciar()">
+      <button onclick="mas()">+</button>
+      <button onclick="menos()">-</button>
+      <button onclick="multiplicar()">*</button>
+      <button onclick="dividir()">/</button>
+      <button onclick="calcular()">=</button>
 
       <label>2.2) x^y (x elevado a y)</label>
-      <input type='text' value='' size="12">
-      <button onclick="elevado()">Pulsar</button>
+      <ol>
+        <li>Introduce el n&uacute;mero en el recuadro </li>
+        <li>A continuación pulsa el boton 'Elevar' e introduce el exponente</li>
+        <li>Y finalmente pulsa boton '=' para ejecutar operacion</li>
+      </ol>
+      <input id="oppotencia" type='text' size="12" class="li" ondblclick="vaciar()">
+      <button onclick="potencia()">Elevar</button>
+      <button onclick="calcularPotencia()">=</button>
     </main>
-
-
-
     <footer>
       <section id="copyright">
         <h3>&nbsp;</h3>
@@ -129,6 +311,5 @@
         </a>
       </section>
     </footer>
-
   </body>
 </html>

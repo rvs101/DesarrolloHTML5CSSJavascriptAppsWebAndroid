@@ -1,0 +1,120 @@
+<!--Created on 07-abr-2018, 13:17:23-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es" onclick="myFunction(event)">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="short icon" type="image/x-icon" href="https://goo.gl/cais23">
+    <style>
+
+      *{
+        margin: 10px;
+        border: 1px solid red;
+      }
+
+      html {
+        border: 5px solid blue;
+      }
+      body {
+        border: 3px solid green;
+      }
+
+      h1, button, span , pre , p {
+        border: 1px solid red;
+        /*width: content-box;*/
+        width: auto;
+      }
+
+      p#d1{
+        border: 1px solid #00bcd4;
+        height:40px;
+        font-family: Verdana, Futura, Times;
+        font-size: 30px;
+        align-content: center;
+        text-align: center;
+        content: center
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <h1>This is a heading</h1>
+
+    <button>This is a button</button>
+
+    <span>A span element</span>
+
+    <script>
+      /**
+       * 
+       * @param {type} event
+       * @returns {undefined}
+       */
+      function myFunction(event) {
+        var x = event.target;
+        document.getElementById('d1').innerHTML = 'Triggered by a ' + x.tagName + ' element';
+      }
+    </script>
+
+    <p>Todo <b>Elementos</b> de la pagina : <br>
+      <b>
+        &lt;html&gt; --> linea azul <br> 
+        &lt;body&gt; --> linea verde <br>
+        &lt;h1&gt;  --> linea roja <br>
+        &lt;button&gt; --> linea roja  <br> 
+        &lt;span&gt; --> linea roja  <br>
+        &lt;p&gt; --> linea roja  <br>
+        &lt;footer&gt; --> linea roja  <br>
+        &lt;section&gt; --> linea roja  <br>
+        &lt;h3&gt; --> linea roja  <br>
+        &lt;img&gt; --> linea roja  <br>
+      </b>
+    </p>
+    <p>
+      Son disparadores <b>'Triggers'</b> todos los <b>elementos HTML</b> que se les puede asociar un <b>'Evento'</b> <br>
+      que luego <b>se le pasa por parametro</b> a la funcion como <b>'event'</b> y asi añadirle <br>
+      <b>PROPIEDADES</b> como <b>.target</b>  que identifica el elemento que lo disparo. <br>
+    </p>
+
+    <pre>
+       function myFunction(event) {
+        var x = event.target;
+        document.getElementById('demo').innerHTML = 'Triggered by a ' + x.tagName + ' element';
+      }
+    </pre>
+
+    <p id='demo'>Haz click en alguno de los <b>ELEMENTOS</b> del <b>
+        <em>'document'</em></b> de DOM para encontrar el 
+      <b>ELEMENTO</b> que disparo el <b>EVENTO</b> 'onclick'
+    </p>
+
+    <p id='d1'>
+
+    </p>
+
+    <footer>
+      footer
+      <section id="copyright">
+        section
+        <h3>&nbsp;h3</h3>
+        <a rel="license" href="#">a
+          <img alt="Licencia de Creative Commons" style="border-width:0" 
+               src="https://i.creativecommons.org/l/by/4.0/80x15.png" />img
+        </a>
+        &nbsp;Este obra está bajo una 
+        <a rel="license" href="#">
+          a<br>
+          licencia de Creative Commons Reconocimiento 4.0 Internacional
+        </a>
+      </section>
+    </footer>
+  </body>
+</html>

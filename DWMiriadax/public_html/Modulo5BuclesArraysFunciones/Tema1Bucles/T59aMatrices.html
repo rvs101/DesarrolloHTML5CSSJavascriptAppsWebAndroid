@@ -1,4 +1,4 @@
-<!--Created on 09-abr-2018, 18:10:10-->
+<!--Created on 09-abr-2018, 19:51:44-->
 <!-- Referencia :  -->
 <!DOCTYPE html>
 <html lang="es">
@@ -19,21 +19,19 @@
   </head>
   <body>
     <script>
-      /**
-       * Usando la funcion flecha como funcion
-       * para manipular los elementos
-       * @type type
-       */
-      var x  = Array.from([1, 2, 3], x => x + x);
-      document.write(x);
-      document.write('<br>');
-      /**
-       * Generar secuencia de numeros
-       * Puesto que el array se inicializa con 'undefined'
-       * @type type
-       */
-      var y = Array.from({length: 7}, (v, i) => i);
-      document.write('<br>' + y);
+
+      var myVar = "Pruebas de una matriz multidimencional";
+      var nb = 4;
+      var a = new Array(nb);
+
+      for (var i = 0; i < nb; i++) {
+        a[i] = new Array(nb);
+        for (var j = 0; j < nb; j++) {
+          a[i][j] = "[" + i + "," + j + "]";
+          document.write(a[i][j]);
+        }
+          document.write('<br>');
+      }
     </script>
 
     <footer>

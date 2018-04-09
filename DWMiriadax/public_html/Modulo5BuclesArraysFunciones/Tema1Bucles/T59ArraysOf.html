@@ -11,18 +11,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <link rel="short icon" type="image/x-icon" href="https://goo.gl/cais23">
+    <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/cais23">
     <!--Usar para CSS internos-->
     <!--<style></style>-->
-    <!--<script src="link"></script>-->
+    <script>
+      /**
+       * Array.of en caso de no estar de forma Nativa
+       * @returns {undefined}
+       */
+      function ArrayofNoExiste() {
+        if (!Array.of) {
+          Array.of = function () {
+            return Array.prototype.slice.call(arguments);
+          };
+        }
+      }
+    </script>
     <!--Usar para ejecutar codigo--> 
   </head>
   <body>
-
     <script>
 //      Crea una nueva instancia Array con un número variable de elementos 
 //      pasados como argumento, independientemente del número o del tipo.
+      var x1 = Array.of(1);
+      var x2 = Array.of(1, 2, 3);
+      var x3 = Array.of(undefined);
 
+      document.write(x1);
+      document.write('<br>');
+      document.write(x2);
+      document.write('<br>');
+      document.write(x3);
+
+      ArrayofNoExiste();
 
     </script>
     <footer>

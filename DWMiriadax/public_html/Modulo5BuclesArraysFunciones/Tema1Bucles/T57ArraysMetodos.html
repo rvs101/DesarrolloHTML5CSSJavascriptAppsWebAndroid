@@ -1,0 +1,74 @@
+<!--Created on 09-abr-2018, 17:55:17-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="short icon" type="image/x-icon" href="https://goo.gl/cais23">
+  </head>
+  <body>
+    <script>
+
+      /**
+       * Crear array sobre 'objeto' iterables
+       * @type type
+       */
+      var arrayFoo = Array.from("foo");
+      document.write(arrayFoo);
+
+      document.write('<hr>');
+
+      var s = new Set(['foo', window]);
+      Array.from(s);
+
+
+      s.forEach(function (p, i) {
+        document.write('posicion : ' + p, 'indice : ' + i);
+      });
+
+
+      var m = new Map([[1, 2], [3, 4], [5, 6]]);
+      Array.from(m);
+      m.forEach(function (p, i) {
+        document.write('<hr>');
+        document.write('indice : ' + i + ' posicion : ' + p);
+      });
+
+      /**
+       * Array desde un objeto Array-like (argumentos)
+       */
+
+      function f() {
+        return Array.from(arguments);
+      }
+
+      document.write('<hr>');
+
+      var x = f(1, 2, 3);
+      x.forEach(function (v, i) {
+        document.write(' indice : ' + i + ' valor ' + v + '<br>');
+      });
+
+    </script>
+
+    <footer>
+      <section id="copyright">
+        <h3>&nbsp;</h3>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Licencia de Creative Commons" style="border-width:0" 
+               src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+        </a>&nbsp;Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          licencia de Creative Commons Reconocimiento 4.0 Internacional
+        </a>
+      </section>
+    </footer>
+  </body>
+</html>

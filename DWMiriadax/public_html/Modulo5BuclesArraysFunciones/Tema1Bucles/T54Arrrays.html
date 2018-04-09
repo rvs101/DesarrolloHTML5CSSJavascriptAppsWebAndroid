@@ -1,0 +1,207 @@
+<!--Created on 09-abr-2018, 12:17:22-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="short icon" type="image/x-icon" href="https://goo.gl/cais23">
+    <!--Usar para CSS internos-->
+    <!--<style></style>-->
+    <!--<script src="link"></script>-->
+    <!--Usar para ejecutar codigo--> 
+    <script>
+//Posicion :            0           1
+      var frutas = ['Manzanas', 'Bananas'];
+
+      console.log('longitud : ' + frutas.length);
+
+      var primero = frutas[0];
+      console.log(primero);
+
+      var ultimo = frutas[frutas.length - 1];
+      console.log(ultimo);
+
+//Bucles sobre array:
+//      frutas.forEach(function (elemento, indice, array) {
+//        console.log(elemento,indice);
+//      });
+
+      console.log('Iterar sobre array mediante funcion : ');
+
+    </script>
+  </head>
+  <body>
+
+    <script>
+      /**
+       * 'array' no se esta usando
+       * @param {type} param
+       */
+      frutas.forEach(function (elemento, indice, array) {
+        var r = document.createElement('span');
+        var h = document.createTextNode(" " + elemento + " " + indice);
+        r.appendChild(h);
+        document.getElementsByTagName('body')[0].appendChild(r);
+      });
+
+      document.write("<hr>");
+
+      /**
+       * Forma correcta
+       */
+      frutas.forEach(function (elemento, indice) {
+        var r = document.createElement('span');
+        var h = document.createTextNode(" " + elemento + "\n" + indice);
+        r.appendChild(h);
+        document.getElementsByTagName('body')[0].appendChild(r);
+      });
+
+      /**
+       * Añadir elemento al final de un Array
+       * Nueva longitud
+       * 
+       * @type Number
+       */
+      var nuevaLongitud = frutas.push('Naranja');
+
+      frutas.forEach(function (elemento, indice) {
+        document.write(" <br>" + indice + " " + elemento);
+      });
+
+
+      /**
+       * Eliminar elemento del final de un Array
+       * 
+       * @type Object
+       */
+      var eliminar_ultimo = frutas.pop();
+
+      frutas.forEach(function (elemento, indice) {
+        document.write(" <br>" + indice + " " + elemento);
+      });
+
+
+      /**
+       * Añade un nuevo elemento al principio
+       * @type Number
+       */
+      var nuevaLongInicio = frutas.unshift('Fresa');
+
+      document.writeln("<hr>");
+
+      frutas.forEach(function (e, i) {
+        document.write("<br> " + e + " " + i);
+      });
+
+      document.writeln("<hr>");
+
+      frutas.push('Mango');
+
+      /**
+       * Encontrar el índice de un elemento en el Array
+       */
+      document.writeln("<br>!!! Posicion : " + frutas.indexOf('Mango') + " !!!");
+
+      frutas.forEach(function (e, i) {
+        document.writeln("<br> " + e + " " + i);
+      });
+
+      document.writeln("<hr>");
+
+      document.writeln("<br>!!! Banana - Posicion : " + frutas.indexOf('Banana') + " !!!");
+      document.writeln("<br>!!! Banana<b>s</b> - Posicion : " + frutas.indexOf('Bananas') + " !!!");
+
+      document.writeln("<hr>");
+
+      var pos = 2;
+      document.write("<br> Fruta en la posicion 2 : " + frutas[pos] + " para eliminar con <b>frutas.splice </b>");
+
+      /**
+       * Eliminar elemento con el índice de posición
+       * 
+       * @type Array
+       */
+      var elementoEliminado = frutas.splice(pos, 1);
+
+      frutas.forEach(function (e, i) {
+        document.write('<br> ' + e + " " + i);
+      });
+
+      document.writeln("<hr>");
+
+      var vegetales = ['Repollo', 'Nabo', 'Rábano', 'Zanahoria'];
+
+      document.writeln('<br> ' + vegetales + "<br>");
+
+      vegetales.forEach(function (e, i) {
+        document.writeln("<br> " + e + " - " + i);
+      });
+
+
+      var posN = 1, n = 2;
+
+      var elementoEliminados = vegetales.splice(pos, 1);
+
+      document.write('<hr>');
+
+      vegetales.forEach(function (e, i) {
+        document.write('<br> elemento: ' + e + ' pos: ' + i);
+      });
+
+      document.write('<hr>');
+
+//Eliminar elemento con el índice de posición
+
+      var vegetales2 = ['Repollo', 'Nabo', 'Rabano', 'Zanahorias', 'Lechuga', 'Guisante'];
+      document.write(vegetales2);
+
+      var posicionEmpiezaEliminar = 1;
+      var numeroElementosAEliminar = 2;
+
+      /**
+       * Arrays Basico de elementos
+       * 
+       * @param {type} posicionEmpiezaEliminar
+       * @param {type} numeroElementosAEliminar
+       */
+      vegetales2.splice(posicionEmpiezaEliminar, numeroElementosAEliminar);
+
+      vegetales2.forEach(function (e, i) {
+        document.write('<br>' + e + ' ' + i);
+      });
+
+      document.writeln('<hr>');
+      document.writeln(vegetales2);
+
+      /**
+       * Copiar un array
+       * @type Array
+       */
+      var copiaSuperficialArray = frutas.slice();
+
+      copiaSuperficialArray.forEach(function (e, i) {
+        document.writeln("<br> :" + e, " - " +i);
+      });
+
+    </script>
+    <footer>
+      <section id="copyright">
+        <h3>&nbsp;</h3>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Licencia de Creative Commons" style="border-width:0" 
+               src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+        </a>&nbsp;Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          licencia de Creative Commons Reconocimiento 4.0 Internacional
+        </a>
+      </section>
+    </footer>
+  </body>
+</html>

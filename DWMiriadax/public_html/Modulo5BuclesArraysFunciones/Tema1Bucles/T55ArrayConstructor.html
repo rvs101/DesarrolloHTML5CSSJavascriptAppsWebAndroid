@@ -1,0 +1,68 @@
+<!--Created on 09-abr-2018, 17:22:08-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="short icon" type="image/x-icon" href="https://goo.gl/cais23">
+    <!--Usar para CSS internos-->
+    <!--<style></style>-->
+    <!--<script src="link"></script>-->
+    <!--Usar para ejecutar codigo--> 
+    <script>
+
+      var longitudDelArray = 5;
+      document.write(new Array(longitudDelArray));
+      document.write('<hr>');
+      document.write(new Array(1, 2, 3, 4, 5, 6));
+      document.write('<hr>');
+
+//              0  1  2  3  4  5
+      new Array(1, 2, 3, 4, 5, 6).forEach(function (v, i) {
+        document.write('<br> indice ' + i, ' : valor : ' + v);
+      });
+
+//      Matriz unidemsional de 3 elementos
+      var miVariable;
+      var miMatriz = new Array('PI', miVariable, 3.14159265);
+
+      var tipoMusica = new Array(25);
+      tipoMusica[0] = "R&B";
+      tipoMusica[1] = "Blues";
+      tipoMusica[2] = "Jazz";
+      tipoMusica[3] = "Rock";
+
+      var listaMusica = tipoMusica.slice(0, 5);
+      document.write('<br>' + listaMusica);
+
+      var colores = new Array();
+      colores[99] = 'AmarilloPatito';
+      
+    
+
+    </script>
+  </head>
+  <body>
+
+
+    <footer>
+      <section id="copyright">
+        <h3>&nbsp;</h3>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Licencia de Creative Commons" style="border-width:0" 
+               src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+        </a>&nbsp;Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          licencia de Creative Commons Reconocimiento 4.0 Internacional
+        </a>
+      </section>
+    </footer>
+  </body>
+</html>

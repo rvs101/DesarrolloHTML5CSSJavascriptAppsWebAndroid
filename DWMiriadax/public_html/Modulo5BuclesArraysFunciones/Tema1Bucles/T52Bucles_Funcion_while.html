@@ -1,0 +1,75 @@
+<!--Created on 09-abr-2018, 9:49:05-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="short icon" type="image/x-icon" href="https://goo.gl/cais23">
+    <!--Usar para CSS internos-->
+    <!--<style></style>-->
+    <script>
+      /**
+       * @param {type} n
+       * @returns {res|Number}
+       */
+      function po_2(n) {
+        var res = 1;
+        while (n !== 0) {
+          res = res * 2;
+          n = n - 1;
+        }
+        return res;
+      }
+    </script>
+  </head>
+  <body>
+
+    <script>
+      var n = 10;
+      var v = po_2(n);
+      var r = document.createElement('p');
+      var h = document.createTextNode(v);
+      r.appendChild(h);
+      document.getElementsByTagName('body')[0].appendChild(r);
+
+      var n = 20;
+      var v = po_2(n);
+      var r = document.createElement('p');
+      var h = document.createTextNode(v);
+      r.appendChild(h);
+      document.getElementsByTagName('body')[0].appendChild(r);
+
+      var n = Math.floor((Math.random() * 20) + 1);
+      var r0 = document.createElement('p');
+      var h1 = document.createTextNode(n);
+      r0.appendChild(h1);
+      document.getElementsByTagName('body')[0].appendChild(r0);
+
+      var v = po_2(n);
+      var r = document.createElement('p');
+      var h = document.createTextNode(v);
+      r.appendChild(h);
+      document.getElementsByTagName('body')[0].appendChild(r);
+    </script>
+
+    <footer>
+      <section id="copyright">
+        <h3>&nbsp;</h3>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Licencia de Creative Commons" style="border-width:0" 
+               src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+        </a>&nbsp;Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          licencia de Creative Commons Reconocimiento 4.0 Internacional
+        </a>
+      </section>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!--Created on 09-abr-2018, 11:06:58-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="short icon" type="image/x-icon" href="https://goo.gl/cais23">
+    <!--Usar para CSS internos-->
+    <!--<style></style>-->
+    <!--Usar para ejecutar codigo--> 
+  </head>
+  <body>
+
+    <script>
+      var n = 3;
+      for (var res = 1; n !== 0; n--)
+        res = res * 2; //no recomendable
+      var resultado = res - 4;
+      var r = document.createElement('p');
+      var h = document.createTextNode(resultado);
+      r.appendChild(h);
+      document.getElementsByTagName('body')[0].appendChild(r);
+
+      var n = Math.floor((Math.random() * 10) + 1);
+      for (var res = 1; n !== 0; n--) res = res * 2;
+      var resultado = res - 4;
+      var r = document.createElement('p');
+      var h = document.createTextNode(resultado);
+      r.appendChild(h);
+      document.getElementsByTagName('body')[0].appendChild(r);
+
+    </script>
+    <footer>
+      <section id="copyright">
+        <h3>&nbsp;</h3>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Licencia de Creative Commons" style="border-width:0" 
+               src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+        </a>&nbsp;Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          licencia de Creative Commons Reconocimiento 4.0 Internacional
+        </a>
+      </section>
+    </footer>
+  </body>
+</html>

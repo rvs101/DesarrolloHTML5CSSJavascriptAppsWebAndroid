@@ -1,4 +1,4 @@
-<!--Created on 09-abr-2018, 18:10:10-->
+<!--Created on 09-abr-2018, 19:57:55-->
 <!-- Referencia :  -->
 <!DOCTYPE html>
 <html lang="es">
@@ -13,28 +13,53 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/cais23">
     <!--Usar para CSS internos-->
-    <!--<style></style>-->
+    <style>
+      label{
+        width: 170px;
+        display: block;
+        border: 1px solid #26d258;
+        margin: 5px 0 5px 0;
+      }
+    </style>
     <!--<script src="link"></script>-->
     <!--Usar para ejecutar codigo--> 
+    <script>
+
+      /**
+       * Vaciar input 
+       * @returns {undefined}
+       */
+      function vaciar() {
+        document.getElementById('n1').value = "";
+      }
+
+      /**
+       * 
+       * @returns {undefined}
+       */
+      function sumatorio() {
+        // obtener el valor del input
+        var num = document.getElementById('n1');
+        // convierte los valores en un array fragmentado de elementos con un ','
+        var lista = num.value.split(",");
+        var i = 0, acc = 0;
+        // mientras la longitud de lista sea menor que 'i'
+        while (i < lista.length) {
+          // +lista : convierte un String a Number
+          acc += (+lista[i++]);
+        }
+        //  muestra dentro de 'input' el valor acumulado
+        num.value = acc;
+      }
+    </script>
   </head>
   <body>
-    <script>
-      /**
-       * Usando la funcion flecha como funcion
-       * para manipular los elementos
-       * @type type
-       */
-      var x  = Array.from([1, 2, 3], x => x + x);
-      document.write(x);
-      document.write('<br>');
-      /**
-       * Generar secuencia de numeros
-       * Puesto que el array se inicializa con 'undefined'
-       * @type type
-       */
-      var y = Array.from({length: 7}, (v, i) => i);
-      document.write('<br>' + y);
-    </script>
+
+    <label>Numero</label>
+    <input type="text" id="n1" ondblclick="vaciar()">
+    <button onclick="sumatorio()">
+      <code>Σ x</code>
+    </button>
 
     <footer>
       <section id="copyright">

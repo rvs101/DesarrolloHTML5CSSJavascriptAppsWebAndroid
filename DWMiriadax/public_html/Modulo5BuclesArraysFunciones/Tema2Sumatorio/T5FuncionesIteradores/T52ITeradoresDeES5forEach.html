@@ -1,4 +1,4 @@
-<!--Created on 09-abr-2018, 18:10:10-->
+<!--Created on 09-abr-2018, 21:12:54-->
 <!-- Referencia :  -->
 <!DOCTYPE html>
 <html lang="es">
@@ -14,26 +14,38 @@
     <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/cais23">
     <!--Usar para CSS internos-->
     <!--<style></style>-->
-    <!--<script src="link"></script>-->
     <!--Usar para ejecutar codigo--> 
+    <script>
+      function veces(letra, frase) {
+        var n = 0;
+// Recorre 'forEach' una frase fragmentada 'split' cada parte en "comillas" para cada elemento 'x' 
+        frase.split("").forEach(function (x) {
+          if (letra === x) {
+            ++n;
+          }
+        });
+        return n;
+      }
+
+      /**
+       * 
+       * @param {type} x
+       * @returns {undefined}
+       */
+      function lanzar(x) {
+        var r = document.createElement('p');
+        var h = document.createTextNode(x);
+        r.appendChild(h);
+        document.getElementsByTagName('body')[0].appendChild(r);
+      }
+    </script>
   </head>
   <body>
+
     <script>
-      /**
-       * Usando la funcion flecha como funcion
-       * para manipular los elementos
-       * @type type
-       */
-      var x  = Array.from([1, 2, 3], x => x + x);
-      document.write(x);
-      document.write('<br>');
-      /**
-       * Generar secuencia de numeros
-       * Puesto que el array se inicializa con 'undefined'
-       * @type type
-       */
-      var y = Array.from({length: 7}, (v, i) => i);
-      document.write('<br>' + y);
+      var l = 'a', f = 'la casa roja';
+      var mensaje = ('la frase "' + f + '" tiene ' + veces(l, f) + ' veces la letra ' + l);
+      lanzar(mensaje);
     </script>
 
     <footer>

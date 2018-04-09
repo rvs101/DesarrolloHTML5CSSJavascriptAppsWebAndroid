@@ -1,4 +1,4 @@
-<!--Created on 09-abr-2018, 18:10:10-->
+<!--Created on 09-abr-2018, 21:12:54-->
 <!-- Referencia :  -->
 <!DOCTYPE html>
 <html lang="es">
@@ -14,26 +14,43 @@
     <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/cais23">
     <!--Usar para CSS internos-->
     <!--<style></style>-->
-    <!--<script src="link"></script>-->
     <!--Usar para ejecutar codigo--> 
-  </head>
-  <body>
     <script>
       /**
-       * Usando la funcion flecha como funcion
-       * para manipular los elementos
-       * @type type
+       * 
+       * @param {type} letra
+       * @param {type} frase
+       * @returns {Number}
        */
-      var x  = Array.from([1, 2, 3], x => x + x);
-      document.write(x);
-      document.write('<br>');
+      function veces(letra, frase) {
+         var i = 0, n = 0; // inicializacion del bucle
+        while (i < frase.length) { // condicion de permanencia
+          if (letra === frase[i++]) { // accion del bucle 'e' , incremento i para moverse por el array
+            ++n; 
+          }
+        }
+        return n; // devuelve el nº de coincidencias
+      }
+
       /**
-       * Generar secuencia de numeros
-       * Puesto que el array se inicializa con 'undefined'
-       * @type type
+       * 
+       * @param {type} x
+       * @returns {undefined}
        */
-      var y = Array.from({length: 7}, (v, i) => i);
-      document.write('<br>' + y);
+      function lanzar(x) {
+        var r = document.createElement('p');
+        var h = document.createTextNode(x);
+        r.appendChild(h);
+        document.getElementsByTagName('body')[0].appendChild(r);
+      }
+    </script>
+  </head>
+  <body>
+
+    <script>
+      var l = 'a', f = 'la casa roja';
+      var mensaje = ('la frase "' + f + '" tiene ' + veces(l, f) + ' veces la letra ' + l);
+      lanzar(mensaje);
     </script>
 
     <footer>

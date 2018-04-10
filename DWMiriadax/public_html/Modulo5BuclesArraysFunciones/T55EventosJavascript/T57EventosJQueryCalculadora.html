@@ -1,0 +1,82 @@
+<!--Created on 10-abr-2018, 14:37:48-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/cais23">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <!--Usar para CSS internos-->
+    <style>
+      label#l1{
+        display: block;
+        margin: 10px;
+        text-align: left;
+      }
+
+      input#in1 {
+        display: inline;
+        margin-left: 15px;
+        text-align: left;
+      }
+
+      button#b1{
+        display: inline;
+        margin: 5px;
+      }
+    </style>
+    <!--Para que cargue el JQUERY despues del arbol DOM-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--Usar para ejecutar codigo--> 
+    <script>
+      /**
+       * Declaro la funcion 
+       * @returns {undefined}
+       */
+      $(function () {
+        $('#in1').on('click', function () {
+//          Selector id 'in1'
+          $('#in1').val('');
+        });
+
+        $('#b1').on('click', function () {
+          /**
+           * Declara la variable con el selector id
+           * @type $
+           */
+          var num = $('#in1');
+//          obtenemos los valores 
+          num.val(num.val() * num.val());
+        }
+        );
+      });
+    </script>
+  </head>
+  <body>
+
+    <label id='l1'>Resultado </label>
+    <input id='in1' type="text" value="">
+    <button id='b1' type="button">x<sup>2</sup></button>
+
+
+    <footer>
+      <section id="copyright">
+        <h3>&nbsp;</h3>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Licencia de Creative Commons" style="border-width:0" 
+               src="https://licensebuttons.net/l/by/4.0/80x15.png" />
+        </a>&nbsp;Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          licencia de Creative Commons Reconocimiento 4.0 Internacional
+        </a>
+      </section>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!--Created on 10-abr-2018, 16:29:46-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/cais23">
+    <!--Usar para CSS internos-->
+    <!--<style></style>-->
+    <!--Usar para ejecutar codigo--> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+
+      /**
+       * Agrega al elemento con id #fecha
+       *  una cadena de tipo fecha
+       * @returns {undefined}
+       */
+      function mostrar_fecha() {
+//       Selecciono el elemento por medio del 'id'
+//       'html' hace de innerHTML y añade la fecha si esta vacio devuelve el 'id-> #fecha'
+        $("#fecha").html(new Date());
+      }
+      
+      /** 
+       * Funcion 
+       * @returns {undefined}
+       */
+      $(function () {
+        // funcion setInterval : programa un evento periodico
+        // elegimos la funcion y cada cuanto tiempo se ejecuta
+        setInterval(mostrar_fecha, 1000); // define 'evento'
+        // invocamos el metodo para que realice
+        mostrar_fecha();
+      });
+
+    </script>
+  </head>
+  <body>
+
+    <div id='fecha'></div>
+
+    <footer>
+      <section id="copyright">
+        <h3>&nbsp;</h3>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Licencia de Creative Commons" style="border-width:0" 
+               src="https://licensebuttons.net/l/by/4.0/80x15.png" />
+        </a>&nbsp;Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          licencia de Creative Commons Reconocimiento 4.0 Internacional
+        </a>
+      </section>
+    </footer>
+  </body>
+</html>

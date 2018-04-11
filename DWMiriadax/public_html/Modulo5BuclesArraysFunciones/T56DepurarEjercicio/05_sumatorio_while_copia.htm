@@ -1,0 +1,36 @@
+
+<!DOCTYPE html><html>
+  <head><title>Ejemplo</title><meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/cais23">
+
+
+    <script type="text/javascript">
+
+      function vaciar() {
+        document.getElementById("n1").value = "";
+      }
+
+      function sumatorio() {
+        var num = document.getElementById("n1");
+
+        var lista = num.value.split(",");
+
+        var i = 0, acc = 0;
+        while (i < lista.length) {
+          acc = acc + (+lista[i]);
+          console.log(acc);
+          console.log(i);
+          i++;
+        }
+
+        num.value = acc;
+      }
+    </script>
+  </head><body>
+    Número:
+    <input type="text" id="n1" onclick="vaciar()" name="entrada">
+    <p>
+      <button onclick="sumatorio()">Σ x</button>
+    </p>
+  </body></html>
+

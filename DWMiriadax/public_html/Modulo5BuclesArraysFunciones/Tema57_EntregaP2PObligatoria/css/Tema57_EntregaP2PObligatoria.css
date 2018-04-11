@@ -1,0 +1,91 @@
+/* 
+    Created on : 11-abr-2018, 18:35:20
+    Author     : Robot
+*/
+
+main#m1{
+  font-family: 'Tajawal', sans-serif;
+  width: auto;
+  text-align: left;
+  content: left;
+  margin: 10px 0 0 10px;
+  padding: 15px;
+  font-size: large;
+}
+
+p.p1{
+  display: block;
+  font-family:inherit;
+  font-size: xx-large;
+  margin: 5px 0 0 0;
+  padding: 5px;
+}
+
+p.p2{
+  line-height: normal;
+  letter-spacing: 1px;
+  display: block;
+  font-family:inherit;
+  font-size: x-large;
+  margin: 5px 0 0 0;
+  padding: 5px 0 10px 0;
+}
+
+span#s1 , span#s2{
+  font-weight: bold;
+  margin-left: 40px;
+  padding-top: 20px;
+}
+
+label , input#n1{
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+label#l1{
+  font-family: 'Tajawal', sans-serif;
+  font-size: xx-large;
+}
+
+button{
+  padding: 5px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+button.b0{
+  display: inline;
+  margin: 10px 10px 0 10px;
+}
+
+aside#a4,#a5{
+  margin-left: 180px;
+}
+
+hr{
+  background-color: #cccccc;
+  height: 5px;
+  width: 400px;
+}
+
+body{
+  width: auto;
+  height: auto;
+  border: 1px solid red;
+  margin: 10px;
+}
+
+h2{
+  text-align: left;
+  margin: 20px;
+}
+
+footer{
+  margin: 20px;
+}
+
+hr{
+  width: 600px;
+}
+

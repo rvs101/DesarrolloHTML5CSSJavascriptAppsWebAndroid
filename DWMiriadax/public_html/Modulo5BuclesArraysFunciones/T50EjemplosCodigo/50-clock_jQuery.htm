@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reloj</title>
+    <meta charset="UTF-8">
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+      crossorigin="anonymous">
+    </script>
+
+    <script>
+      function mostrar_fecha( ) {
+        $("#fecha").html(new Date());
+      }
+
+      $(function () {
+        // Define evento periodico, ocurre
+        // cada segundo (1000 miliseg)
+        setInterval(mostrar_fecha, 1000);
+
+        // muestra fecha al cargar
+        mostrar_fecha();
+      });
+    </script>
+  </head>
+  <body>
+
+    <h2>Reloj</h2>
+
+    <div id="fecha">valor</div>
+
+  </body>
+</html>
+

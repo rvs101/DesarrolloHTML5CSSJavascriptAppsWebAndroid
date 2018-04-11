@@ -1,4 +1,4 @@
-<!--Created on 04-abr-2018, 19:16:20-->
+<!--Created on 11-abr-2018, 9:39:32-->
 <!-- Referencia :  -->
 <!DOCTYPE html>
 <html lang="es">
@@ -11,32 +11,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <link rel="short icon" type="image/x-icon" href="../../img/source/ic_launcher.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/cais23">
     <!--Usar para CSS internos-->
-    <!--<style></style>-->
-    <!--<script src="link"></script>-->
-    <!--Usar para ejecutar codigo--> 
-    <script>
-
-      function comer(persona, comida) {
-        persona = (persona !== undefined) ? persona : 'Alguien';
-        comida = (comida !== undefined) ? comida : 'Pan';
-        return (persona + ' come ' + comida);
+    <style>
+      .Casa{
+        border: 1px solid red;
+        width: 190px;
+        padding: 10px;
+        text-align: center;
       }
-      
-    </script>
+    </style>
+    <!--Usar para ejecutar codigo--> 
+    <!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
-
-    <div id='m1'></div>
-    <div id='d2'></div>
-    <div id='d3'></div>
-
-    <script>
-      document.getElementById('d1').innerHTML = comer();
-      document.getElementById('d2').innerHTML = comer('Jose');
-      document.getElementById('d3').innerHTML = comer('Jose', 'Pan');
+    
+       <script>
+//      $('Casa').attr('innerHTML');
+//      $('Casa').html();
+      $('#id3').attr('innerHTML');
     </script>
+
+    <h4 id='id1'>Valor</h4>
+    <p id='id2'></p>
+    <div id='id3'></div>
+    <div id='id4' class='Casa'>Casa</div>
+
+ 
+
+
 
 
     <footer>
@@ -44,7 +48,7 @@
         <h3>&nbsp;</h3>
         <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
           <img alt="Licencia de Creative Commons" style="border-width:0" 
-               src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+               src="https://licensebuttons.net/l/by/4.0/80x15.png" />
         </a>&nbsp;Este obra está bajo una 
         <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
           licencia de Creative Commons Reconocimiento 4.0 Internacional

@@ -2,75 +2,166 @@
  Created on : 11-abr-2018, 18:52:58
  Author     : Robot
  */
-
 /**
- * Cargar el arbol DOM Completo para ejecutar valores
+ * Cuando se cargue el Arbol DOM se puede usar las funciones JQUERY
  * @returns {undefined}
  */
 $(function () {
 // variable que almacena el 1º numero
-  var numero;
   //limpia la entrada de datos
-  $("#n1").on("click",
+  $("#in1").on("click",
           function () {
-            $("#n1").val("");
+            $("#in1").val("");
           }
   );
-  //Busco almacenar un valor al quitar el foco
-  $("#n1").on("blur",
+
+  var valorEntrada = $("#in1");
+  var valorAcumulado = 0;
+  var operador = "";
+  //potencia
+  $("#potencia2").on("click",
           function () {
-            var num = $("#n1");
-            numero = num.val();
-            console.log("numero : " + numero);
-          }
-  );
-  $("#b1").on("click",
-          function () {
-            var num = $("#n1");
+            var num = $("#in1");
             num.val(num.val() * num.val());
           }
   );
-  $("#b2").on("click",
+  //inverso
+  $("#inverso").on("click",
           function () {
-            var num = $("#n1");
+            var num = $("#in1");
             num.val((1 / num.val()).toFixed(3));
           }
   );
-  $("#b3").on('click',
+  //raiz cuadrada
+  $("#raizCuadrada").on('click',
           function () {
-            var num = $("#n1");
+            var num = $("#in1");
             num.val((Math.sqrt(num.val()).toFixed(4)));
           }
   );
-  $("#b4").on('click',
+  //parte entera
+  $("#parteEntera").on('click',
           function () {
-            var num = $("#n1");
+            var num = $("#in1");
             var numDecimal = Number.parseFloat(num.val());
             var numPrec2 = (numDecimal.toPrecision(2));
             if (numPrec2 >= 0.0) {
               alert('Positivo: ' + numPrec2);
-              $('#n1').html('Positivo : ' + num.val(Math.floor(numPrec2)));
+              $('#in1').html('Positivo : ' + num.val(Math.floor(numPrec2)));
             } else {
               var nuevoValor = Math.abs(numPrec2);
               alert('Negativo : ' + -nuevoValor);
               nuevoValor = Math.ceil(nuevoValor);
-              $('#n1').html('Negativo: ' + num.val(-nuevoValor));
+              $('#in1').html('Negativo: ' + num.val(-nuevoValor));
             }
           }
   );
 
-//Cuando seleccione el input #n1 ejecuta el evento 'blur'
-  $("#b5").on('click',
+//parte factorial
+  $('#factorial').on('click', function () {
+    var f = 1;
+    for (var i = 2; i <= $('#in1').val(); i++) {
+      f = (f * i);
+    }
+    $('#in1').val(f);
+  });
+
+  /**
+   * Sumar
+   */
+  $('#sumar').on('click', function () {
+    valorAcumulado = valorEntrada.val();
+    operador = ('+');
+  });
+
+  /**
+   * Restar
+   */
+  $('#restar').on('click', function () {
+    valorAcumulado = valorEntrada.val();
+    operador = ('-');
+  });
+
+  /**
+   * Multiplicar
+   */
+  $('#multiplicar').on('click', function () {
+    valorAcumulado = valorEntrada.val();
+    operador = ('*');
+  });
+
+  /**
+   * Operacion de division
+   */
+  $('#dividir').on('click', function () {
+    valorAcumulado = valorEntrada.val();
+    operador = ('/');
+  });
+
+  /**
+   * Cuando seleccione el input #in1 ejecuta el evento 'click'
+   */
+  $("#potencia").on('click',
           function () { //1ºfuncion 'cuando este seleccionado' coge el 1º valor
-           
-          });
+            valorAcumulado = valorEntrada.val();
+            operador = "pot";
+          }
+  );
+
+  /**
+   * 
+   */
+  $('#sumatoria').on('click', function () {
+    var numeros = valorEntrada.val();
+    var resultado = 0;
+
+    var arrayDeNumeros = numeros.split(",");
+
+    for (var i = 0; i < arrayDeNumeros.length; i++) {
+      resultado += +arrayDeNumeros[i];
+    }
+    valorEntrada.val(resultado);
+  });
+
+  /**
+   * 
+   */
+  $('#producto').on('click', function () {
+    var numeros = valorEntrada.val();
+    var resultado = 1;
+    var arrayDeNumeros = numeros.split(",");
+    for (var i = 0; i < arrayDeNumeros.length; i++) {
+      resultado *= +arrayDeNumeros[i];
+    }
+    valorEntrada.val(resultado);
+  });
+
+  /**
+   * Realiza las operaciones pasadas por parametros mediante 'oper'
+   */
+  $("#calcular").on("click", function () {
+    if (operador === "+") {
+      valorEntrada.val(+valorAcumulado + (+valorEntrada.val()));
+    }
+    ;
+    if (operador === "-") {
+      valorEntrada.val(+valorAcumulado - (+valorEntrada.val()));
+    }
+    ;
+    if (operador === "*") {
+      valorEntrada.val(+valorAcumulado * (+valorEntrada.val()));
+    }
+    ;
+    if (operador === "/") {
+      valorEntrada.val(+valorAcumulado / (+valorEntrada.val()));
+    }
+    ;
+    if (operador === "pot") {
+      valorEntrada.val(Math.pow(+valorAcumulado, +valorEntrada.val()));
+    }
+    ;
+    operador = "";
+  }
+
+  );
 });
-
-//var acc = 0;
-//var acc2 = 0;
-////Ejecuta codigo 'bloque' de la funcion arbol DOM esta construido
-//$(function () {
-//});
-
-
- 

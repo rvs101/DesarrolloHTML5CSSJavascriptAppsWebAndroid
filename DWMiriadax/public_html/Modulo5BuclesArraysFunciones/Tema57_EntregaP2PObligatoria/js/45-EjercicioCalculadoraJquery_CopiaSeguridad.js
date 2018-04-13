@@ -3,25 +3,16 @@
  Author     : Robot
  */
 
+
+
 /**
  * Cargar el arbol DOM Completo para ejecutar valores
  * @returns {undefined}
  */
 $(function () {
-// variable que almacena el 1º numero
-  var numero;
-  //limpia la entrada de datos
   $("#n1").on("click",
           function () {
             $("#n1").val("");
-          }
-  );
-  //Busco almacenar un valor al quitar el foco
-  $("#n1").on("blur",
-          function () {
-            var num = $("#n1");
-            numero = num.val();
-            console.log("numero : " + numero);
           }
   );
   $("#b1").on("click",
@@ -58,19 +49,25 @@ $(function () {
             }
           }
   );
-
-//Cuando seleccione el input #n1 ejecuta el evento 'blur'
-  $("#b5").on('click',
-          function () { //1ºfuncion 'cuando este seleccionado' coge el 1º valor
-           
-          });
 });
 
-//var acc = 0;
-//var acc2 = 0;
-////Ejecuta codigo 'bloque' de la funcion arbol DOM esta construido
-//$(function () {
-//});
+var acc = 0;
+var acc2 = 0;
+var c = 0;
 
+$(function () {
+  //1º funcion (event handler) cuando pierda el foco
+  $("#b5").on('blur', function () {
+    //2º funcion que se ejecuta cuando se quita el blur
+    $(this).val(function () {
+      var num = $("#n1");
+      acc = num.val();
+      console.log(acc);
+    });
+  });
 
- 
+  $("#b5").on('focus', function () {
+    
+  });
+
+});

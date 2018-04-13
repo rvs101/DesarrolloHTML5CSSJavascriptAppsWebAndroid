@@ -1,0 +1,46 @@
+<!--Created on 12-abr-2018, 20:18:14-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/cais23">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+
+// Arbol DOM cargado
+      $(function () {
+        $('#in1').on('click', function () {
+          $('#in1').val("");
+        });
+
+        $('#in1').on('blur change', function () {
+          $('#in2').data($('#in2').val(), $('#in1').val());
+          console.log('valor 1: ' + $('#in1').val());
+          console.log('valor 2: ' + $('#in2').val());
+        });
+//        $("#in1").on('blur', function () {
+//          $("#in1").change(function () {
+//            numero1 = $('#in1').val();
+//            $("#in2").data("numero2", numero1);
+//            numero2 = $("#in2").data("numero2");
+//            console.log('in1 : ' + numero1 + ' - in2 ' + numero2);
+//          });
+//        });
+      });
+    </script>
+  </head>
+  <body>
+
+    <p>Cajetin 1 <input id="in1" type="text"></p>
+    <p>Cajetin 2 <input id="in2" type="text"></p>
+
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!--Created on 12-abr-2018, 20:18:14-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/cais23">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+      var numero1;
+      var numero2;
+      $(function () {
+        $('#in1').on('click', function () {
+          $('#in1').val("");
+        });
+        
+        $("#in1").one('blur', function () {
+          numero1 = $('#in1');
+          $('#in2').val(numero1.val());
+          numero2 = $('#in2').val();
+          console.log(numero1.val() + ' - ' + numero2);
+        });
+      });
+    </script>
+  </head>
+  <body>
+
+    <p>Cajetin 1 <input id="in1" type="number"></p>
+    <p>Cajetin 2 <input id="in2" type="number"></p>
+
+  </body>
+</html>

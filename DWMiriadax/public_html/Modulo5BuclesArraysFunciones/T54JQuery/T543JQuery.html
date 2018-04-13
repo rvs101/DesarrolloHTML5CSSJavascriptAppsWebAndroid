@@ -1,4 +1,4 @@
-<!--Created on 10-abr-2018, 12:08:56-->
+<!--Created on 10-abr-2018, 11:47:59-->
 <!-- Referencia :  -->
 <!DOCTYPE html>
 <html lang="es">
@@ -12,35 +12,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/cais23">
-    <!--Usar para CSS internos-->
-    <!--<style></style>-->
-    <!--Usar para ejecutar codigo--> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-
-//Ejecuta el codigo 'bloque' de la funcion 
-//cuando el Arbol Dom esta construido
-//El bloque 'funcion' ocurre el Evento 'onload'
-      /**
-       * Version larga 
-       * @type type
-       */
-      $(document).ready(function () {
-        $("#fechaStandar").html(new Date());
-      });
-      /**
-       * Version Recomendada
-       * @returns {undefined}
-       */
-      $(function () {
-        $("#fechaRecomendada").html(new Date());
-      });
-    </script>
   </head>
   <body>
 
-    <div id="fechaStandar"></div>
-    <div id="fechaRecomendada"></div>
+    <div id="valor"></div>
+
+    <script>
+      $('#valor').html(new Date());
+    </script>
 
     <footer>
       <section id="copyright">

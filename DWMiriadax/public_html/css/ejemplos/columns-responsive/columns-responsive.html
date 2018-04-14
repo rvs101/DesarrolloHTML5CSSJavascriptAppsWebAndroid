@@ -1,45 +1,46 @@
 ﻿<!--
+ ABRIR CON Firefox
     http://programacion.net/articulo/como_esconder_columnas_automaticamente_mediante_css_en_una_tabla_responsive_1997
-    -->
+-->
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>Ajustar columnas mediante media-queries</title>
     <link rel="stylesheet" type="text/css" href="columnasResponsivas.css" />
-</head>
-<body>
+  </head>
+  <body>
 
     <table id="contact-detail" border="1" class="tutorial-table" cellspacing="0" width="100">
-        <thead>
-            <tr>
-                <th class="priority-1" width="15%">First Name</th>
-                <th class="priority-2" width="15%">Last Name</th>
-                <th class="priority-3" width="15%">Address</th>
-                <th class="priority-4" width="10%">Phone</th>
-                <th class="priority-5" width="15%">DOB</th>
-            </tr>
-        </thead>
+      <thead>
+        <tr>
+          <th class="priority-1" width="15%">First Name</th>
+          <th class="priority-2" width="15%">Last Name</th>
+          <th class="priority-3" width="15%">Address</th>
+          <th class="priority-4" width="10%">Phone</th>
+          <th class="priority-5" width="15%">DOB</th>
+        </tr>
+      </thead>
 
-        <tbody>
-            <tr>
-                <td class="priority-1">Barry</td>
-                <td class="priority-2">Allen</td>
-                <td class="priority-3">Florida</td>
-                <td class="priority-4">2211335566</td>
-                <td class="priority-5">02-02-1983</td>
-            </tr>
-            ...
-            ...
-            ...
-            <tr>
-                <td class="priority-1">Tyler</td>
-                <td class="priority-2">Durden</td>
-                <td class="priority-3">Unknown</td>
-                <td class="priority-4">(288)-555-0128</td>
-                <td class="priority-5">02-02-1983</td>
-            </tr>
-        </tbody>
+      <tbody>
+        <tr>
+          <td class="priority-1">Barry</td>
+          <td class="priority-2">Allen</td>
+          <td class="priority-3">Florida</td>
+          <td class="priority-4">2211335566</td>
+          <td class="priority-5">02-02-1983</td>
+        </tr>
+        ...
+        ...
+        ...
+        <tr>
+          <td class="priority-1">Tyler</td>
+          <td class="priority-2">Durden</td>
+          <td class="priority-3">Unknown</td>
+          <td class="priority-4">(288)-555-0128</td>
+          <td class="priority-5">02-02-1983</td>
+        </tr>
+      </tbody>
     </table>
 
     <br />
@@ -47,28 +48,28 @@
     <button id="boton1" onclick="miFuncion()">Resoluci&oacute;n 1</button>
 
     <div id="forma4">
-        Las propiedades del rectángulo que hemos indicado son: coordenadas x e y donde comienza a mostrarse en contenido dentro del contenedor donde estamos, dimensiones de la forma rectangular y las últimas dos es el borde redondeado que queremos aplicar.
+      Las propiedades del rectángulo que hemos indicado son: coordenadas x e y donde comienza a mostrarse en contenido dentro del contenedor donde estamos, dimensiones de la forma rectangular y las últimas dos es el borde redondeado que queremos aplicar.
 
-        Todas estas propiedades CSS podríamos utilizarlas para hacer que el texto se ajuste a un rectángulo con esquinas redondeadas:
-        Ahora puedes ver propiedades para hacer un círculo y texto que se adaptará perfectamente a esa forma circular.
+      Todas estas propiedades CSS podríamos utilizarlas para hacer que el texto se ajuste a un rectángulo con esquinas redondeadas:
+      Ahora puedes ver propiedades para hacer un círculo y texto que se adaptará perfectamente a esa forma circular.
     </div>
 
     <div class="container">
-        <div class="float-left">
-            This first example is simply a circle shape floated to the left.
-            <p class="caja2">
-                I gave the shape a background color and a border so you can see how the box model is still at work.
-                However, you can see the text flows around a circular shape.
-            </p>
-        </div>
+      <div class="float-left">
+        This first example is simply a circle shape floated to the left.
+        <p class="caja2">
+          I gave the shape a background color and a border so you can see how the box model is still at work.
+          However, you can see the text flows around a circular shape.
+        </p>
+      </div>
     </div>
 
     <script type="text/javascript">
 
-        function miFuncion() {
-            document.getElementById("mensaje").innerHTML = screen.width + " x " + screen.height;
-        }
+      function miFuncion() {
+        document.getElementById("mensaje").innerHTML = screen.width + " x " + screen.height;
+      }
 
     </script>
-</body>
+  </body>
 </html>

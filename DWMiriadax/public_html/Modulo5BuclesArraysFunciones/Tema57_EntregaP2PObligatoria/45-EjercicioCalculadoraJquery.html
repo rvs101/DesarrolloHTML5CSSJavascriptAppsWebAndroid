@@ -5,33 +5,24 @@
   <head>
     <title>titulo</title>
     <meta charset="UTF-8">
-    <!-- Metadatos basicos  -->
     <meta name="author" content="Raul Vela Salas">
     <meta name="description" content="...">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/cais23">
-    <!--<script src="link"></script>-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/Tema57_EntregaP2PObligatoria.css">
     <!--Usar para CSS internos-->
     <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
-    <!--    <script
-          src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-          integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-          crossorigin="anonymous">
-        </script>-->
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
     <script src="js/libreria/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="js/45-EjercicioCalculadoraJquery.js">
-
-    </script>
+    <script type="text/javascript" src="js/45-EjercicioCalculadoraJquery.js"></script>
   </head>
   <body>
 
     <h2>Buenos d&iacute;as,<br> 
       Bienvenido a la calculadora de Raúl Vela Salas
     </h2>
-
     <main id='m1'>
       <p class="p1">
         1) Operaciones unitarias (con un solo operando): <br>
@@ -40,7 +31,7 @@
         1.1) x^2 (número elevado al cuadrado)<br>
         1.2) 1/x (inverso del número)<br>
         1.3) sqrt(x) (raiz cuadrada del número)<br>
-        1.4) Parte_entera(x): 
+        1.4) Parte_entera(x): <
         <span id="s1">
           <br>Si x es positivo devuelve Math.floor(x) 
         </span>
@@ -65,35 +56,45 @@
         3.2) Producto(x) (producto de n números)<br>
       </p>
     </main>
+    
+    <section id='sec1'>
+      <label id="l1">Resultado</label>
+      <aside id='a3'>
+        <input type="text" id="in1">
+      </aside>
+      <br>
+      <aside id="a4">
+        <button id="potencia2" class="b0">x<sup>2</sup></button>
+        <button id="inverso" class="b0">1/x</button>
+        <button id="raizCuadrada" class="b0">sqrt</button>
+        <button id="parteEntera" class="b0">Parte Entera</button>
+        <button id="factorial" class="b0">n!</button>
+      </aside>
+      <aside id="a5">
+        <button id="sumar" class="b0">+</button>
+        <button id="restar" class="b0">-</button>
+        <button id="dividir" class="b0">/</button>
+        <button id="multiplicar" class="b0">*</button>
+        <button id="potencia" class="b0">2^<sup>n</sup></button>
+        <button id="calcular">=</button>
+      </aside>
+      <aside id='a6'>
+        <button id='sumatoria'>Σ x</button>
+        <button id='producto'>∏ X</button>
+      </aside>
+    </section>
 
-    <hr>
-
-    <label id="l1">Resultado :</label>
-    <input type="text" id="n1">
-    <input type="hidden" id="n2">
-    <br>
-    <aside id="a4">
-      <button id="b1" class="b0">x<sup>2</sup></button>
-      <button id="b2" class="b0">1/x</button>
-      <button id="b3" class="b0">sqrt</button>
-      <button id="b4" class="b0">Parte Entera</button>
-    </aside>
-    <aside id="a5">
-      <button id="b5" class="b0">2^<sup>n</sup></button>
-      <button id="b6" class="b0">n!</button>
-    </aside>
-
-    <footer>
-      <section id="copyright">
-        <h3>&nbsp;</h3>
-        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-          <img alt="Licencia de Creative Commons" style="border-width:0" 
-               src="https://licensebuttons.net/l/by/4.0/80x15.png" />
-        </a>&nbsp;Este obra está bajo una 
-        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-          licencia de Creative Commons Reconocimiento 4.0 Internacional
-        </a>
-      </section>
-    </footer>
+      <footer>
+        <section id="copyright">
+          <h3>&nbsp;</h3>
+          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+            <img alt="Licencia de Creative Commons" style="border-width:0" 
+                 src="https://licensebuttons.net/l/by/4.0/80x15.png" />
+          </a>&nbsp;Este obra está bajo una 
+          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+            licencia de Creative Commons Reconocimiento 4.0 Internacional
+          </a>
+        </section>
+      </footer>
   </body>
 </html>

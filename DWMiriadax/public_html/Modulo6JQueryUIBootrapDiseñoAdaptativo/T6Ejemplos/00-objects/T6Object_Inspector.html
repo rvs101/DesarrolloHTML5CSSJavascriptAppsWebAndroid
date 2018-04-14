@@ -1,0 +1,58 @@
+<!--Created on 14-abr-2018, 9:49:21-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/cais23">
+    <!--Usar para CSS internos-->
+    <!--<style></style>-->
+    <!--<script src="link"></script>-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <!--Usar para ejecutar codigo--> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $('#b1').on("click",
+                function () {
+                  var obj = window[$('#prop').val()];
+                  var tabla = $('#tabla');
+                  tabla.html("");
+                  for (var i in obj) {
+                    tabla.append('<tr><td>' + i + '</td></tr> = ' + obj[i] + '</td></tr>');
+                  }
+                });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>Object Inspector</h2>
+
+    <p>Introduce una Propiedad de windows
+      <input type="text" size='40' id='prop'>
+      <button id='b1'>Inspeccionar</button>
+    </p>
+
+    <table id='tabla'>
+    </table>
+
+    <footer>
+      <section id="copyright">
+        <h3>&nbsp;</h3>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Licencia de Creative Commons" style="border-width:0" 
+               src="https://licensebuttons.net/l/by/4.0/80x15.png" />
+        </a>&nbsp;Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          licencia de Creative Commons Reconocimiento 4.0 Internacional
+        </a>
+      </section>
+    </footer>
+  </body>
+</html>

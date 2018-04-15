@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-ES">
   <head>
     <title>Bootstrap Example</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="Mini app">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/cais23">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
     <link href="css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
       * { user-select: none;
@@ -31,14 +36,19 @@
         height: auto;
       }
 
+      .clear {
+        clear: both;
+      }
+    
       @media (orientation:landscape){ #sortable {width:100vh;}}
       @media (orientation:portrait) { #sortable {width:100%;}}
     </style>
-    <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <!--<script src="http://code.jquery.com/jquery.min.js"></script>-->
+    <!--<script src="http://code.jquery.com/ui/1.8.17/jquery-ui.min.js"></script>-->
     <script src="js/bootstrap.js"></script>
-
     <script>
       $(function () {
         $("#sortable").sortable();
@@ -49,7 +59,7 @@
   <body>
 
     <div class="container">
-      <nav class="navbar navbar-inverse ">
+      <nav class="navbar navbar-inverse">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#miMenu">
@@ -61,16 +71,17 @@
           </div>
           <div class="collapse navbar-collapse" id="miMenu">
             <ul class="nav navbar-nav">
-              <li><a href="index.html">INICIO</a></li>
-              <li class="active"><a href="#">PUZZLE</a></li>
-              <li><a href="#">Opción 3</a></li> 
-              <li><a href="#">Opción 4</a></li> 
-              <li><a href="#">Opción 5</a></li> 
+              <li class="active">
+                <a href="index.html">INICIO</a></li>
+              <li><a href="puzzle.html">PUZZLE</a></li>
+              <li><a href="calculadora.html">CALCULADORA</a></li> 
+              <li><a href="https://www.proverbia.net/">FRASES</a></li> 
+              <li><a href="https://reloj-alarma.es/temporizador/">TEMPORIZADOR</a></li> 
             </ul>
           </div>
         </div>
       </nav>
-      <div class="ejercicio">
+      <div class="ejercicio panel-body">
         <ul id="sortable">
           <li><img id="p1" src="puzzle/rafael_8.jpg" alt=""/></li>
           <li><img id="p2" src="puzzle/rafael_4.jpg" alt=""/></li>
@@ -82,10 +93,33 @@
           <li><img id="p8" src="puzzle/rafael_1.jpg" alt=""/></li>
           <li><img id="p9" src="puzzle/rafael_5.jpg" alt=""/></li>
         </ul>
-        <div class="clear"> </div>
+        <div class="clear"></div>
       </div>
-      <div class="panel-footer">Nombre Apellidos</div>
+      <div class="panel-footer">Raul Vela Salas</div>
     </div>
+    <!--Mi footer-->
+    <footer style="
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(189, 195, 199);
+            color: #000;
+            text-align: center;">
+      <aside style="height: 55px;">
+        <img alt="Licencia de Creative Commons" src="https://licensebuttons.net/l/by/4.0/80x15.png" />
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+        </a>Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          licencia de Creative Commons Reconocimiento 4.0 Internacional
+        </a>
+        <p style="
+           margin-top: 5px;
+           font-size: 20px;
+           font-family: 'Lobster', cursive;
+           ">Powered by Raul Vela Salas</p>
+      </aside>
+    </footer>
 
   </body>
 </html>

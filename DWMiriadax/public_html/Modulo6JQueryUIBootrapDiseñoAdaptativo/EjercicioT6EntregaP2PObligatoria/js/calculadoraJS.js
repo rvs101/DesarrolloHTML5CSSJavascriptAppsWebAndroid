@@ -109,7 +109,6 @@ $(function () {
   $("#calcular").on("click",
           function () {
             var num = $("#n1");
-
             switch (ope) {
               case "+":
                 num.text(+acu + +num.text());
@@ -211,5 +210,7 @@ $(function () {
   };
 
   $('#tiempo').html(fe());
+
+  setInterval(fe, 1000);
 
 });

@@ -39,14 +39,22 @@
       .clear {
         clear: both;
       }
-
-      .ejercicio panel-body{
-
-      }
-
+    
       @media (orientation:landscape){ #sortable {width:100vh;}}
       @media (orientation:portrait) { #sortable {width:100%;}}
     </style>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <!--<script src="http://code.jquery.com/jquery.min.js"></script>-->
+    <!--<script src="http://code.jquery.com/ui/1.8.17/jquery-ui.min.js"></script>-->
+    <script src="js/bootstrap.js"></script>
+    <script>
+      $(function () {
+        $("#sortable").sortable();
+        $("#sortable").disableSelection();
+      });
+    </script>  
   </head>
   <body>
 
@@ -66,7 +74,7 @@
               <li class="active">
                 <a href="index.html">INICIO</a></li>
               <li><a href="puzzle.html">PUZZLE</a></li>
-              <li><a href="calculadora/calculadora.html">CALCULADORA</a></li> 
+              <li><a href="calculadora.html">CALCULADORA</a></li> 
               <li><a href="https://www.proverbia.net/">FRASES</a></li> 
               <li><a href="https://reloj-alarma.es/temporizador/">TEMPORIZADOR</a></li> 
             </ul>
@@ -112,16 +120,7 @@
            ">Powered by Raul Vela Salas</p>
       </aside>
     </footer>
-    <script src="js/jquery-1.11.2.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="http://code.jquery.com/jquery.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.8.17/jquery-ui.min.js"></script>
-    <script>
-      $(function () {
-        $("#sortable").sortable();
-        $("#sortable").disableSelection();
-      });
-    </script>  
+
   </body>
 </html>
 

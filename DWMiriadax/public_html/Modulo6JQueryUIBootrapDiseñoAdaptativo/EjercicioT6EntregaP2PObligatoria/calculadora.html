@@ -9,11 +9,11 @@
     <meta name="description" content="Calculadora con JQuery">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/cais23">
-    <!--Usar para CSS internos-->
     <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/cais23">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/calculadoraCss.css">
     <style type="text/css">
       * { user-select: none;
@@ -31,13 +31,13 @@
       }
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="jsNueva/jquery-ui.min.js"></script>
-    <script src="jsNueva/jquery.ui.touch-punch.min.js"></script>
-    <script src="jsNueva/bootstrap.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/calculadoraJS.js" type="text/javascript"></script>
 
     <script>
       $(function () {
-
         var input = $("#n1");
         var memory = $("#n2");
 
@@ -56,9 +56,9 @@
     </script>
   </head>
   <body>
-    <!-- Contenedor -->
+    <!-- Contenedor Principal - Barra de navegacion -->
     <div class="container">
-      <nav class="navbar navbar-inverse ">
+      <nav class="navbar navbar-inverse">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#miMenu">
@@ -70,8 +70,8 @@
           </div>
           <div class="collapse navbar-collapse" id="miMenu">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="../index.html">INICIO</a></li>
-              <li><a href="../puzzle.html">PUZZLE</a></li>
+              <li class="active"><a href="index.html">INICIO</a></li>
+              <li><a href="puzzle.html">PUZZLE</a></li>
               <li><a href="calculadora.html">CALCULADORA</a></li> 
               <li><a href="https://www.proverbia.net/">FRASES</a></li> 
               <li><a href="https://reloj-alarma.es/temporizador/">TEMPORIZADOR</a></li> 
@@ -83,17 +83,16 @@
       <h2>
         <span id="tiempo"></span><br>Bienvenido a la calculadora de Raúl Vela Salas
       </h2>
-
+      <!--Cuerpo de la calculador-->
       <main id='sec1'>
         <aside>
           <label class="l1">Resultado</label>
           <div class="ejercicio">
-            <div contenteditable="true" id="n1"></div>
+            <div contenteditable="true" id="n1" class="draggable">&nbsp;</div>
             <p class="l1">
               Memoria: 
             </p>
-            <div contenteditable="true" id="n2">
-            </div>
+            <div contenteditable="true" id="n2" class="droppable">&nbsp;</div>
             <p>
               <button id="toM"><sup>ToM</sup></button>
               <button id="fromM"> FromM</button>  
@@ -145,6 +144,5 @@
         </aside>
       </footer>
     </div>
-    <script src="js/calculadoraJS.js" type="text/javascript"></script>
   </body>
 </html>

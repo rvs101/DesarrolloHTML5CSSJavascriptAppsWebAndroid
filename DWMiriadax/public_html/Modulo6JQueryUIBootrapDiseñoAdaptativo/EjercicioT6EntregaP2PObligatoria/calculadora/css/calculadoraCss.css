@@ -1,0 +1,151 @@
+/* 
+    Created on : 11-abr-2018, 18:35:20
+    Author     : Robot
+*/
+html{
+  background-color: #5eb89e;
+}
+
+body{
+  border: 3px solid #27999d;
+  background-color: #c0deeb;
+  border-radius: 20px;
+  padding-bottom: 70px;
+  margin-bottom: 10px;
+
+}
+
+main#m1{
+  font-family: 'Tajawal', sans-serif;
+  text-align: left;
+  content: left;
+  margin: 1px 0px 0px 10px;
+  padding: 0px 0px 10px 10px;
+  font-size: medium;
+}
+
+p.p1{
+  /*display: block;*/
+  font-family:inherit;
+  font-size: x-large;
+  margin: 5px 0px 0px 0px;
+  padding: 5px;
+}
+
+p.p2{
+  line-height: normal;
+  letter-spacing: 1px;
+  /*display: block;*/
+  font-family:inherit;
+  font-size: medium;  
+  /*margin: 5px 0px 0px 0px;*/
+  /*padding: 5px 0px 10px 0px;*/
+}
+
+span#s1 , span#s2{
+  font-weight: bold;
+  margin-left: 40px;
+  padding-top: 20px;
+}
+
+div#n1 , div#n2{
+  display: inline-block;
+  border-radius: 10px;
+  margin-top: 10px;
+  /*margin-left: 60px;*/
+  /*padding-left: 0px;*/
+  font-size: 30px;
+  text-align: right;
+  font-family: 'Gugi', cursive;
+  background-color: black;
+  color: #00ff33;
+  width: 401.96875px;
+}
+
+label.l1 , p.l1{
+  font-family: 'Gugi', cursive;
+  text-align: center;
+  content: center;
+  font-size: 30px;
+  align-content: center;
+  /*margin-left: 200px;*/
+}
+
+button{
+  font-family: 'Gugi', cursive;
+  font-size: x-large;
+  content: center;
+  padding: 17px;
+  margin-top: 10px;
+}
+
+button.b0{
+  display: inline;
+  margin: 10px 10px 0 10px;
+}
+
+aside#a3{
+  /*margin-left: 50px;*/
+}
+
+aside#a4,#a6{
+  /*margin-left: 50px;*/
+}
+
+aside{
+  /*margin-top: 25px;*/
+}
+
+aside#a5{
+  /*margin-left: 50px;*/
+}
+
+aside#a6{
+  /*margin-left: 50px;*/
+}
+
+aside.a7{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+
+h2{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer{
+  width: 100%;
+}
+
+/*#calcular{
+  margin-left: auto;
+}*/
+
+button{
+  border-radius: 15px;
+}
+
+button#sumatorio,button#producto{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+main#sec1{
+  content: center;
+  align-items: center;
+  text-align: center;
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+  border-radius: 20px;
+  border: 5px solid #5e5fcc;
+  background-color: #7b7bcf;
+}
+
+div.ejercicio{
+}

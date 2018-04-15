@@ -1,0 +1,89 @@
+<!--Created on 15-abr-2018, 14:16:25-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/cais23">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      var fe = function () {
+        let fecha = new Date();
+        let msj;
+        if ((fecha.getHours() >= 7) && (fecha.getHours() <= 12) && (fecha.getMinutes() > 0)) {
+          msj = ('dias: ' + (fecha.getHours() + ' ' + fecha.getMinutes()).toString());
+          console.log(msj);
+        }
+        if ((fecha.getHours() > 12) && (fecha.getHours() <= 14) && (fecha.getMinutes() > 0)) {
+          msj = ('mediodia : ' + (fecha.getHours() + ' ' + fecha.getMinutes()).toString());
+          console.log(msj);
+        }
+        if ((fecha.getHours() > 14) && (fecha.getHours() <= 20) && (fecha.getMinutes() > 0)) {
+          msj = ('tardes : ' + (fecha.getHours() + ' ' + fecha.getMinutes()).toString());
+          console.log(msj);
+        }
+        if (fecha.getHours() > 20 && (fecha.getMinutes() > 0)) {
+          msj = ('noches : ' + (fecha.getHours() + ' ' + fecha.getMinutes()).toString());
+          console.log(msj);
+        }
+      };
+
+      fe();
+
+      var fecha = new Date();
+      var msj;
+
+      if (fecha.getHours() < 7) {
+        msj = "Buenas noches!!!";
+      } else if (fecha.getHours() < 12) {
+        msj = "Buenos días!!!";
+      } else if (fecha.getHours() < 21) {
+        msj = "Buenas tardes!!";
+      } else {
+        msj = "Buenas noches!!!";
+      }
+
+      $(function () {
+        $('#h1').html(msj);
+      });
+
+
+
+
+    </script>
+  </head>
+  <body>
+
+    <h1 id="h1"></h1>
+    <h1 id="h2"></h1>
+
+    <footer style="
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(189, 195, 199);
+            color: #000;
+            text-align: center;">
+      <aside style="height: 55px;">
+        <img alt="Licencia de Creative Commons" src="https://licensebuttons.net/l/by/4.0/80x15.png" />
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+        </a>Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          licencia de Creative Commons Reconocimiento 4.0 Internacional
+        </a>
+        <p style="
+           margin-top: 5px;
+           font-size: 20px;
+           font-family: 'Lobster', cursive;
+           ">Powered by RVS</p>
+      </aside>
+    </footer>
+  </body>
+</html>

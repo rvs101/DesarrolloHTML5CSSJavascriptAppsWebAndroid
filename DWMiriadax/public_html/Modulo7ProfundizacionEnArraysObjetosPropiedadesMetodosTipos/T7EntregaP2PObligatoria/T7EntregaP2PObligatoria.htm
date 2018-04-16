@@ -1,0 +1,119 @@
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>MODULO 7: PROFUNDIZACIÓN EN ARRAYS, OBJETOS, PROPIEDADES, MÉTODOS, TIPOS</title> 
+
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="Mini Carrusel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/cais23">
+    <link rel="stylesheet" type="text/css" href="css/citas_slide.css" />
+    <link rel="stylesheet" href="css/citas.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="javascript/jquery-2.1.4.min.js" ></script>
+    <script type="text/javascript" src="javascript/galeria.js" ></script>
+    <script src="javascript/funciones.js"></script>
+
+  </head>
+  <body>
+    <header id="cabecera">
+      <h1>Módulo 7: Profundización en arrays, 
+        objetos, propiedades, métodos, tipos
+      </h1>
+      <h2>Entrega P2P obligatoria</h2>
+      <div id="navegacion">
+        Completar el ejemplo del carrusel de 
+        citas editable añadiendo los manejadores 
+        de los eventos de edición del contenido
+        de una cita existente o de borrado de dicha cita.
+      </div>
+    </header> 
+
+    <div class="contenido">
+      <nav> 
+        <ul id="selector"></ul>
+      </nav>
+      <section id="caja">
+        <img id="foto" alt="img3">
+        <div class="textos">
+          <p id="frase"></p>
+          <p id="persona"></p>
+        </div>
+      </section>
+      <div class="editar" id="editar"> 
+        <img src="images/carat-d-white.svg" alt="" title="Mostrar/Ocultar"/>
+      </div>
+      
+      <section id="datos">
+        <div contentEditable="true" id="persona_d"></div>
+        <div contentEditable="true" id="frase_d"></div>
+        <div contentEditable="true" id="foto_d"></div>
+        <div id="botones">
+          <ul>
+            <li><img src="images/edit-black.svg" alt="img1" title="Guardar" id="guardar"/></li>
+            <li><img src="images/plus-black.svg" alt="img2" title="Añadir" id="nuevo"/></li>
+            <li><img src="images/delete-black.svg" alt="img3" title="Eliminar" id="borrar"/></li>
+          </ul>
+        </div>
+      </section>
+      
+    </div>
+    
+    <footer>
+      <ol>
+        <li>Haz clic en Mostrar/Ocultar 
+          <img src="images/carat-d-white.svg" alt="i0" title="Mostrar/Ocultar">. 
+          Se mostrará el autor, la frase y la url de la imagen  de la cita actual.</li>
+        <li>Pulsa el botón Añadir 
+          <img src="images/plus-black.svg" alt="i1" title="Añadir" id="nuevo"> 
+          y se efectuará una copia de la cita actual como último elemento del carrousel.</li>
+        <li>Selecciona el último elemento del carrousel y vuelve a desplegar los contenidos con el botón Mostrar/ocultar.</li>
+        <li>Modifica el contenido de los cuadros de texto con los datos que te interesen.</li>
+        <li>Pulsa el botón Guardar 
+          <img src="images/edit-black.svg" alt="i2" title="Guardar" id="guardar"> 
+          y se actualizará el elemento con los datos introducidos.</li>
+        <li>Para eliminar un elemento, selecciónalo en el carrousel,
+          pulsa el botón Mostrar/Ocultar y haz clic en el botón Eliminar 
+          <img src="images/delete-black.svg" alt="i3" title="Eliminar" id="borrar">
+        </li>
+      </ol>
+    </footer>
+    
+    <aside>
+      <!--Mi footer-->
+      <footer style="
+              position: fixed;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              background-color: rgb(189, 195, 199);
+              color: #000;
+              text-align: center;">
+        <aside style="height: 55px;">
+          <img alt="Licencia de Creative Commons" src="https://licensebuttons.net/l/by/4.0/80x15.png" />
+          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          </a>Este obra está bajo una 
+          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+            licencia de Creative Commons Reconocimiento 4.0 Internacional
+          </a>
+          <p style="
+             margin-top: 5px;
+             font-size: 20px;
+             font-family: 'Lobster', cursive;
+             ">Powered by Ra&uacute;l Vela Salas</p>
+        </aside>
+      </footer>
+    </aside>
+  </body>
+</html>
+

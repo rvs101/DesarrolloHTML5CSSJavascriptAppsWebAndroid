@@ -1,0 +1,55 @@
+/* 
+    Created on : 16-abr-2018, 1:24:28
+    Author     : Robot
+*/
+#contenidoPrincipal{    
+  background: rgba(241,231,103,0.66);
+}
+
+h1,h2{
+  font-size: 200px;
+  content: center;
+  align-content: center;
+  text-align:center;
+}
+
+#contenidoPrincipal h1, h2 {
+  margin: 20px;
+  font-family:Gugi;
+  color:rgb(20,20,100);
+}
+
+header#cabecera{
+  background-color: #c7bcbc;
+}
+
+div#navegacion {
+  content: center;
+  align-content: center;
+  text-align: center;
+  padding: 0.5em;
+  margin-bottom: 10px;
+  color: #000;
+  font-family: Tajawal , serif;
+  font-size: 1.8em;
+  border: 1px solid black;
+  border-radius: 12px;
+  background-color: #cecece;
+  margin-right: 400px;
+  margin-left: 400px;
+}
+
+footer{
+  margin-top:3em;
+  display: block;
+}
+
+footer img{
+  background:gray;
+  border-radius: 50%;
+  padding: 0.2em;
+}
+
+ol{
+  background-color: #cecece;
+}

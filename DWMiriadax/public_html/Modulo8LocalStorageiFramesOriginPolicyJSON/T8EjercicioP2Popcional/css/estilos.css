@@ -1,0 +1,90 @@
+/* 
+    Created on : 16-abr-2018, 12:37:33
+    Author     : Robot
+*/
+body{
+  font-family: Lobster, serif;
+  border-radius: 12px;
+  box-shadow:1px 10px 50px 10px wheat inset;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+}
+
+header#h1{
+  align-content: center;
+  content: center;
+  text-align: center;
+  /*width: 400px;*/
+  width: 277px;
+  height: 50px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  border-radius: 12px;
+  box-shadow:1px 10px 50px 10px wheat inset;
+  /*margin-right: 0px;*/
+}
+
+span#crono{
+  margin-top: 10px;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 1px 10px 5px #aaaaaa;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Safari */
+  transform: rotate(0deg);
+}
+
+aside#a1{
+  width: 200px;
+  height: 50px;
+  box-shadow:1px 10px 50px 10px wheat inset;
+  border-radius: 12px;
+  align-content: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+aside#a2{
+  width: 200px;
+  height: 100px;
+  border-radius: 12px;
+  align-content: center;
+  content: center;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  box-shadow:1px 5px 30px 10px wheat inset;
+}
+
+aside#a3{
+  width: 200px;
+  border-radius: 12px;
+  align-content: center;
+  content: center;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  box-shadow:1px 5px 30px 10px wheat inset;
+}
+
+h3 , h2{
+  align-content: center;
+  content: center;
+  text-align: center;
+} 
+
+header#h1 > h2{
+  align-content: center;
+}

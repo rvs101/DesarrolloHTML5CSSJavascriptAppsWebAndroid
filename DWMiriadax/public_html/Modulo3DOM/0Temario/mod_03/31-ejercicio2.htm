@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../img/background/LogoOficial.bmp">
+        <style type="text/css">
+            div#d1{
+                border: 1px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="d"><p>Content</p><p>Further Elaborated</p></div>
+
+        <div id="d1"></div>
+
+        <script type="text/javascript">
+
+            var d = document.getElementById("d");
+            var x = d.outerHTML;
+            document.getElementById("d1").innerHTML = x;
+
+        </script>
+
+    </body>
+</html>

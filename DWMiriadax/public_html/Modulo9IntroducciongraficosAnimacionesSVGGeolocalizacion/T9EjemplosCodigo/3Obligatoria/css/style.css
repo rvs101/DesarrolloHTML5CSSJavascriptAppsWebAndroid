@@ -1,0 +1,265 @@
+/* 
+    Created on : 17-abr-2018, 21:21:37
+    Author     : Robot
+*/
+body {
+  font-family: 'Tajawal', sans-serif;
+  color: rgba(52, 73, 94,3);
+  text-align: center;
+}
+
+.bloque {
+  width: 50%;
+  margin: 1% auto;
+  overflow: hidden;
+}
+
+h5{
+  font-family: 'Ubuntu', sans-serif;
+  border-radius: 12px;
+  background-color: rgb(238, 229, 229);
+  content: center;
+  align-content: center;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  border: 3px solid #908c8c;
+  width: 30%;
+  height: 25px;
+}
+
+.caja {
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+  float: left;
+  margin-right: 2%;	
+  margin-bottom: 5px;
+  padding: 1em 0;
+  width: 100%;
+}
+
+.borde {
+  border: .35em double rgba(52, 73, 94,1.0);
+  border-radius: 35px;
+}
+
+a {
+  color: rgba(241, 196, 15,1.0);
+  text-decoration: none;    
+}
+
+a:hover {
+  color: rgba(26, 188, 156,1.0);
+  text-decoration: underline;
+}
+
+a:active, a:visited {
+  color: rgba(26, 188, 156,1.0);
+}
+
+.header, .footer {
+  background: rgba(52, 73, 94,1.0);
+  padding: 1em;
+}
+
+.header-h1 {
+  font-family: 'Gugi',sans-serif;
+  font-size: 2em;
+  margin-bottom: 0px;
+  margin-top: 1px;
+}
+
+.footer { margin-top: 1em; }
+
+.caja-h2 {
+  font-family: 'Lobster Two', Helvetica, sans-serif;
+  font-size: 1.5em;
+}
+
+.caja-h2 span {
+  display: block;
+  font-size: .8em;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+button, input {
+  background-color: rgb(238, 229, 229);
+  border-radius: 15px;
+  width: 95%;
+  margin-bottom: .5em;
+  padding: .1em;
+  font-size: .8em;    
+}
+
+#mapa {
+  background: rgba(0, 255, 0, 0.5);
+  position: absolute;
+  top: 8.5em;
+  left: 0;
+  right: 0;
+  bottom: 0; 
+}
+
+@media all and (min-width: 175px){	
+  .header-h1 {
+    border: 3px solid #908c8c;
+    border-radius: 12px;
+    width:75%;
+    background-color: #eee5e5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: 1px;
+    font-size: 1em;
+  }
+
+  .header-h1 {
+    background-color: rgb(238, 229, 229);
+  }
+
+  .bloque{
+    width: 50%;
+    margin: -3% auto;
+    overflow: hidden;
+  }
+}
+
+@media all and (min-width: 345px){	
+  .header-h1 {
+    border: 3px solid #908c8c;
+    border-radius: 12px;
+    width: 70%;
+    background-color: #eee5e5;
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: 1px;
+  }
+
+  .bloque{
+    width: 50%;
+    margin: -1% auto;
+    overflow: hidden;
+  }
+}
+
+
+@media all and (min-width:550px){
+
+  .header-h1 {
+    border: 6px solid #908c8c;
+    border-radius: 12px;
+    width: 50%;
+    background-color: #eee5e5;
+    font-size: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: 1px;
+  }
+
+  .x2 .caja { width:49%; }
+
+  .x2 .caja:nth-child(2n){ margin-right: 0; }
+
+  a { color: rgba(231, 76, 60,1.0); }
+
+  .header-h1 {
+    font-size: 2.3em;
+    margin-bottom: 0px;
+    margin-top: 1px;
+  }
+
+  .caja-h2 { font-size: 1.8em; }
+
+  .header, .footer {
+    background-color: rgb(238, 229, 229);
+  }
+
+  button { 
+    font-size: 1em;
+  }
+
+  #mapa {top: 10em;}
+
+  .bloque{
+    width: 50%;
+    margin: -0.5% auto;
+    overflow: hidden;
+  }
+}
+
+
+
+@media all and (min-width:670px){	
+
+  .header-h1 {
+    border: 6px solid #908c8c;
+    border-radius: 12px;
+    width: 50%;
+    background-color: #eee5e5;
+    font-size: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: 1px;
+  }
+
+  a { color: rgba(26, 188, 156,1.0); }
+
+  a:hover { color: rgba(241, 196, 15,1.0); }
+
+  a:active, a:visited { color: rgba(241, 196, 15,1.0); }
+
+  .header, .footer { box-shadow: 0 0 3px 3px rgba(26, 188, 156,1.0); }
+
+  .header-h1 {
+    background-color: rgb(238, 229, 229);
+    font-size: 2.6em;
+    margin-bottom: 0px;
+    margin-top: 1px;
+  }
+
+  #mapa {top: 11em;}
+
+  .bloque{
+    width: 50%;
+    margin: 1% auto;
+    overflow: hidden;
+  }
+
+}  
+
+@media all and (min-width:1024px){
+
+  a { color: rgba(230, 126, 34,1.0); }
+
+  .header-h1 {
+    border: 6px solid #908c8c;
+    border-radius: 12px;
+    width: 50%;
+    background-color: #eee5e5;
+    font-size: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: 1px;
+  }
+
+  .bloque {max-width: 1024px;}
+
+  .caja-h2 { font-size: 2.5em; }
+
+  .apps-h3 { font-size: 1.8em; }
+
+  #mapa {top: 12em;}
+
+}
+
+
+

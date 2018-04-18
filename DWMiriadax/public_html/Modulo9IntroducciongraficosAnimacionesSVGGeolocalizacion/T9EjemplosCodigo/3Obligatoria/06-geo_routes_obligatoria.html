@@ -1,0 +1,52 @@
+<!--Created on : 17-abr-2018, 21:21:37-->
+<!--Author     : Robot-->
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <title>GMaps.js &mdash; Geolocation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/cais23">
+    <link rel="stylesheet" type="text/css" href="css/mypath.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <style>
+      .x2 .caja { 
+        width:49%;  
+      }
+      .x2 .caja:nth-child(2n){
+        margin-right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Cabecera -->
+    <header class="cabecera">
+      <h1 class="header-h1">Geolocalizaci&oacute;n</h1>
+    </header> 
+    <h5>Opciones</h5>
+    <nav class="section">
+      <article class="bloque x2">
+        <button id="limpiar" class="caja">Limpiar Mapa</button>
+        <button id="compactar" class="caja">Compactar Ruta</button>
+      </article>        
+      <div class="bloque">
+        <div id="mapa" class="caja"></div>
+      </div>
+    </nav>  
+
+    <!--Librerias--> 
+    <script 
+      async defer 
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4mVUHjxP3jT7DQFURPbXRpBSzlV_n7k8&callback=initMap" 
+    type="text/javascript"></script>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script type="text/javascript" src="js/gmaps.js"></script>
+    <script type="text/javascript" src="js/touch.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+  </body>
+</html>

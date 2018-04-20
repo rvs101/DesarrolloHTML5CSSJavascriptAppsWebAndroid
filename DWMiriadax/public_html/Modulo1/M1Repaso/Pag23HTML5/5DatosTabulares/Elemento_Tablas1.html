@@ -1,0 +1,180 @@
+<!--Created on 20-abr-2018, 9:49:25-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="shortcut icon" href="https://goo.gl/cais23">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="stylesheet" type='text/css' href='css/estilosTabla1.css'>
+  </head>
+  <body>
+
+    <section id='s1'>
+      <h2 id='h2t1'>Tabla basica</h2>
+      <table id='tb1'>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+        </tr>
+        <tr>
+          <td>Jane</td>
+          <td>Doe</td>
+        </tr>
+      </table>
+    </section>
+
+
+    <section id='s2'>
+      <h2 id="h2t2">Simple table with header</h2>
+      <table id='tb2'>
+        <tr class='tr2'>
+          <th class='th2'>First Name</th>
+          <th class='th2'>Second Name</th>
+        </tr>
+        <tr class='tr2'>
+          <td class='th2'>John</td>
+          <td class='th2'>Doe</td>
+        </tr>
+        <tr class='tr3'>
+          <td class='th2'>Jane</td>
+          <td class='th2'>Doe</td>
+        </tr>        
+      </table>
+    </section>
+
+    <section id='s3'>
+      <h2 id='h2c3'>Table with thead , tfoot , and tbody</h2>
+      <table class='tb3'>
+        <thead class='th3'>
+          <tr class='tr3'>
+            <th class='th3'>Header content 1</th>
+            <th class='th3'>Header content 2</th>
+          </tr>
+        </thead>
+        <tbody class='tb3'>
+          <tr class='tr3'>
+            <td class='td3'>Body content 1</td>
+            <td class='td3'>Body content 2</td>
+          </tr>
+        </tbody>
+        <tfoot id='tf3' >
+          <tr class='tr3'>
+            <td class='td3' >Footer content 1</td>
+            <td class='td3'>Footer content 2</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section id='s4'>
+      <h2 id='h2c4'>Table with colgroup</h2>
+      <table id='t4'>
+        <colgroup span="4" class="columns4"></colgroup>
+        <tr class='tr4'>
+          <th class='th4'>Countries</th>
+          <th class='th4'>Capitals</th>
+          <th class='th4'>Population</th>
+          <th class='th4'>Language</th>
+        </tr>
+        <tr class='tr4'>
+          <td class='td4'>USA</td>
+          <td class='td4'>Washington D.C</td>
+          <td class='td4'>309 millons</td>
+          <td class='td4'>English</td>
+        </tr>
+        <tr class='tr4'>
+          <td class='td4'>Sweden</td>
+          <td class='td4'>Stockholm</td>
+          <td class='td4'>9 millons</td>
+          <td class='td4'>Swedish</td>
+        </tr>
+        <tfoot id='tf4'>
+          <tr id='idtr4'>
+            <td class='tdc4'>Footer content 1</td>
+            <td class='tdc4'>Footer content 1</td>
+            <td class='tdc4'>Footer content 2</td>
+            <td class='tdc4'>Footer content 2</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section>
+      <h2>Table with colgroup and col</h2>
+      <table>
+        <colgroup>
+          <col class="column1">
+          <col class="column2plus3" span="2">
+        </colgroup>
+        <tr>
+          <th>Lime</th>
+          <th>Lemon</th>
+          <th>Orange</th>
+        </tr>
+        <tr>
+          <td>Green</td>
+          <td>Yellow</td>
+          <td>Orange</td>
+        </tr>
+      </table>
+    </section>
+
+
+    <section>
+      <h2>Simple table with caption</h2>
+      <table>
+        <caption>Awesome caption</caption>
+        <tr>
+          <td>Awesome data</td>
+        </tr>
+      </table>
+    </section>
+
+
+
+
+    <footer style="
+            position: fixed;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(189, 195, 199);
+            color: #000;
+            text-align: center;">
+      <aside style="height: 55px;">
+        <img alt="Licencia de Creative Commons" src="https://licensebuttons.net/l/by/4.0/80x15.png" />
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+        </a>Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          licencia de Creative Commons Reconocimiento 4.0 Internacional
+        </a>
+        <p style="
+           margin-top: 5px;
+           font-size: 20px;
+           font-family: 'Lobster', cursive;
+           ">Powered by RVS</p>
+      </aside>
+      <span>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px"
+               src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+               alt="¡CSS Válido!" />
+        </a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px"
+               src="http://jigsaw.w3.org/css-validator/images/vcss"
+               alt="¡CSS Válido!" />
+        </a>
+      </span>
+    </footer>
+  </body>
+</html>

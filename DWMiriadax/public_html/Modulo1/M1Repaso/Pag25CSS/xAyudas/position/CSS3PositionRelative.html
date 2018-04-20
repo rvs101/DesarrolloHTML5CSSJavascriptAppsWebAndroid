@@ -1,0 +1,63 @@
+<!--Created on 19-abr-2018, 14:18:38-->
+<!-- Referencia : https://www.lawebera.es/maquetacion-web/maquetar-paginas-web-posicion-capas-ii.php -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <style>
+
+      body{
+        margin: 0;
+        padding: 0;
+        background: #000;
+      }
+
+      #capa1{
+        width: 300px;
+        height: 200px;
+        position: static;
+        top: 60px;
+        left: 40px;
+        background: orange;
+      }
+
+      #capa2{
+        width: 260px;
+        height: 400px;
+        position: static;
+        top: 40px;
+        left: 20px;
+        background: blue;
+      }
+
+      #capa3{
+        width: 100px;
+        height: auto;
+        position: relative;
+        top: 110px;
+        left: 210px;
+        background: white;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div id='capa1'>Flujo static</div>
+    <div id='capa3'>Capa 3 Respetará el flujo del documento y la posición de la capa 1.
+      La capa 3 se posicionará respecto del comienzo de la capa padre, en este caso, la capa 1
+    </div>
+    <div id='capa2'>Flujo static
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!--Created on 19-abr-2018, 8:38:47-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <!-- Metadatos basicos  -->
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/cais23">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <!--Usar para CSS internos-->
+    <style>
+      body{
+        background-color: turquoise;
+      }
+
+      @media only screen and (max-width: 600px){
+        body{
+          background-color: tomato;
+        }
+      }
+
+    </style>
+    <script>
+
+    </script>
+    <!--<script src="link"></script>-->
+    <!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">-->
+    <!--Usar para ejecutar codigo--> 
+  </head>
+  <body>
+
+    <p id="p1"></p>
+
+
+    <footer style="
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(189, 195, 199);
+            color: #000;
+            text-align: center;">
+      <aside style="height: 55px;">
+        <img alt="Licencia de Creative Commons" src="https://licensebuttons.net/l/by/4.0/80x15.png" />
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+        </a>Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          licencia de Creative Commons Reconocimiento 4.0 Internacional
+        </a>
+        <p style="
+           margin-top: 5px;
+           font-size: 20px;
+           font-family: 'Lobster', cursive;
+           ">Powered by RVS</p>
+      </aside>
+    </footer>
+    <script>
+
+      /**
+       * 
+       * @returns {undefined}
+       */
+      function getWidth() {
+        var ancho = window.innerWidth;
+        if (ancho > 600) {
+          console.log('ancho mayor : ' + ancho);
+          var x2 = document.createElement("p");
+          var t = document.createTextNode("width : > " + ancho + 'px');
+          x2.appendChild(t);
+          document.body.appendChild(x2);
+        }
+        if (ancho <= 600) {
+          console.log('ancho menor : ' + ancho);
+          var x3 = document.createElement("p");
+          var t = document.createTextNode("width : < " + ancho + 'px');
+          x3.appendChild(t);
+          document.body.appendChild(x3);
+        }
+      }
+
+      getWidth();
+
+    </script>
+  </body>
+</html>

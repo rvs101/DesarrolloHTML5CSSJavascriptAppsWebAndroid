@@ -12,7 +12,7 @@ body{
   width: 400px;
 }
 
-header#h1{
+header#h2t1{
   align-content: center;
   content: center;
   text-align: center;
@@ -85,6 +85,6 @@ h3 , h2{
   text-align: center;
 } 
 
-header#h1 > h2{
+header#h2t1 > h2{
   align-content: center;
 }

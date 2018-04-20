@@ -1,0 +1,138 @@
+<!--Created on 19-abr-2018, 12:23:30-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="theme-Color" content="#121010">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/cais23">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <!--Usar para CSS internos-->
+    <style>
+
+      @media only screen and (min-width: 0px){
+        body{
+          background-color: pink;
+        }
+      }
+
+      @media only screen and (min-width: 300px){
+        body{
+          background-color: red;
+        }
+      }
+
+      @media only screen and (min-width : 600px){
+        body{
+          background-color: green;
+        }
+      }
+
+      @media only screen and (min-width: 1200px){
+        body{
+          background-color: blue;
+        }
+      }
+
+      .txtcls{
+        display: flex;
+        flex-direction: row;
+        width: 300px;
+        font-family: 'Lobster';
+        color: #080808;
+        font-family: black;
+        padding: 10px;
+        background-color: #cccccc;
+        border: none;
+        cursor: crosshair;
+        margin: 10px;
+        border-radius: 12px;
+        font-family: 'Lobster' , Timer, sans-serif ;
+      }
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+            integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" 
+            crossorigin="anonymous">
+    </script>
+    <script>
+      /**
+       * 
+       * @param {type} obj
+       * @param {type} ancho
+       * @returns {undefined}
+       */
+      function obtenerAncho(obj, ancho) {
+        $('#anvent').html('El ancho de la ' + obj + ' es ' + ancho + 'px. (width)');
+      }
+
+      /**
+       * 
+       * @param {type} obj
+       * @param {type} alto
+       * @returns {undefined}
+       */
+      function obtenerAlto(obj, alto) {
+        $('#alvent').html('El alto de la ' + obj + ' es ' + alto + 'px. (height)');
+      }
+
+      /**
+       * 
+       * @type type
+       */
+      obtenerAlto('ventana', $(window).height());
+
+      /**
+       * 
+       * @type type
+       */
+      obtenerAncho('ventana', $(window).width());
+
+      /**
+       * 
+       * @type type
+       */
+      $(window).resize(function () {
+        obtenerAlto('ventana', $(window).height());
+        obtenerAncho('ventana', $(window).width());
+      });
+    </script>
+  </head>
+  <body>
+
+    <div class='txtcls' id='anvent'></div>
+    <div class='txtcls' id='alvent'></div>
+
+    <footer style="
+            position: fixed;
+            padding: 2px 0px 10px 0px;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(189, 195, 199);
+            color: #000;
+            text-align: center;">
+
+      <aside style="height: 55px;">
+        <img alt="Licencia de Creative Commons" src="https://licensebuttons.net/l/by/4.0/80x15.png" />
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+        </a>Este obra está bajo una 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          licencia de Creative Commons Reconocimiento 4.0 Internacional
+        </a>
+        <p style="
+           margin-top: 5px;
+           font-size: 20px;
+           font-family: 'Lobster', cursive;
+           ">Powered by RVS</p>
+      </aside>
+    </footer>
+
+  </body>
+</html>

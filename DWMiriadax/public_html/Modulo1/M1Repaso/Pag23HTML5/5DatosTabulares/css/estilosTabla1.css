@@ -1,0 +1,248 @@
+/* 
+    Created on : 20-abr-2018, 10:06:04
+    Author     : Robot
+*/
+
+body{
+  background-color: #c8c6c6;
+}
+
+h2{
+  font-family: 'Lobster' , Helvetica , sans-serif;
+  text-align: center;
+  border: 3px solid rgba(250,250,21,0.5);
+  width: 300px;
+  margin-left: auto;
+  margin-right:auto;
+  border-radius: 12px;
+}
+
+section{
+  margin: 10px;
+  max-width: fit-content;
+  width: 500px;
+}
+
+table{
+  margin-left: auto;
+  margin-right: auto;
+  content: initial;
+  align-content: space-between;
+  text-align: center;
+  font-family: Arial , Helvetica , sans-serif;
+  font-size: 0.8em;
+  border-spacing: 5px;
+  border-top-style: solid;
+  border-top-color: rgba(122,122,122,1);
+  padding: 5px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e3/Color_icon_yellow.png');
+  background-clip: content-box;
+}
+
+tr , td {
+  text-align: center;
+}
+
+section#s1{
+  background-color: rgba(120,255,221,0.1);
+  border: 3px solid rgba(255,255,21,0.3);
+  border-radius: 12px;
+}
+
+h2#h2t1{
+  background-color: rgba(255,255,21,0.5);
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e3/Color_icon_yellow.png');
+  background-clip: content-box;
+  background-size: contain;
+}
+
+table#tb1{
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e3/Color_icon_yellow.png');
+  background-size: 100% 100%;
+  border-radius: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 400px;
+}
+
+section#s2{
+  border-radius: 12px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/23/Color_icon_gold.png);
+  background-repeat: round;
+  background-size: cover;
+  background-origin: content-box;
+  padding: 5px;
+}
+
+h2#h2t2{
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e3/Color_icon_yellow.png');
+}
+
+table#tb2{
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e3/Color_icon_yellow.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-origin: content-box;
+  width: 300px;
+  max-width: fit-content;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th.th2{
+  border-radius: 12px;
+  background: linear-gradient(to right, tomato 30% , yellowgreen 60%);
+}
+
+tr.tr2{
+  border-radius: 12px;
+  background: linear-gradient(to bottom, 
+    rgba(140,132,121,0.1) 0% , 
+    rgba(10,151,16,1) 90%,
+    rgba(117,34,41,1) 2% ,
+    rgba(15,110,255,1));
+}
+
+tr.tr3{
+  border-radius: 12px;
+  background: linear-gradient(
+    to top,
+    green 20%, greenyellow 50%, gold 90%);
+  border-radius: 0 50% 0 50%;
+}
+
+h2#h2c3{
+  border-radius: 36px 12px;
+  background: #e3c706;
+}
+
+
+section#s3{
+  background: 
+    url('https://upload.wikimedia.org/wikipedia/commons/9/93/Bulb_Idea_Flat_Icon_GIF_Animation.gif'),
+    no-repeat,
+    url('https://upload.wikimedia.org/wikipedia/commons/4/48/RAL-Color_1036.gif'), 
+    repeat-x,
+    url('https://upload.wikimedia.org/wikipedia/commons/e/e3/Color_icon_yellow.png')
+    left bottom repeat-y;
+  background-repeat: no-repeat;
+  background-size: 320px;
+  background-origin: border-box;
+  background-position: bottom;
+  background-position-x: center;
+  background-attachment: local;
+  border-radius: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 355px;
+  border-top-left-radius: 50% 20%;
+  border-top-right-radius: 50% 20%;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+
+table.tb3{
+  font-family: 'Lobster' , Helvetica , sans-serif;
+  width: 300px;
+  border-radius: 36px;
+  width: 350px;
+  height: 100px;
+  border-radius: 36px 12px;
+}
+
+thead.th3{
+  font-family: 'Lobster' , Helvetica , sans-serif;
+  width: 300px;
+  border-radius: 36px;
+  width: 300px;
+  height: 100px;
+}
+
+tr.tr3{
+  font-family: 'Lobster' , Helvetica , sans-serif;
+  width: 300px;
+  border-radius: 36px;
+  width: 100px;
+  height: 30px;
+}
+
+th.th3{
+  font-family: Arial, Helvetica , sans-serif;
+  width: 300px;
+  border-radius: 36px;
+  width: 100px;
+  height: 30px;
+}
+
+td.td3{
+  background-color: #e3cd52;
+  border-radius: 13px;
+  width: 30px;
+}
+
+section#s4{
+  background-color: rgba(148,232,138,1);
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/87/Color_icon_green.png');
+  background-position: left top;
+  background-size: 345px;
+  background-repeat: repeat-x;
+  border: 2px solid black;
+  width: auto;
+  height: 300px;
+  border-radius: 24px;
+  padding: 20px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  box-shadow: 0 0 15px 15px #2ac360;
+}
+
+h2#h2c4{
+  border: 2px solid black;
+  background-color: #94e88a;
+  background-attachment: fixed;
+  border-radius: 24px 12px;
+  background: linear-gradient(to top, rgba(50,116,45,1), rgba(0,200,10,0.5));
+}
+
+table#t4{
+  border: 1px solid black;
+  border-radius: 24px 12px;
+  background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  height: 10px;
+}
+
+tr.tr4{
+  border: 3px solid black;
+  font-family: Verdana , sans-serif;
+  font-size: 25px;
+}
+
+th.th4{
+  border: 1px solid black;
+  font-family: Gill, Helvetica, sans-serif;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 12px;
+  background-color: #2ac360;
+}
+
+
+td.td4{
+  border-radius: 10px 20px;
+  background-color: #2ac360;
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  padding: 5px;
+  width: 14px;
+}
+
+
+td.tdc4{
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/53/Loading_bar.gif');
+  background-size: auto;
+  border-radius: 12px 20px;
+}

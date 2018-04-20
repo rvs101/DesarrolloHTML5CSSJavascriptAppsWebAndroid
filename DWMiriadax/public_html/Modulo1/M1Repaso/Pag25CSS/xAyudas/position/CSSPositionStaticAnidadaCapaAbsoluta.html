@@ -1,0 +1,78 @@
+<!--Created on 19-abr-2018, 14:18:38-->
+<!-- Referencia : https://www.lawebera.es/maquetacion-web/maquetar-paginas-web-posicion-capas-ii.php -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <style>
+
+      body{
+        color: red;
+        margin: 0;
+        padding: 0;
+        background: #000;
+      }
+
+      #capa1{
+        width: 300px;
+        height: 200px;
+        position: relative;
+        top: 5px;
+        left: 40px;
+        background: orange;
+      }
+
+      #capa2{
+        width: 260px;
+        height: 400px;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        background: blue;
+      }
+
+      #capa3{
+        width: 100px;
+        height: auto;
+        position: static;
+        top: 110px;
+        left: 210px;
+        background: white;
+      }
+
+      #capa4{
+        width: 100px;
+        height: auto;
+        position: relative;
+        /*top: 110px;*/
+        left: 210px;
+        background: green;
+        border: 1px solid red;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div id='capa1'>Flujo 1  &quot; relative</div>
+    <div id='capa2'>Flujo 2 absolute  &#33;
+
+      - Se posiciona en cualquier lugar respecto al elemento padre 'BODY'
+      <div id='capa3'>
+        Flujo 3 static - Sigue el flujo del elemento padre en este caso 'capa 2 - Absolute
+      </div>
+      <div id='capa4'>
+        Flujo 4 static - Sigue el flujo del elemento padre en este caso 'capa 2 - Absolute
+      </div>
+    </div>
+
+  </body>
+</html>

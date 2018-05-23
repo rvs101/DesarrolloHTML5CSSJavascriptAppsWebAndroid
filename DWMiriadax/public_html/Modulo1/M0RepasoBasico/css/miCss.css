@@ -1,0 +1,13 @@
+/* 
+    Created on : 23-may-2018, 20:11:08
+    Author     : Robot
+*/
+
+img#img1{
+  position: relative;
+  top: 10px;
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

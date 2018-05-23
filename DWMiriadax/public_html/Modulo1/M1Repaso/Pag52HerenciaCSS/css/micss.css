@@ -1,0 +1,51 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20-abr-2018, 20:13:49
+    Author     : Robot
+*/
+
+#caja1 nav ul{
+  color: red;
+}
+
+section#caja2{
+  background-origin: border-box;
+  border: 4px solid red;
+  border-radius: 20px 50px;
+  margin-top: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  width: 500px;
+}
+
+section#caja2 > h4{
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+  text-align: center;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/56/Color_icon_gray.png');
+  font-family: 'Lobster',Arial , sans-serif;
+  font-size: 40px;
+  width: 400px;
+  border-radius: 20px 20px;
+  margin-bottom: 10px;
+}
+
+#caja2 nav ul{
+  color: rgba(30,210,20,1);
+}
+
+ol > li{
+  font-family: 'Lobster', Arial , sans-serif;
+}
+
+li > a{
+  color: black;
+}

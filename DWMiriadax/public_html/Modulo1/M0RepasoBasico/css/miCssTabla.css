@@ -1,0 +1,40 @@
+/* 
+    Created on : 24-may-2018, 0:10:57
+    Author     : Robot
+*/
+
+body
+{
+  border: 5px solid red;
+  font-family: 'Lobster', Helvetica , sans-serif;
+  border-radius: 20px;
+}
+
+table{
+  position: static;
+  top: 20px;
+  bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 0px;
+  font-family: 'Lobster' , Helvetica , sans-serif;
+  font-size: 0.8em;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #333;
+}
+
+th,td{
+  padding: 0.5em;
+  border-bottom-width: 10px;
+  border-bottom-style: solid;
+  border-bottom-color: #333;
+}
+
+th{
+  background-color: #E2E2E2;
+}
+
+td{
+  background-color: #F0F0F0;
+}

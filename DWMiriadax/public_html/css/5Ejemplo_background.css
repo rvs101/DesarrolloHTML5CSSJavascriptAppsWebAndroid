@@ -1,80 +1,83 @@
 
 body {
-    background-image: url(../img/background/ac.jpg);
+  background-image: url(../img/background/ac.jpg);
 }
 
 div {
-    display: inline-block;
-    border: 1px solid black;
-    width: 4em;
-    height: 4em;
+  display: inline-block;
+  border: 1px solid black;
+  width: 4em;
+  height: 4em;
 }
 
 .modA {
-    background-image: url(../img/background/back_mantel.jpg);
+  background-image: url(../img/background/back_mantel.jpg);
 }
 
 .modB {
-    background-image: url(../img/background/back_mantel.jpg);
-    background-clip: content-box;
+  background-image: url(../img/background/back_mantel.jpg);
+  background-clip: content-box;
 }
 
 .modC {
-    background-image: url(../img/background/back_mantel.jpg);
-    background-size: 100% 100%;
+  background-image: url(../img/background/back_mantel.jpg);
+  background-size: 100% 100%;
 }
 
 .modD {
-    background-image: url(../img/background/back_mantel.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-origin: content-box;
+  background-image: url(../img/background/back_mantel.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-origin: content-box;
 }
 
 .modE {
-    background-image: url(../img/background/dh.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(../img/background/dh.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .modF {
-    background-image: url(../img/background/dh.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-origin: content-box;
+  background-image: url(../img/background/dh.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
 }
 
 .modG {
-    background-image: url(../img/background/dh_2.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+  background-image: url(../img/background/dh_2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .modH {
-    background-image: url(../img/background/dh_3.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+  background-image: url(../img/background/dh_3.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .modI {
-    background: linear-gradient(to right, #d2ff52 0%, #566647 100%);
+  background: linear-gradient(to right, #d2ff52 0%, #566647 100%);
 }
 
 .modJ {
-    background: linear-gradient(to bottom, rgba(240,183,161,1) 0%, rgba(140,51,16,1) 80%, rgba(117,34,1,1) 51%, rgba(191,110,78,1) 100% )
+  background: linear-gradient(to bottom, rgba(240,183,161,1) 0%, rgba(140,51,16,1) 80%, rgba(117,34,1,1) 51%, rgba(191,110,78,1) 100% )
 }
 
 .modK {
-    background: linear-gradient()
+  background: linear-gradient()
 }
 
 .modL {
-    background: linear-gradient(to top,rgba(50,116,45,1) 0%, 100%);
+  background: linear-gradient(to top,rgba(50,116,45,1) 0%, 100%);
 }
 
-div#mario {
-    background: url(../img/background1/f01.png) left bottom repeat-x, url(../img/background1/f02.png) left bottom no-repeat, url(../img/background1/f03.png) left top repeat-x;
-    background-color: #a4d3ff;
+div.mario {
+  background: 
+    url(../img/background1/f01.png) left bottom repeat-x,
+    url(../img/background1/f02.png) left bottom no-repeat, 
+    url(../img/background1/f03.png) left top repeat-x;
+  background-color: #a4d3ff;
 }

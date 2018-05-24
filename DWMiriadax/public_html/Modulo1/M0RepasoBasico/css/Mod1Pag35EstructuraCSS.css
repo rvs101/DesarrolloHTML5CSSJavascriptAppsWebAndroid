@@ -1,0 +1,36 @@
+/* 
+    Created on : 24-may-2018, 17:50:08
+    Author     : Robot
+*/
+
+header h3{
+  background-color: #99ffcc;
+  position: relative;
+  border: 1px solid red;
+  top: 10px;
+  padding: 10px;
+  font-size: 2.2em;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Lobster' , Helvetica , sans-serif;  
+}
+
+div {
+  position: relative;
+  display: block;
+  background: 
+    url(../imagen/background/f01.png) left bottom repeat-x,/*suelo*/
+    url(../imagen/background/f02.png) left bottom no-repeat, /*personajes*/     
+    url(../imagen/background/f03.png) left top repeat-x; /*nubes*/
+  background-color: #a4d3ff;
+  border-radius: 15px;
+  font-weight: bolder;
+}
+
+p{
+  display: block;
+  margin: 40px;
+}
+
+
+

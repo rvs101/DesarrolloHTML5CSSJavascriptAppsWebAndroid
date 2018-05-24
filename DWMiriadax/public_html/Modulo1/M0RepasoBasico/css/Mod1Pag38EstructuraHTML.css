@@ -1,0 +1,84 @@
+/* 
+    Created on : 24-may-2018, 19:08:44
+    Author     : Robot
+*/
+
+header{
+  border: 2px solid red;
+  display: block;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 10px;
+}
+
+nav{
+  border: 2px solid blue;
+  margin: 10px;
+  padding: 1px;
+}
+
+img.img1{
+  display: block;
+  width: 280px;
+  align-content: center;
+  content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.img2{
+  display: block;
+  width: 180px;
+  align-content: center;
+  content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section{
+  position: absolute;
+  border: 5px solid green;
+  height: 1500px;
+}
+
+section h2{
+  position: relative;
+  display: block;
+  border: 5px solid violet;
+  padding: 10px;
+  width: 305px;
+  margin: 5px;
+}
+
+section h3{
+  display: block;
+  border: 7px solid yellow;
+}
+
+aside.a1{
+  position: absolute;
+  display: inline;
+  border: 5px solid salmon;
+  height: auto;
+}
+
+article.a1{
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  height: auto;
+  width: 600px;
+  margin: 10px;
+  border: 5px solid slateblue;
+}
+
+article.a2{
+  position: relative;
+  display: inline-block;
+  height: auto;  
+  width: 190px;
+  padding: 10px;
+}
+

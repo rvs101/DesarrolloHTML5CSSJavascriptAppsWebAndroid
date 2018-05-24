@@ -14,7 +14,7 @@
     padding: 5px;
 }
 
-div#mario {
+div.mario {
     background: 
         url(../img/background1/f01.png) left bottom repeat-x, 
         url(../img/background1/f02.png) left bottom no-repeat, 

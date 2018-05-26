@@ -1,0 +1,23 @@
+/* 
+    Created on : 26-may-2018, 19:49:56
+    Author     : Robot
+*/
+
+.muestra{
+  height: 300px;
+  width: 400px;
+  background-color: #FF9;
+}
+
+.anterior{
+  float: left;
+  height: 100px;
+  width: 200px;
+  background-color: #CFC;
+}
+
+.posterior{
+  height: 100px;
+  width: 200px;
+  background-color: #CCF;
+}

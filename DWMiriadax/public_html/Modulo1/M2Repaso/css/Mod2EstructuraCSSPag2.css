@@ -1,0 +1,21 @@
+/* 
+    Created on : 26-may-2018, 19:38:23
+    Author     : Robot
+*/
+
+*{
+  padding: 5px;
+}
+
+div > img{
+  width: 15.5em;
+  border-radius: 15px;
+}
+
+div{
+  float: left;
+  padding: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border: 1px solid #666;
+}

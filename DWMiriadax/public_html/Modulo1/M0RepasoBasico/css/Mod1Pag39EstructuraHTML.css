@@ -1,0 +1,78 @@
+/* 
+    Created on : 26-may-2018, 10:38:20
+    Author     : Robot
+*/
+
+/* Elementos generales */
+*{
+  margin: 5px;
+  width: 600px;
+}
+
+div.caja{
+  border: 1px solid #ccccff;
+  border-radius: 7px;
+}
+
+div > header{
+  text-align: center;
+  background-color: #ccccff;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2px;
+  margin: 5px;
+  width: auto;
+}
+
+nav{
+  width: auto;
+}
+
+ul{
+  padding: 10px 5px 8px 0px;
+  margin: 1px;
+  background-color: #ccccff;
+  width: auto;
+}
+
+ul > li{
+  padding: 0.2px;
+  margin: 1px;
+  display: inline;
+  list-style: none;
+}
+
+li > a{
+  font-family: 'Times New Roman', sans-serif;
+  background-color: #e9e9e9;
+  padding: 2px;
+}
+
+/*izquierda*/
+article#ar1{
+  position: relative;
+  display: inline-block;
+  padding: 5px;
+  background-color: #ccccff;
+  width: 400px;
+  height: 100px; 
+}
+
+/*derecha*/
+aside#as1{
+  position: absolute;
+  display: inline-block;
+  padding: 5px;
+  height: 100px; 
+  background-color: #ccccff;
+  width: 160px;
+}
+
+footer#pie{
+  padding: 5px;
+  margin-top: 2px;
+  margin-bottom: 300px;
+  width: auto;
+  background-color: #ccccff;
+
+}

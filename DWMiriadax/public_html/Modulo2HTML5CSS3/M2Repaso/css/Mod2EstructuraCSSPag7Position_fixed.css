@@ -2,7 +2,11 @@
     Created on : 26-may-2018, 19:49:56
     Author     : Robot
 */
- 
+
+.caja{
+  border: 1px solid red;
+}
+
 .caja1{
   height: 100px;
   width: 150px;

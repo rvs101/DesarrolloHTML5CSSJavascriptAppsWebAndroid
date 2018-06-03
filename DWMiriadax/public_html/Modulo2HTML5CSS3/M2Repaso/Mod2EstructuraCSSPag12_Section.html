@@ -1,4 +1,4 @@
-<!--Created on 26-may-2018, 20:53:43-->
+<!--Created on 27-may-2018, 10:10:55-->
 <!-- Referencia :  -->
 <!DOCTYPE html>
 <html lang="es">
@@ -15,28 +15,53 @@
     <link rel="shortcut icon" href="https://goo.gl/cais23">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
     <style>
-      @font-face{
-        font-family: FiraMono;
-        src: url(font/FiraMono-Regular.woff) format('woff');
-      }
-
-      h2{
-        font-family: FiraMono,serif;
-      }
-
+      article , header , h2 , p , small , section{padding: 5px;}
+      .book { border: double medium; margin: 2em;}
+      section { border: double medium; margin: 2em; }
+      section.chapter h3 { font: 2em Roboto, Helvetica Neue, sans-serif; }
+      section.appendix h3 { font: small-caps 2em Roboto, Helvetica Neue, sans-serif; }
     </style>
   </head>
   <body>
 
-    <div>
+    <article class="book">
+
       <header>
-        <h2>Cabecera</h2>
+        <h2>My Book</h2>
+        <p>A sample with not much content</p>
+        <p><small>Published by Dummy Publicorp Ltd.</small></p>
       </header>
-      <section>
-        
+
+      <section class="chapter">
+        <h3>My First Chapter</h3>
+        <p>This is the first of my chapters. It doesn’t say much.</p>
+        <p>But it has two paragraphs!</p>
       </section>
-      
-    </div>
+
+      <section class="chapter">
+        <h3>It Continues: The Second Chapter</h3>
+        <p>Bla dee bla, dee bla dee bla. Boom.</p>
+      </section>
+
+      <section class="chapter">
+        <h3>Chapter Three: A Further Example</h3>
+        <p>It’s not like a battle between brightness and earthtones would go
+          unnoticed.</p>
+        <p>But it might ruin my story.</p>
+      </section>
+
+      <section class="appendix">
+        <h3>Appendix A: Overview of Examples</h3>
+        <p>These are demonstrations.</p>
+      </section>
+
+      <section class="appendix">
+        <h3>Appendix B: Some Closing Remarks</h3>
+        <p>Hopefully this long example shows that you <em>can</em> style
+          sections, so long as they are used to indicate actual sections.</p>
+      </section>
+
+    </article>
 
     <footer style="
             position: fixed;

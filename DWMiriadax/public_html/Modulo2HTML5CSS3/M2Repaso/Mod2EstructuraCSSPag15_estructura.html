@@ -1,0 +1,211 @@
+<!--Created on 08-jun-2018, 18:05:27-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <!-- Metadatos basicos - Seccion Tecnica : Servidor  -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="shortcut icon" href="https://goo.gl/cais23">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <style>
+
+      *{
+        border: 1px solid red;
+        border-radius: 7px;
+        font-family: 'Lobster', Helvetica , sans-serif;
+      }
+
+      h3 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 500px;
+      }
+
+      p{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        height: auto;
+      }
+
+      header{
+        background-color: #26d258;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+
+      h1{
+        line-height: 50px;
+      }
+
+      section{
+        margin: 5px;
+        padding: 5px;
+      }
+
+      nav{
+        background-color: #d2ff52;
+        height: 30px;
+        line-height: 30px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        padding: 10px;
+        text-align: center;
+      }
+
+      section#sidebar1{
+        background-color: #a4d3ff;
+        float: left;
+        height: auto;
+        position: static;
+        width: auto;
+      }
+
+      section#main{
+        background-color: #dad55e;
+        float: left;
+        height: 700px;
+        position: static;
+        width: auto;
+      }
+
+      aside{
+        background-color: #f1a899;
+        float: left;
+        height: 600px;
+        padding: 5px;
+        position: static;
+        width: auto;
+      }
+
+      footer{
+        background-color: #ff6666;
+        bottom: 0px;
+        border-radius: 0px;
+        height: auto;
+        padding: 7px;
+        position:fixed;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: available;
+        width: 100%;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>Cabecera</h1>
+    </header>
+
+    <nav>
+      Barra de navegacion
+    </nav>
+
+    <section id="sidebar1">
+      <h3>Barra Sidebar 
+        <br>Al tener fijado el <b>width</b> 500px 
+        <br>No modifica el ancho de la capa , 
+        <br>El texto se va acumulando linea a linea
+      </h3>
+      <p>El ancho del <b>p</b> redimensiona la caja 
+        <br>y empuja a las demas capas
+        <br>hacia abajo siguiendo 
+        <br>el flujo natural del posicionamiento
+        --------------------------------------------------->
+      </p>
+      <pre>
+        h3 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        <b>width: 500px;</b>
+        }
+        p{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        <b>height: auto;</b> <em>Para que coja todo el alto</em>
+        }
+        section#sidebar1{
+        background-color: #a4d3ff;
+        float: left;
+        position: static;
+        <b>height: auto;</b> Para que se ajuste todo el alto
+        <b>width: auto;</b>
+        }
+      </pre>
+    </section>
+
+    <main>
+      <section id="main">
+        <h3>Barra Main </h3>
+        <p>El ancho me lo fija el bloque h3 </p>
+        <pre>
+        h3 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        <b>width: 500px;</b>
+        }
+        p{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        height: 20px;
+        }
+        section#main{
+        background-color: #dad55e;
+        float: left;
+        height: 700px;
+        position: static;
+        <b>width: auto;</b>
+        }
+        </pre>
+      </section>
+    </main>
+
+    <aside>
+      <p>PARRAFO : lateral</p>
+      <p>El ancho me lo fija la cantidad de caracteres</p>
+      <pre>
+      aside{
+      background-color: #f1a899;
+      float: left;
+      height: 600px;
+      padding: 5px;
+      position: static;
+      width: auto;
+      <b>width: auto;</b>
+      }
+      </pre>
+    </aside>
+
+    <footer>
+      <code>
+        <b>footer</b>{
+        background-color: #ff6666;
+        bottom: 0px;
+        border-radius: 0px;
+        height: auto;
+        padding: 7px;
+        position:fixed;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: available;
+        <b>width: 100%;</b>
+        }
+      </code>
+    </footer>
+  </body>
+</html>

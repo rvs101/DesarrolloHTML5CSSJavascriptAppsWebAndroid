@@ -1,0 +1,208 @@
+<!--Created on 09-jun-2018, 18:37:26-->
+<!-- Referencia :  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>titulo</title>
+    <!-- Metadatos basicos - Seccion Tecnica : Servidor  -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Raul Vela Salas">
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster|Jua|Playfair+Display" rel="stylesheet">
+    <link rel="shortcut icon" href="https://goo.gl/cais23">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <style>
+
+      *{
+        border: 1px solid red;
+        padding: 5px;
+        border-radius: 7px;
+      }
+
+      body{
+        background-color: #e5e5e5;
+      }
+
+      header{
+        background-color: #ccffff;
+        font-family: "Lobster" , Helvetica ,sans-serif;
+        font-size: 3.3em;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      nav{
+        background-color: #ccccff;
+        font-family: "Lobster" , Helvetica , sans-serif;
+        font-size: 2.7em;
+        padding: 10px;
+        margin: 5px;
+        text-align: center;
+      }
+
+      span{
+        text-align: center;
+        padding: 1px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      span#barraLateral1parrafo{
+        font-family: "Jua" , Times , sans-serif;
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      main#content{
+        background-color: #ffcc99;
+        height: 500px;
+      }
+
+      section , article , aside{
+        background-color: #f7ecb5;
+        box-sizing: border-box;
+        height: 500px;
+        float: left;
+        position: static;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        width:  24.5%;
+      }
+
+      section#seccionSidebar{
+        margin-top: 11px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      section#seccionSidebar > img#avion{
+        display: block;
+        border-radius: 15px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      aside{
+        float: right;
+        height: 500px;
+      }
+
+      aside#barraLateral1{  
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      span#barraLateral1parrafo{
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      footer{
+        align-content: center;
+        clear: both;
+        font-family: "Indie Flower" , sans-serif;
+        font-size: 3.0em;
+        position: static;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      footer > span#pie{
+        background-color: #c1e2b3;
+        display: block;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <span>Cabecera</span>
+    </header>
+
+    <nav id='barraNavegacion'>
+      <span>Barra de navegacion</span>
+    </nav>
+
+    <section id='seccionSidebar'>
+      <h2>section : Barra Lateral</h2>
+      <span>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation 
+        ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate 
+        velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, 
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </span>
+      <img id='avion' src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Avenger_TBM.jpg/500px-Avenger_TBM.jpg" alt="avion">
+    </section>
+
+    <main id='content'>
+      <article id='articulo1'>
+        <h1>Article : 1st Post title</h1>
+        <p>
+          Articulo principal <br>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation 
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+          Duis aute irure dolor in reprehenderit in voluptate 
+          velit esse cillum dolore eu fugiat nulla pariatur. 
+          Excepteur sint occaecat cupidatat non proident, 
+          sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </article>
+
+      <article id='articulo2'>
+        <h1>Article : 2st Post title</h1>
+        <p>
+          Articulo secundario <br>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation 
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+          Duis aute irure dolor in reprehenderit in voluptate 
+          velit esse cillum dolore eu fugiat nulla pariatur. 
+          Excepteur sint occaecat cupidatat non proident, 
+          sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </article>
+
+      <aside id='barraLateral1'>
+        <span> Aside : Barra lateral
+        </span>
+        <span id='barraLateral1parrafo'> Aside : Barra lateral
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation 
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+          Duis aute irure dolor in reprehenderit in voluptate 
+          velit esse cillum dolore eu fugiat nulla pariatur. 
+          Excepteur sint occaecat cupidatat non proident, 
+          sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </span>
+      </aside>
+    </main>
+
+    <footer>
+      <span id="pie">Pie
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+      </span>
+    </footer>
+
+  </body>
+</html>
